@@ -1,0 +1,12 @@
+@import '../mixins';
+
+.header {
+  @include underlinedHeader;
+}
+
+.blurb {
+  @include blurbText(var(--text-md));
+  margin-top: var(--space-xl);
+  font-weight: 400;
+  width: 40%;
+}

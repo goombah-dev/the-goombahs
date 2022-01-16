@@ -40,8 +40,28 @@
   font-family: var(--font-body);
   font-size: $textSize;
   font-weight: var(--semibold);
+  line-height: 170%;
   letter-spacing: var(--push-md);
   text-align: center;
   text-transform: initial;
   text-align: left;
+}
+
+@mixin underlinedHeader {
+  position: relative;
+  margin: 0;
+  width: auto;
+  display: inline-block;
+  font-size: var(--text-header);
+  font-weight: var(--xbold);
+  text-transform: uppercase;
+  &::after {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: var(--primary);
+  }
 }

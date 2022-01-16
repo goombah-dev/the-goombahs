@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 
+import { DiscordIcon } from '../svg/discord-icon'
+import { TwitterIcon } from '../svg/twitter-icon'
+import { FBIcon } from '../svg/fb-icon'
+
 import {
   topNav,
   navLink,
   active,
   logo,
   social,
-  icon
+  icon,
 } from '../../styles/layout/top-nav.module.scss'
 
 const pageLinks = [
@@ -45,19 +49,31 @@ export const TopNav = () => {
       <div className={logo}>THE GOOMBAHS</div>
       <div className={pageLinks}>
         {pageLinks.map((lnk, idx) => {
-          const isActiveLink = idx === activeLink ? active : null
+          const isActiveLink =
+            idx === activeLink ? active : null
 
           return (
             <Link href={lnk.path} key={lnk.name}>
-              <a className={`${navLink} ${isActiveLink}`} onClick={() => setSetActiveLink(idx)}>{lnk.name}</a>
+              <a
+                className={`${navLink} ${isActiveLink}`}
+                onClick={() => setSetActiveLink(idx)}
+              >
+                {lnk.name}
+              </a>
             </Link>
           )
         })}
       </div>
       <div className={social}>
-        <span className={icon}>DS</span>
-        <span className={icon}>FB</span>
-        <span className={icon}>TW</span>
+        <span className={icon}>
+          <DiscordIcon />
+        </span>
+        <span className={icon}>
+          <TwitterIcon />
+        </span>
+        <span className={icon}>
+          <FBIcon />
+        </span>
       </div>
     </nav>
   )

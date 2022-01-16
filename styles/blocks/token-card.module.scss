@@ -1,0 +1,56 @@
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: var(--text-color);
+  .upper {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    background-color: var(--white);
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      filter: brightness(.8);
+    }
+    .tokenName {
+      position: absolute;
+      bottom: 3.5%;
+      left: 10%;
+      margin: 0;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      font-size: var(--text-xl);
+      :first-child {
+        font-size: var(--text-3xl);
+      }
+    }
+  }
+  .lower {
+    height: 35%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.cardBlurb {
+  font-family: var(--font-accent);
+  font-size: var(--text-md);
+  letter-spacing: var(--push-md);
+  text-align: left;
+  width: 80%;
+}
+
+.cardBtn {
+  font-size: var(--text-2xl) !important;
+  width: 80%;
+  padding: var(--space-md) 0;
+
+}

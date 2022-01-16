@@ -80,6 +80,7 @@
   --loose: 2;
 
   /* letter-spacing */
+  --push-2xl: 0.5em;
   --push-xl: 0.25em;
   --push-lg: 0.15em;
   --push-md: 0.08em;
@@ -146,7 +147,7 @@
   /* text size */
   --text-hero: var(--text-10xl);
   --text-display: var(--text-7xl);
-  --text-header: var(--text-4xl);
+  --text-header: var(--text-5xl);
   --text-blurb-lg: var(--text-2xl);
   --text-blurb: var(--text-lg);
   --text-prose: var(--text-2xl);
@@ -159,7 +160,7 @@
   
   
   /* container sizing */
-  --content-width: 76vw
+  --content-width: 70vw
 
 }
 
@@ -224,7 +225,7 @@ button {
 
 .btn__primary {
   position: relative;
-  padding: var(--space-sm) var(--space-2xl);
+  padding: var(--space-sm) var(--space-xl);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,7 +233,7 @@ button {
   letter-spacing: var(--push-lg);
   background-color: var(--primary);
   font-family: var(--font-accent);
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   text-transform: uppercase;
   color: var(--text-accent);
   transition: var(--transition-primary);
