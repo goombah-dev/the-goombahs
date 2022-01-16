@@ -48,7 +48,7 @@ export const TopNav = () => {
           const isActiveLink = idx === activeLink ? active : null
 
           return (
-            <Link href={lnk.path}>
+            <Link href={lnk.path} key={lnk.name}>
               <a className={`${navLink} ${isActiveLink}`} onClick={() => setSetActiveLink(idx)}>{lnk.name}</a>
             </Link>
           )

@@ -17,7 +17,7 @@ export const LayoutBG = ({ numImgs = 2 }) => {
           
 
           return (
-            <div className={`${artWindow} ${isTlBr}`}>
+            <div key={idx} className={`${artWindow} ${isTlBr}`}>
               <img
                 src={baseUrlPng(directionUrl)}
                 alt='goombahs background collage art'
