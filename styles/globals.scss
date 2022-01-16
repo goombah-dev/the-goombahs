@@ -1,0 +1,242 @@
+@import './_mixins.scss';
+
+
+:root {
+
+  /* font-family */
+  --font-title: 'Montserrat', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+  --font-accent: 'Bebas Neue', cursive;
+
+  /* palette */
+  --full-black: #0A0A0A;
+  --black: #3b3b3b;
+  --black-fade-5: hsla(0, 0%, 0%, 0.05);
+  --black-fade-10: hsla(0, 0%, 0%, 0.1);
+  --black-fade-20: hsla(0, 0%, 0%, 0.2);
+  --black-fade-40: hsla(0, 0%, 0%, 0.4);
+  --black-fade-80: hsla(0, 0%, 0%, 0.8);
+  --grey-90: #24222a;
+  --grey-90: #363636;
+  --grey-50: #78757a;
+  --grey-40: #99979b;
+  --grey-10: #e6e5e6;
+  --grey-05: #F6F6F6;
+  --grey-fade-20: hsla(276, 2%, 47%, 0.2);
+  --off-white: #fafafa;
+  --white: #ffffff;
+  --white-fade-20: hsla(0, 0%, 100%, 0.2);
+  --red-eye: #820000;
+  --house-paint: #BE0000;
+
+  /* z-indeces */
+  --base-two: -200;
+  --base-one: -100;
+  --ground: auto;
+  --level-one: 100;
+  --level-two: 200;
+  --level-three: 300;
+  --level-four: 400;
+  --level-five: 500;
+  --level-six: 600;
+  --level-seven: 700;
+  --level-eight: 800;
+  --level-nine: 900;
+  --level-top: 9999;
+
+  /* radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 48px;
+  --radius-rounded: 999px;
+
+  /* spacing */
+  --space-xs: 2px;
+  --space-sm: 4px;
+  --space-md: 8px;
+  --space-ml: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 48px;
+  --space-4xl: 64px;
+  --space-5xl: 70px;
+
+  /* viewport-spacing */
+  --vp-sm: 2.5vmin;
+  --vp-ms: 3.5vmin;
+  --vp-md: 5vmin;
+  --vp-ml: 7vmin;
+  --vp-lg: 9vmin;
+  --vp-xl: 11vmin;
+  --vp-2xl: 13vmin;
+  --vp-3xl: 26vmin;
+
+  /* line-height */
+  --solid: 1;
+  --dense: 1.25;
+  --default: 1.5;
+  --loose: 2;
+
+  /* letter-spacing */
+  --push-xl: 0.25em;
+  --push-lg: 0.15em;
+  --push-md: 0.08em;
+  --push-sm: 0.02em;
+  --tight: -0.015em;
+
+  /* font-weight */
+  --light: 200;
+  --body: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --xbold: 800;
+  --xxbold: 900;
+
+  /* font-size */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-2xl-plus: 28px;
+  --text-3xl: 32px;
+  --text-3xl-plus: 40px;
+  --text-4xl: 48px;
+  --text-5xl: 56px;
+  --text-6xl: 64px;
+  --text-7xl: 78px;
+  --text-8xl: 96px;
+  --text-9xl: 118px;
+  --text-10xl: 128px;
+  --text-11xl: 156px;
+
+  /* bezier curves */
+  --smooth: cubic-bezier(0.115, 0.905, 0.32, 1);
+  --punchitchewy: cubic-bezier(1, 0, 0.115, 0.995);
+
+  /* transitions */
+  --transition-1: all 1s var(--punchitchewy);
+  --transition-2: all 0.6s var(--punchitchewy);
+  --transition-3: all 0.3s var(--punchitchewy);
+  --transition-4: all 0.1s var(--punchitchewy);
+  --transition-1-smooth: all 1.25s var(--smooth);
+  --transition-2-smooth: all 0.6s var(--smooth);
+  --transition-3-smooth: all 0.3s var(--smooth);
+  --transition-4-smooth: all 0.1s var(--smooth);
+
+  // * role-based tokens * //
+
+  /* borders */
+  --stnd-border: 1px solid var(--text-color);
+
+  /* colors */
+  --background: var(--full-black);
+
+
+  --text-color: var(--black);
+  --text-accent: var(--grey-10);
+  --primary: var(--red-eye);
+  --primary-vivid: var(--house-paint);
+  --primary-accent: var(--grey-10);
+
+  /* text size */
+  --text-hero: var(--text-10xl);
+  --text-display: var(--text-7xl);
+  --text-header: var(--text-4xl);
+  --text-blurb-lg: var(--text-2xl);
+  --text-blurb: var(--text-lg);
+  --text-prose: var(--text-2xl);
+
+  /* transitions */
+  --transition-primary: var(--transition-2-smooth);
+
+  /* spacing */
+  --grid-space: var(--vp-xl);
+  
+  
+  /* container sizing */
+  --content-width: 76vw
+
+}
+
+html,
+body {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  background-color: var(--background) !important;
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  letter-spacing: var(--push-sm);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    display: none !important;
+  }
+  & > * {
+    color: var(--white);
+    ::-moz-selection {
+      color: var(--grey-10);
+      background-color: transparent;
+    }
+    ::selection {
+      color: var(--grey-10);
+      background-color: transparent;
+    }
+  }
+  & * {
+    ::-webkit-scrollbar {
+      display: none !important;
+    }
+  }
+}
+
+a,
+p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn__primary {
+  position: relative;
+  padding: var(--space-sm) var(--space-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  letter-spacing: var(--push-lg);
+  background-color: var(--primary);
+  font-family: var(--font-accent);
+  font-size: var(--text-3xl);
+  text-transform: uppercase;
+  color: var(--text-accent);
+  transition: var(--transition-primary);
+  &:hover {
+    background-color: var(--primary-vivid);
+  }
+}

@@ -1,0 +1,64 @@
+@import '../mixins';
+
+.hero {
+  @include homeSection(93vh);
+}
+
+.heroContent {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sectionHeader {
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .primary {
+    position: relative;
+    font-size: var(--text-hero);
+    font-weight: var(--xxbold);
+    margin: 0;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -10%;
+      left: 0;
+      width: 99%;
+      height: 10px;
+      background-color: var(--primary);
+    }
+  }
+  .secondary {
+    font-size: var(--text-blurb-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+}
+
+.blurb {
+  @include blurbText(var(--text-blurb-lg));
+  width: 45vw;
+  margin: 0;
+  letter-spacing: var(--push-lg);
+}
+
+.ctaButton {
+  height: 7vh;
+  button {
+    height: 100%;
+    margin: 0;
+  }
+  span {
+    transform: translateY(2.5%)
+  }
+  svg {
+    margin-left: var(--space-lg);
+  }
+}
