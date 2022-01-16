@@ -38,7 +38,7 @@ const pageLinks = [
 ]
 
 export const TopNav = () => {
-  const [activeLink, setSetActiveLink] = useState(2)
+  const [activeLink, setSetActiveLink] = useState(0)
 
   return (
     <nav className={topNav}>
