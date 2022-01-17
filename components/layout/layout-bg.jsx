@@ -5,8 +5,8 @@ import { baseUrlPng } from '../../utils/base-url'
 import { layoutBGContainer, artWindow, pullLeft } from '../../styles/layout/layout.module.scss'
 
 export const LayoutBG = ({ numImgs = 2 }) => {
-  const tRbL = 'TR-BL_qgchck'
-  const tLbR = 'TL-BR_desvgl'
+  const tRbL = 'TR-BL_icjpxa'
+  const tLbR = 'TL-BR_zqwq7p'
 
   return (
     <div className={layoutBGContainer}>

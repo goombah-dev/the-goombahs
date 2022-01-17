@@ -1,6 +1,9 @@
 import React from 'react'
 
-import { header, blurb as blurbStyle} from '../../styles/blocks/title-blurb.module.scss'
+import {
+  header,
+  blurb as blurbStyle,
+} from '../../styles/blocks/title-blurb.module.scss'
 
 export const TitleBlurb = ({ title, blurb }) => {
   return (

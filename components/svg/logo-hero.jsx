@@ -113,8 +113,8 @@ export const LogoHero = () => {
           y2='250.62'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0.17329' stop-color='white' />
-          <stop offset='1' stop-color='#868686' />
+          <stop offset='0.17329' stopColor='white' />
+          <stop offset='1' stopColor='#868686' />
         </linearGradient>
         <linearGradient
           id='paint1_linear_143_7'
@@ -124,8 +124,8 @@ export const LogoHero = () => {
           y2='250.62'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0.17329' stop-color='white' />
-          <stop offset='1' stop-color='#868686' />
+          <stop offset='0.17329' stopColor='white' />
+          <stop offset='1' stopColor='#868686' />
         </linearGradient>
         <linearGradient
           id='paint2_linear_143_7'
@@ -135,8 +135,8 @@ export const LogoHero = () => {
           y2='250.62'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0.17329' stop-color='white' />
-          <stop offset='1' stop-color='#868686' />
+          <stop offset='0.17329' stopColor='white' />
+          <stop offset='1' stopColor='#868686' />
         </linearGradient>
         <linearGradient
           id='paint3_linear_143_7'
@@ -146,8 +146,8 @@ export const LogoHero = () => {
           y2='250.62'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0.17329' stop-color='white' />
-          <stop offset='1' stop-color='#868686' />
+          <stop offset='0.17329' stopColor='white' />
+          <stop offset='1' stopColor='#868686' />
         </linearGradient>
         <linearGradient
           id='paint4_linear_143_7'
@@ -157,8 +157,8 @@ export const LogoHero = () => {
           y2='250.62'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0.17329' stop-color='white' />
-          <stop offset='1' stop-color='#868686' />
+          <stop offset='0.17329' stopColor='white' />
+          <stop offset='1' stopColor='#868686' />
         </linearGradient>
         <linearGradient
           id='paint5_linear_143_7'
@@ -168,8 +168,8 @@ export const LogoHero = () => {
           y2='250.62'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0.17329' stop-color='white' />
-          <stop offset='1' stop-color='#868686' />
+          <stop offset='0.17329' stopColor='white' />
+          <stop offset='1' stopColor='#868686' />
         </linearGradient>
         <linearGradient
           id='paint6_linear_143_7'
@@ -179,8 +179,8 @@ export const LogoHero = () => {
           y2='250.62'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0.17329' stop-color='white' />
-          <stop offset='1' stop-color='#868686' />
+          <stop offset='0.17329' stopColor='white' />
+          <stop offset='1' stopColor='#868686' />
         </linearGradient>
         <linearGradient
           id='paint7_linear_143_7'
@@ -190,8 +190,8 @@ export const LogoHero = () => {
           y2='250.62'
           gradientUnits='userSpaceOnUse'
         >
-          <stop offset='0.17329' stop-color='white' />
-          <stop offset='1' stop-color='#868686' />
+          <stop offset='0.17329' stopColor='white' />
+          <stop offset='1' stopColor='#868686' />
         </linearGradient>
       </defs>
     </svg>

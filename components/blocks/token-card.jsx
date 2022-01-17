@@ -14,7 +14,7 @@ import {
 } from '../../styles/blocks/token-card.module.scss'
 
 export const TokenCard = ({ token: tkn }) => {
-  console.log('tkn: ', tkn);
+  
   return (
     <div className={card}>
       <div className={upper}>

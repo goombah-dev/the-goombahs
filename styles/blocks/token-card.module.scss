@@ -49,7 +49,8 @@
 }
 
 .cardBtn {
-  font-size: var(--text-2xl) !important;
+  font-size: var(--text-2xl);
+  font-size: 1vmax;
   width: 80%;
   padding: var(--space-md) 0;
 

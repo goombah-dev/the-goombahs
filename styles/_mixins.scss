@@ -10,6 +10,7 @@
   justify-content: center;
 }
 
+
 // psuedo elements
 
 @mixin pseudoUnderline($width) {
@@ -24,6 +25,7 @@
   transform-origin: left;
   transition: var(--transition-primary);
 }
+
 
 // typography
 
@@ -45,6 +47,12 @@
   text-align: center;
   text-transform: initial;
   text-align: left;
+}
+
+@mixin blurbHeader {
+  font-size: var(--text-lg);
+  text-transform: uppercase;
+  margin-bottom: var(--space-lg);
 }
 
 @mixin underlinedHeader {

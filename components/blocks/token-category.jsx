@@ -12,7 +12,7 @@ export const TokenCategory = ({ title, blurb, tokens }) => {
       <div className={cardContainer}>
         {tokens.map(tkn => {
           return (
-            <Fragment key={tkn.title}>
+            <Fragment key={tkn.id}>
               <TokenCard token={tkn} />
             </Fragment>
           )

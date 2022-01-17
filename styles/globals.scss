@@ -1,15 +1,13 @@
 @import './_mixins.scss';
 
-
 :root {
-
   /* font-family */
   --font-title: 'Montserrat', sans-serif;
   --font-body: 'Montserrat', sans-serif;
   --font-accent: 'Bebas Neue', cursive;
 
   /* palette */
-  --full-black: #0A0A0A;
+  --full-black: #0a0a0a;
   --black: #3b3b3b;
   --black-fade-5: hsla(0, 0%, 0%, 0.05);
   --black-fade-10: hsla(0, 0%, 0%, 0.1);
@@ -21,13 +19,14 @@
   --grey-50: #78757a;
   --grey-40: #99979b;
   --grey-10: #e6e5e6;
-  --grey-05: #F6F6F6;
+  --grey-05: #f6f6f6;
   --grey-fade-20: hsla(276, 2%, 47%, 0.2);
   --off-white: #fafafa;
   --white: #ffffff;
   --white-fade-20: hsla(0, 0%, 100%, 0.2);
+  --dry-paint: #570000;
   --red-eye: #820000;
-  --house-paint: #BE0000;
+  --house-paint: #be0000;
 
   /* z-indeces */
   --base-two: -200;
@@ -137,10 +136,10 @@
   /* colors */
   --background: var(--full-black);
 
-
   --text-color: var(--black);
   --text-accent: var(--grey-10);
   --primary: var(--red-eye);
+  --primary-dark: var(--dry-paint);
   --primary-vivid: var(--house-paint);
   --primary-accent: var(--grey-10);
 
@@ -156,12 +155,11 @@
   --transition-primary: var(--transition-2-smooth);
 
   /* spacing */
-  --grid-space: var(--vp-xl);
-  
-  
-  /* container sizing */
-  --content-width: 70vw
+  --grid-gap-vert: var(--vp-lg);
 
+
+  /* container sizing */
+  --content-width: 70vw;
 }
 
 html,
@@ -180,22 +178,33 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   ::-webkit-scrollbar {
-    display: none !important;
+    background-color: var(--full-black);
+    width: 3px;
+    &:hover {
+      width: 10px;
+    }
+    // display: none !important;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary-dark);
+    // display: none !important;
   }
   & > * {
     color: var(--white);
     ::-moz-selection {
-      color: var(--grey-10);
+      color: var(--primary);
       background-color: transparent;
     }
     ::selection {
-      color: var(--grey-10);
+      color: var(--primary);
       background-color: transparent;
     }
   }
   & * {
     ::-webkit-scrollbar {
-      display: none !important;
+      // display: none !important;
+      background-color: var(--grey-10);
+      width: 8px;
     }
   }
 }
@@ -206,6 +215,23 @@ p {
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: unset;
+}
+
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
 }
 
 img {
