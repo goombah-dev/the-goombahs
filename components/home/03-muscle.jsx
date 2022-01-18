@@ -3,21 +3,20 @@ import { useInView } from 'react-intersection-observer'
 
 import { TokenCategory } from '../blocks/token-category'
 import { TokenRank } from '../blocks/token-rank'
-
 import { TokenNav } from '../blocks/token-nav'
 
 const sectionData = {
-  title: `The Commission`,
+  title: `The Muscle`,
   blurb: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
   tokens: [
     {
-      id: `boss`,
+      id: `consig2`,
       imageUrl: `boss-main_hojsjn`,
-      name: `The Boss`,
+      name: `The 2nd Consiglieri`,
       title: (
         <>
           <span>The</span>
-          <span>Boss</span>
+          <span>2nd Consiglieri</span>
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
@@ -37,13 +36,13 @@ const sectionData = {
       ],
     },
     {
-      id: `underboss`,
+      id: `soldier`,
       imageUrl: `underboss-main_kxq7rg`,
-      name: `The Underboss`,
+      name: `The Soldier`,
       title: (
         <>
           <span>The</span>
-          <span>Underboss</span>
+          <span>Soldier</span>
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
@@ -63,13 +62,13 @@ const sectionData = {
       ],
     },
     {
-      id: `consiglieri`,
+      id: `associate`,
       imageUrl: `consig-main_fltyei`,
-      name: `The Consiglieri`,
+      name: `The Associate`,
       title: (
         <>
           <span>The</span>
-          <span>Consiglieri</span>
+          <span>Associate</span>
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
@@ -89,13 +88,13 @@ const sectionData = {
       ],
     },
     {
-      id: `shylock`,
+      id: `politician`,
       imageUrl: `shylock-main_tfoozy`,
-      name: `The Shylock`,
+      name: `The Politician`,
       title: (
         <>
           <span>The</span>
-          <span>Shylock</span>
+          <span>Politician</span>
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
@@ -115,13 +114,13 @@ const sectionData = {
       ],
     },
     {
-      id: `capo`,
+      id: `police`,
       imageUrl: `capo-main_sg1dys`,
-      name: `The Capo`,
+      name: `The Policeman`,
       title: (
         <>
           <span>The</span>
-          <span>Capo</span>
+          <span>Policeman</span>
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
@@ -143,19 +142,16 @@ const sectionData = {
   ],
 }
 
-export const Commission = () => {
+export const Muscle = () => {
   const { tokens: tokenRanks, title } = sectionData
 
   const [currentRank, setCurrentRank] = useState(0)
 
-  const { ref: commissionRef, inView: commInView } =
+  const { ref: muscleRef, inView: muscleInView } =
     useInView({ threshold: 0.4 })
 
   return (
-    <div
-      style={{ position: 'relative' }}
-      ref={commissionRef}
-    >
+    <div style={{ position: 'relative' }} ref={muscleRef}>
       <TokenCategory
         title={sectionData.title}
         blurb={sectionData.blurb}
@@ -164,7 +160,7 @@ export const Commission = () => {
       <TokenRank rankData={tokenRanks[currentRank]} />
       <TokenNav
         sectionTitle={title}
-        sectionInView={commInView}
+        sectionInView={muscleInView}
         tokenRanks={tokenRanks}
         currentRank={currentRank}
         setCurrentRank={setCurrentRank}

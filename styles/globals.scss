@@ -160,6 +160,7 @@
 
   /* container sizing */
   --content-width: 70vw;
+  --content-margin-width: calc((100vw - var(--content-width)) / 2);
 }
 
 html,

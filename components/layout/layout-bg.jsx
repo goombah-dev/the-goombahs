@@ -12,7 +12,7 @@ export const LayoutBG = ({ numImgs = 2 }) => {
     <div className={layoutBGContainer}>
       {
         Array.from({ length: numImgs }).map((imgs, idx) => {
-          const directionUrl = idx % 2 === 0 ? tLbR : tRbL
+          const directionUrl = (idx % 2 === 0) ? tLbR : tRbL
           const isTlBr = !(idx % 2 === 0) ? pullLeft : ''
           
 

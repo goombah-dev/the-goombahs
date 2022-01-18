@@ -2,6 +2,7 @@
 
 .hero {
   @include homeSection(93vh);
+  margin-bottom: var(--vp-xl);
 }
 
 .heroContent {
