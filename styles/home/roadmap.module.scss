@@ -1,0 +1,60 @@
+@import '../mixins';
+
+.sectionContainer {
+  @include homeSection(auto);
+  margin-bottom: var(--intersection-margin);
+  p {
+    width: 100% !important;
+  }
+}
+
+.mapContainer {
+  margin-top: var(--intersection-margin);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.monthBlock {
+  margin-bottom: var(--intercontent-margin);
+  display: grid;
+  gap: 0 5%;
+  grid-template-columns: .1fr .9fr;
+  .monthName {
+    font-family: var(--font-accent);
+    font-size: var(--text-2xl);
+    letter-spacing: var(--push-md);
+    color: var(--primary);
+  }
+}
+
+.eventBlock {
+  margin-bottom: var(--intercontent-margin);
+  .eventHeader {
+    position: relative;
+    margin-bottom: var(--space-lg);
+    font-size: var(--text-blurb);
+    font-weight: var(--bold);
+    text-transform: uppercase;
+    letter-spacing: var(--push-md);
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: -2.5%;
+      height: 7px;
+      width: 7px;
+      transform: translateY(-50%);
+      background-color: var(--primary);
+    }
+  }
+  .eventBlurb {
+    @include blurbText(var(--text-prose));
+    padding-right: 10vw;
+  }
+  .ctaBtn {
+    margin-top: var(--space-lg);
+  }
+}

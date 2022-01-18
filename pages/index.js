@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Hero } from '../components/home/01-hero'
 import { Commission } from '../components/home/02-commission'
 import { Muscle } from '../components/home/03-muscle'
+import { Roadmap } from '../components/home/04-roadmap'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero />
         <Commission />
         <Muscle />
+        <Roadmap />
       </main>
     </>
   )

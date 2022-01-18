@@ -149,13 +149,17 @@
   --text-header: var(--text-5xl);
   --text-blurb-lg: var(--text-2xl);
   --text-blurb: var(--text-lg);
-  --text-prose: var(--text-2xl);
+  --text-prose: var(--text-md);
 
   /* transitions */
   --transition-primary: var(--transition-2-smooth);
 
   /* spacing */
   --grid-gap-vert: var(--vp-lg);
+  --intrasection-margin: var(--vp-md);
+  --intersection-margin: var(--vp-xl);
+  --intercontent-margin: var(--vp-ms);
+  --intracontent-margin: var(--vp-sm);
 
 
   /* container sizing */
@@ -266,5 +270,13 @@ button {
   transition: var(--transition-primary);
   &:hover {
     background-color: var(--primary-vivid);
+  }
+  &--transp {
+    background-color: transparent;
+    border-left: 2px solid var(--primary);
+    color: var(--primary);
+    &:hover {
+      color: var(--white);
+    }
   }
 }
