@@ -3,6 +3,7 @@ import { Hero } from '../components/home/01-hero'
 import { Commission } from '../components/home/02-commission'
 import { Muscle } from '../components/home/03-muscle'
 import { Roadmap } from '../components/home/04-roadmap'
+import { Contact } from '../components/home/05-contact'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Commission />
         <Muscle />
         <Roadmap />
+        <Contact />
       </main>
     </>
   )

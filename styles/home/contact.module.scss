@@ -1,0 +1,81 @@
+@import '../mixins';
+
+.contactSection {
+  @include homeSection(100vh);
+}
+
+.contactBlock {
+  height: 48vh;
+  width: 80%;
+  display: grid;
+  gap: var(--grid-gap-vert);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  & > * {
+    height: 100%;
+  }
+}
+
+.tagLines {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  .primary {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 8vmin;
+    text-transform: uppercase;
+    &::before {
+      @include pseudoUnderline(100%);
+      top: calc(115% - 5px);
+      height: 10px !important;
+    }
+    &::after {
+      @include pseudoUnderline(calc(var(--content-width) * .8));
+      top: 115%;
+    }
+  }
+  .secondary {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: var(--text-2xl);
+    letter-spacing: var(--push-lg);
+  }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  justify-content: flex-start;
+  input {
+    height: 25%;
+    width: 100%;
+    padding: 0 var(--space-xl);
+    margin: 5% 0;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-accent);
+    font-size: var(--text-xl);
+    color: var(--white);
+    &::placeholder {
+      font-family: var(--font-accent);
+      font-size: var(--text-xl);
+      color: var(--grey-40);
+    }
+  }
+  .submitBtn {
+    height: 20%;
+    width: 100%;
+    margin-top: 10%;
+    border-radius: var(--radius-sm);
+  }
+}
