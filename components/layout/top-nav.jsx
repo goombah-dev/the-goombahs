@@ -7,6 +7,7 @@ import { FBIcon } from '../svg/fb-icon'
 
 import {
   topNav,
+  navLinks,
   navLink,
   active,
   logo,
@@ -47,7 +48,7 @@ export const TopNav = () => {
   return (
     <nav className={topNav}>
       <div className={logo}>THE GOOMBAHS</div>
-      <div className={pageLinks}>
+      <div className={navLinks}>
         {pageLinks.map((lnk, idx) => {
           const isActiveLink =
             idx === activeLink ? active : null
