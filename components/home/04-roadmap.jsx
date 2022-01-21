@@ -134,12 +134,12 @@ export const Roadmap = () => {
       <div className={mapContainer}>
         {months.map((mnth) => {
           return (
-            <div className={monthBlock}>
+            <div className={monthBlock} key={mnth.name}>  
               <p className={monthName}>{mnth.name}</p>
               <div className={eventsSection}>
                 {mnth.events.map((evt) => {
                   return (
-                    <div className={eventBlock}>
+                    <div className={eventBlock} key={evt.title}>
                       <h6 className={eventHeader}>
                         {evt.title}
                       </h6>

@@ -36,7 +36,7 @@ const pageLinks = [
 export const Footer = () => {
   return (
     <footer className={footerContainer}>
-      <div className={logo}>GOOMBAHS</div>
+      <div className={logo}>THE GOOMBAHS</div>
       <div className={navLinks}>
         {pageLinks.map((lnk, idx) => {
           return (

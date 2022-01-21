@@ -10,11 +10,10 @@
 }
 
 .logo {
-  padding-left: 4vw;
-  font-size: var(--text-blurb-lg);
-  font-weight: var(--xxbold);
-  letter-spacing: var(--push-lg);
+  font-size: var(--text-2xl);
   text-transform: uppercase;
+  font-weight: var(--xbold);
+  margin-left: var(--space-xl);
 }
 
 .navLinks {

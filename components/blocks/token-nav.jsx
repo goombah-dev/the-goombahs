@@ -24,6 +24,7 @@ export const TokenNav = ({ sectionTitle, sectionInView, tokenRanks, currentRank,
 
             return (
               <span
+                key={tkn.id}
                 className={isActive ? activeRank : ''}
                 onClick={() => setCurrentRank(idx)}
               >

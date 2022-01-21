@@ -28,9 +28,9 @@ export const TokenCard = ({ token: tkn }) => {
       <div className={lower}>
         <p className={cardBlurb}>{tkn.blurb}</p>
         <Link href={tkn.path}>
-          <button className={`${cardBtn} btn__primary`}>
+          <a className={`${cardBtn} btn__primary`}>
             More Info →
-          </button>
+          </a>
         </Link>
       </div>
     </div>
