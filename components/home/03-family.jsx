@@ -7,8 +7,24 @@ import { TokenRank } from '../blocks/token-rank'
 import { TokenNav } from '../blocks/token-nav'
 
 const sectionData = {
-  title: `The Commission`,
-  blurb: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+  title: `The Family`,
+  blurb: (
+    <>
+      <span>
+        Each of the five families - Mongelli, Crypanno,
+        Russo, DePietro, and Gonzetti, are organized into a
+        hierarchy. The Boss reigns supreme, the Underboss
+        carrying out his will, while the Consiglieris
+        advise. Capos govern over their assigned turf, and
+        employ soldiers to enforce their authority.
+      </span>
+      <span>
+        The rank of each token corresponds to its rarity, of
+        course, but the highest rank tokens are also
+        rendered in higher fidelity.
+      </span>
+    </>
+  ),
   tokens: [
     {
       id: `boss`,
@@ -89,32 +105,6 @@ const sectionData = {
       ],
     },
     {
-      id: `shylock`,
-      imageUrl: `shylock-main_tfoozy`,
-      name: `The Shylock`,
-      title: (
-        <>
-          <span>The</span>
-          <span>Shylock</span>
-        </>
-      ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
-      perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
-      ],
-      buyLink: '/',
-      imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
-      ],
-    },
-    {
       id: `capo`,
       imageUrl: `capo-main_sg1dys`,
       name: `The Capo`,
@@ -140,21 +130,47 @@ const sectionData = {
         `boss-5_tsoawa`,
       ],
     },
+    {
+      id: `soldier`,
+      imageUrl: `ex-navy_c7ylue`,
+      name: `The Soldier`,
+      title: (
+        <>
+          <span>The</span>
+          <span>Soldier</span>
+        </>
+      ),
+      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      path: `/`,
+      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      perks: [
+        `Lorem ipsum dolor sit amet`,
+        `consectetur adipiscing`,
+        `Cras ut vehicula nibh`,
+      ],
+      buyLink: '/',
+      imgThumbs: [
+        `boss-2_bwvxyp`,
+        `boss-3_ykzeeo`,
+        `boss-4_h0rsza`,
+        `boss-5_tsoawa`,
+      ],
+    },
   ],
 }
 
-export const Commission = () => {
+export const Family = () => {
   const { tokens: tokenRanks, title } = sectionData
 
   const [currentRank, setCurrentRank] = useState(0)
 
-  const { ref: commissionRef, inView: commInView } =
+  const { ref: familyRef, inView: famInView } =
     useInView({ threshold: 0.4 })
 
   return (
     <div
       style={{ position: 'relative' }}
-      ref={commissionRef}
+      ref={familyRef}
     >
       <TokenCategory
         title={sectionData.title}
@@ -164,7 +180,7 @@ export const Commission = () => {
       <TokenRank rankData={tokenRanks[currentRank]} />
       <TokenNav
         sectionTitle={title}
-        sectionInView={commInView}
+        sectionInView={famInView}
         tokenRanks={tokenRanks}
         currentRank={currentRank}
         setCurrentRank={setCurrentRank}

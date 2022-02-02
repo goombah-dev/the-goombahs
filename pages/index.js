@@ -1,11 +1,25 @@
+import React, { useState, useEffect } from 'react';
+;
+
 import Head from 'next/head'
+
 import { Hero } from '../components/home/01-hero'
-import { Commission } from '../components/home/02-commission'
-import { Muscle } from '../components/home/03-muscle'
-import { Roadmap } from '../components/home/04-roadmap'
+import { Story } from '../components/home/02-story'
+import { Family } from '../components/home/03-family'
+import { Outsiders } from '../components/home/04-outsiders'
+import { Roadmap } from '../components/home/06-roadmap'
 import { Contact } from '../components/home/05-contact'
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 1024) {
+      setIsMobile(true)
+    }
+  }, []);
+  
+
   return (
     <>
       <Head>
@@ -15,8 +29,9 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <Commission />
-        <Muscle />
+        <Story/>
+        <Family />
+        <Outsiders />
         <Roadmap />
         <Contact />
       </main>

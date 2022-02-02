@@ -19,21 +19,17 @@ export const Hero = () => {
       <div className={heroContent}>
         <div className={sectionHeader}>
           <LogoHero />
-          {/* <h1 className={primary}>GOOMBAHS</h1>
-          <h4 className={secondary}>
-            {'Join The Family.'
-              .split('')
-              .map((lett, idx) => (
-                <span key={`${lett}${idx}`}>{lett}</span>
-              ))}
-          </h4> */}
         </div>
         <p className={blurb}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Cras ut vehicula nibh. Vestibulum vestibulum
-          sem sed metus pharetra, consectetur adipiscing vel
-          posuere sapien convallis. consectetur adipiscing.
-          Cras ut vehicula nibh. Vestibulum vestibulum.
+          Weclome to Club Goombah, the NFT social club where
+          token ownership grants you access to the Club and
+          all the the perks of being a member. 
+          <br /><br />
+          Minting one of 7500 tokens on the ERC blockchain will 
+          make you a member of the family.
+          With your newly minted token you’ll be able to access 
+          members only areas of our 3D metaverse, both virtual and 
+          live shows, plus other exclusive drops and giveaways.
         </p>
         <div className={ctaButton}>
           <button className='btn__primary'>
