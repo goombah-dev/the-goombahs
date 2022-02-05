@@ -37,7 +37,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#fam-detail`,
+      path: `/#crew-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -63,7 +63,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#outsiders-detail`,
+      path: `/#crew-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -89,7 +89,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#fam-detail`,
+      path: `/#crew-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -115,7 +115,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#outsiders-detail`,
+      path: `/#crew-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -156,7 +156,7 @@ export const Crew = () => {
       />
       <TokenRank
         rankData={tokenRanks[currentRank]}
-        sectionId={'outsiders-detail'}
+        sectionId={'crew-detail'}
       />
       <TokenNav
         sectionTitle={title}
