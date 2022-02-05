@@ -8,12 +8,14 @@ import { TwitterIcon } from '../svg/twitter-icon'
 import {
   footerContainer,
   logo,
+  logoWrap,
   navLinks,
   navLink,
   socialBlock,
   icon,
-  meta
+  meta,
 } from '../../styles/layout/footer.module.scss'
+import { LogoIcon } from '../svg/logo-icon'
 
 const pageLinks = [
   {
@@ -22,7 +24,7 @@ const pageLinks = [
   },
   {
     name: 'NFTs',
-    path: '/#family',
+    path: '/#tokens-1',
   },
   {
     name: 'Utility',
@@ -40,15 +42,27 @@ const pageLinks = [
     name: 'Roadmap',
     path: '/#roadmap',
   },
+  {
+    name: 'Terms & Conditions',
+    path: '/terms-conditions',
+  },
 ]
 
 export const Footer = () => {
   return (
     <footer className={footerContainer}>
-      <div className={logo}>GOOMBAHS</div>
+      <div className={logo}>
+        <div className={logoWrap}>
+          <LogoIcon /> GOOMBAHS
+        </div>
+      </div>
       <div className={meta}>
         <span>© 2022 The Goombahs</span>
-        <span><Link href='/terms-conditions'><a>Terms & Conditions</a></Link></span>
+        <span>
+          <Link href='/terms-conditions'>
+            <a>Terms & Conditions</a>
+          </Link>
+        </span>
       </div>
       <div className={navLinks}>
         {pageLinks.map((lnk, idx) => {

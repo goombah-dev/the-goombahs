@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 import { AnimatePresence } from 'framer-motion'
 
+import { LogoIcon } from '../svg/logo-icon';
 import { MobileMenu } from './mobile-menu'
 import { DiscordIcon } from '../svg/discord-icon'
 import { TwitterIcon } from '../svg/twitter-icon'
@@ -14,6 +15,7 @@ import {
   navLink,
   active,
   logo,
+  logoWrap,
   social,
   icon,
   mobileBtn,
@@ -27,7 +29,7 @@ const pageLinks = [
   },
   {
     name: 'NFTs',
-    path: '/#family',
+    path: '/#tokens-1',
   },
   {
     name: 'Utility',
@@ -49,6 +51,7 @@ const pageLinks = [
 
 export const TopNav = () => {
   const [activeLink, setSetActiveLink] = useState(0)
+  const [linksDeactivated, setLinksDeactivated] = useState(false);
   const [isMobile, setIsMobile] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const { pathname } = useRouter()
@@ -72,7 +75,7 @@ export const TopNav = () => {
   // do not highlight navbar if not on homepage
   useEffect(() => {
     const isHomePage = pathname === '/'
-    console.log('isHomePage: ', isHomePage);
+    
   }, [pathname]);
   
   
@@ -81,13 +84,23 @@ export const TopNav = () => {
     <nav className={topNav}>
       <div className={logo}>
         <Link href='/'>
-          <a>{isMobile ? `G` : `THE GOOMBAHS`}</a>
+          <a className={logoWrap}>
+            {isMobile ? (
+              <LogoIcon />
+            ) : (
+              <>
+                <LogoIcon /> <span>GOOMBAHS</span>
+              </>
+            )}
+          </a>
         </Link>
       </div>
       {isMobile ? (
         <>
           <div
-            className={`${mobileBtn} ${menuOpen ? close : null}`}
+            className={`${mobileBtn} ${
+              menuOpen ? close : null
+            }`}
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <span />
@@ -106,7 +119,9 @@ export const TopNav = () => {
           <div className={navLinks}>
             {pageLinks.map((lnk, idx) => {
               const isActiveLink =
-                idx === activeLink ? active : null
+                !linksDeactivated && idx === activeLink
+                  ? active
+                  : null
 
               return (
                 <Link href={lnk.path} key={lnk.name}>

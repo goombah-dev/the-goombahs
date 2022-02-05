@@ -16,6 +16,7 @@ import {
   arrow,
   heroImg
 } from '../../styles/home/hero.module.scss'
+import Link from 'next/link';
 
 export const Hero = () => {
   return (
@@ -44,12 +45,17 @@ export const Hero = () => {
         </div>
       </div>
       <div className={heroImg}>
-        <img src={baseUrlPng(`hero-gooms_q5grxs`)} alt='goombahs' />
+        <img
+          src={baseUrlPng(`hero-gooms_q5grxs`)}
+          alt='goombahs'
+        />
       </div>
-      <div className={scrollBtn}>
-        <span className={text}>SCROLL DOWN</span>
-        <span className={arrow}>→</span>
-      </div>
+      <Link href="/#story">
+        <a className={scrollBtn}>
+          <span className={text}>SCROLL DOWN</span>
+          <span className={arrow}>→</span>
+        </a>
+      </Link>
     </section>
   )
 }

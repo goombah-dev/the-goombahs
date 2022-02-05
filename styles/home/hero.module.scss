@@ -1,7 +1,7 @@
 @import "../mixins";
 
 .hero {
-  @include homeSection(93vh);
+  @include homeSection(100vh);
   margin-bottom: var(--vp-xl);
   @media (max-width: 1024px) {
     margin: 0;
@@ -11,7 +11,7 @@
 
 .heroContent {
   z-index: var(--level-two);
-  min-height: 45vh;
+  min-height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,7 @@
   line-height: 150%;
   width: 45vw;
   margin: 0;
+  margin-top: var(--vp-md);
   letter-spacing: var(--push-lg);
   @media (max-width: 1024px) {
     width: 100%;

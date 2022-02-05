@@ -5,10 +5,10 @@ import { TokenCategory } from '../blocks/token-category'
 import { TokenRank } from '../blocks/token-rank'
 import { TokenNav } from '../blocks/token-nav'
 
-import { outsiders } from '../../styles/home/outsiders.module.scss';
+import { crew } from '../../styles/home/crew.module.scss';
 
 const sectionData = {
-  title: `The Outsiders`,
+  title: `The Crew`,
   blurb: (
     <>
       <span>
@@ -27,17 +27,69 @@ const sectionData = {
   ),
   tokens: [
     {
-      id: `shylock`,
-      imageUrl: `shylock-main_tfoozy`,
-      name: `The Shylock`,
+      id: `capo`,
+      imageUrl: `capo-main_sg1dys`,
+      name: `The Capo`,
       title: (
         <>
           <span>The</span>
-          <span>Shylock</span>
+          <span>Capo</span>
+        </>
+      ),
+      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      path: `/#fam-detail`,
+      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      perks: [
+        `Lorem ipsum dolor sit amet`,
+        `consectetur adipiscing`,
+        `Cras ut vehicula nibh`,
+      ],
+      buyLink: '/',
+      imgThumbs: [
+        `boss-2_bwvxyp`,
+        `boss-3_ykzeeo`,
+        `boss-4_h0rsza`,
+        `boss-5_tsoawa`,
+      ],
+    },
+    {
+      id: `loanshark`,
+      imageUrl: `shylock-main_tfoozy`,
+      name: `The Loan Shark`,
+      title: (
+        <>
+          <span>The</span>
+          <span>Loan Shark</span>
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
       path: `/#outsiders-detail`,
+      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      perks: [
+        `Lorem ipsum dolor sit amet`,
+        `consectetur adipiscing`,
+        `Cras ut vehicula nibh`,
+      ],
+      buyLink: '/',
+      imgThumbs: [
+        `boss-2_bwvxyp`,
+        `boss-3_ykzeeo`,
+        `boss-4_h0rsza`,
+        `boss-5_tsoawa`,
+      ],
+    },
+    {
+      id: `soldier`,
+      imageUrl: `ex-navy_c7ylue`,
+      name: `The Soldier`,
+      title: (
+        <>
+          <span>The</span>
+          <span>Soldier</span>
+        </>
+      ),
+      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      path: `/#fam-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -78,88 +130,10 @@ const sectionData = {
         `boss-5_tsoawa`,
       ],
     },
-    {
-      id: `politician`,
-      imageUrl: `politician_s2negb`,
-      name: `The Politician`,
-      title: (
-        <>
-          <span>The</span>
-          <span>Politician</span>
-        </>
-      ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#outsiders-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
-      perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
-      ],
-      buyLink: '/',
-      imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
-      ],
-    },
-    {
-      id: `police`,
-      imageUrl: `cop_nvad0c`,
-      name: `The Policeman`,
-      title: (
-        <>
-          <span>The</span>
-          <span>Policeman</span>
-        </>
-      ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#outsiders-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
-      perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
-      ],
-      buyLink: '/',
-      imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
-      ],
-    },
-    {
-      id: `worker`,
-      imageUrl: `soldier-1_dcrvcm`,
-      name: `The Working Man`,
-      title: (
-        <>
-          <span>The</span>
-          <span>Working Man</span>
-        </>
-      ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#outsiders-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
-      perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
-      ],
-      buyLink: '/',
-      imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
-      ],
-    },
   ],
 }
 
-export const Outsiders = () => {
+export const Crew = () => {
   const { tokens: tokenRanks, title } = sectionData
 
   const [currentRank, setCurrentRank] = useState(0)
@@ -169,9 +143,10 @@ export const Outsiders = () => {
 
   return (
     <div
-      className={outsiders}
+      className={crew}
       style={{ position: 'relative' }}
       ref={muscleRef}
+      id='tokens-2'
     >
       <TokenCategory
         title={sectionData.title}

@@ -5,8 +5,8 @@ import Head from 'next/head'
 
 import { Hero } from '../components/home/01-hero'
 import { Story } from '../components/home/02-story'
-import { Family } from '../components/home/03-family'
-import { Outsiders } from '../components/home/04-outsiders'
+import { Administration } from '../components/home/03-administration'
+import { Crew } from '../components/home/04-crew'
 import { Roadmap } from '../components/home/06-roadmap'
 import { Contact } from '../components/home/05-contact'
 
@@ -30,8 +30,8 @@ export default function Home() {
       <main>
         <Hero />
         <Story/>
-        <Family />
-        <Outsiders />
+        <Administration />
+        <Crew />
         <Roadmap />
         <Contact />
       </main>

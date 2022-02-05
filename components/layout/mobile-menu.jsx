@@ -49,7 +49,9 @@ export const MobileMenu = ({ pageLinks, closeMenu }) => {
         <div className={meta}>
           <span>The Goombahs ©2022</span>
           <span>|</span>
-          <span>Privacy Policy</span>
+          <Link href='/terms-conditions'>
+            <a>Terms & Conditions</a>
+          </Link>
         </div>
       </div>
     </motion.nav>

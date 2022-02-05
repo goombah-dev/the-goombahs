@@ -21,10 +21,21 @@
 }
 
 .logo {
+  margin-left: var(--space-xl);
+  transform: translateY(.5vh);
   font-size: var(--text-2xl);
   text-transform: uppercase;
   font-weight: var(--xbold);
-  margin-left: var(--space-xl);
+  .logoWrap { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  svg {
+    margin-right: var(--space-lg);
+    margin-top: -5px;
+    height: 30px;
+  }
 }
 
 .navLink {

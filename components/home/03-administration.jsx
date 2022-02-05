@@ -5,10 +5,10 @@ import { TokenCategory } from '../blocks/token-category'
 import { TokenRank } from '../blocks/token-rank'
 import { TokenNav } from '../blocks/token-nav'
 
-import { family } from '../../styles/home/family.module.scss';
+import { admin } from '../../styles/home/administration.module.scss';
 
 const sectionData = {
-  title: `The Family`,
+  title: `The Administration`,
   blurb: (
     <>
       <span>
@@ -80,65 +80,13 @@ const sectionData = {
       ],
     },
     {
-      id: `consiglieri`,
+      id: `consigliere`,
       imageUrl: `consig-main_fltyei`,
       name: `The Consiglieri`,
       title: (
         <>
           <span>The</span>
-          <span>Consiglieri</span>
-        </>
-      ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#fam-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
-      perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
-      ],
-      buyLink: '/',
-      imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
-      ],
-    },
-    {
-      id: `capo`,
-      imageUrl: `capo-main_sg1dys`,
-      name: `The Capo`,
-      title: (
-        <>
-          <span>The</span>
-          <span>Capo</span>
-        </>
-      ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/#fam-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
-      perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
-      ],
-      buyLink: '/',
-      imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
-      ],
-    },
-    {
-      id: `soldier`,
-      imageUrl: `ex-navy_c7ylue`,
-      name: `The Soldier`,
-      title: (
-        <>
-          <span>The</span>
-          <span>Soldier</span>
+          <span>Consigliere</span>
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
@@ -160,7 +108,7 @@ const sectionData = {
   ],
 }
 
-export const Family = () => {
+export const Administration = () => {
   const { tokens: tokenRanks, title } = sectionData
 
   const [currentRank, setCurrentRank] = useState(0)
@@ -170,8 +118,8 @@ export const Family = () => {
 
   return (
     <div
-      className={family}
-      id='family'
+      className={admin}
+      id='tokens-1'
       style={{ position: 'relative' }}
       ref={familyRef}
     >

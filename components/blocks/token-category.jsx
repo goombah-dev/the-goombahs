@@ -9,7 +9,7 @@ export const TokenCategory = ({ title, blurb, tokens, setRank }) => {
   return (
     <div className={sectionContainer}>
       <TitleBlurb title={title} blurb={blurb} />
-      <div className={cardContainer}>
+      <div className={cardContainer} style={{ gridTemplateColumns: `repeat(${tokens.length}, 1fr)` }}>
         {tokens.map((tkn, idx) => {
           return (
             <Fragment key={tkn.id}>

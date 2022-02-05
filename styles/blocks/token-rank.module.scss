@@ -66,6 +66,7 @@
 }
 
 .blurb {
+  margin-top: var(--intercontent-margin);
   h6 {
     @include blurbHeader;
   }
@@ -73,6 +74,9 @@
     @include blurbText(var(--text-md));
     @media (max-width: 1024px) {
     }
+  }
+  @media (max-width: 1024px) {
+    margin-top: 0;
   }
 }
 
