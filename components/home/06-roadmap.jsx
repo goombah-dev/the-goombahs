@@ -19,19 +19,11 @@ const sectionData = {
   blurb: (
     <>
       <span>
-        Here's the list of what you can expect over the
-        coming year in the Goombah's Social Club. Stay
+        Here&apos;s the list of what you can expect over the
+        coming year in the Goombah&apos;s Social Club. Stay
         tuned! More events and updates will be added as we
         pass each successive milestone.
       </span>
-      {/* <br />
-      <br />
-      <span>
-        Sed varius, arcu eu pellentesque pulvinar, odio dui
-        semper urna, at aliquam sapien enim vel felis.
-        Suspendisse eu nunc odio. Sed sagittis auctor
-        vehicula. Duis ut metus cursus.
-      </span> */}
     </>
   ),
   months: [

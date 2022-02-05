@@ -74,13 +74,16 @@ const Utility = () => {
       <ul className={policyList}>
         {terms.blocks.map((blk) => {
           return (
-            <div className={policyBlock}>
+            <div key={blk.title} className={policyBlock}>
               <h4 className={header}>{blk.title}</h4>
               <p className={info}>{blk.text}</p>
               {blk.subText && (
                 <ul className={subTextContainer}>
                   {blk.subText.map((st) => (
-                    <li className={subTextItem}>
+                    <li
+                      key={st.text}
+                      className={subTextItem}
+                    >
                       <h6>{st.title}</h6>
                       <p>{st.text}</p>
                     </li>
