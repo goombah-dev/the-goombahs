@@ -2,12 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  // left: calc(-1 * var(--content-margin-width));
   height: 100vh;
   width: calc(var(--content-margin-width) / 4);
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1024px) {
+    display: none;
+  }
   span {
     height: var(--content-margin-width);
     font-family: var(--font-accent);
@@ -19,12 +21,15 @@
   }
 }
 
-.navPosContainer {
+.navPositionWrapper {
   position: absolute;
   bottom: 10vh;
   right: calc(-1 * var(--content-margin-width));
   height: 80vh;
   width: var(--content-margin-width);
+  @media (max-width: 1024px) {
+    display: none;
+  }
 } 
 
 .rankNav {
@@ -51,7 +56,7 @@
   }
 }
 
-.indicatorBullets {
+.sectionIndicators {
   position: absolute;
   bottom: 10vh;
   left: 0;
@@ -60,9 +65,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: 5vh;
+    left: calc(-1 * var(--content-margin-width));
+  }
   span {
     &:not(:last-child) {
-      margin-right: var(--vp-md); 
+      margin-right: var(--vp-md);
+      @media (max-width: 1024px) {
+        margin: 0;
+      }
     }
     cursor: pointer;
     height: 10px;
@@ -74,5 +87,20 @@
       background-color: var(--primary-vivid);
       opacity: 1;
     }
+  }
+}
+
+.mobileSectionNav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  span {
+    width: auto;
+    font-size: var(--text-blurb);
+    font-weight: var(--xxbold);
+    background-color: transparent;
+    color: var(--primary);
+    white-space: nowrap;
   }
 }

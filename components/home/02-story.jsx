@@ -7,7 +7,6 @@ import {
   sectionHeader,
   blurb,
   quote,
-  main,
   emph,
 } from '../../styles/home/story.module.scss'
 
@@ -15,14 +14,14 @@ import {
 
 export const Story = () => {
   return (
-    <section className={story}>
+    <section className={story} id="story">
       <div className={storyContent}>
         <div className={sectionHeader}>
           <TitleBlurb title={`The Story`} blurb={``} />
         </div>
         <p className={blurb}>
           <span className={quote}>“Potresti alzarti.”</span>
-          <span className={main}>
+          <span>
             With these two words, a meeting concludes and
             the heads of the Five Families rise to pay their
             respects to the Godfather Luciano “The Legend”
@@ -36,7 +35,7 @@ export const Story = () => {
           <span className={emph}>
             Unfortunately, this long running peace is about
             to change and a power struggle is on the horizon
-            between the families.
+            between the families...
           </span>
         </p>
       </div>

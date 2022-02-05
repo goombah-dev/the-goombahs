@@ -1,18 +1,26 @@
-@import '../mixins';
+@import "../mixins";
 
 .hero {
   @include homeSection(93vh);
   margin-bottom: var(--vp-xl);
+  @media (max-width: 1024px) {
+    margin: 0;
+    height: 100vh;
+  }
 }
 
 .heroContent {
+  z-index: var(--level-two);
   min-height: 45vh;
   width: 100%;
   display: flex;
-  // padding-left: var(--vp-lg);
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  @media (max-width: 1024px) {
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 .sectionHeader {
@@ -21,16 +29,24 @@
   justify-content: center;
   svg {
     width: 35vw;
-
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+    svg {
+      width: 100%;
+    }
   }
 }
 
 .blurb {
-  @include blurbText(var(--text-md));
+  @include blurbText(var(--text-blurb));
   line-height: 150%;
   width: 45vw;
   margin: 0;
   letter-spacing: var(--push-lg);
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .ctaButton {
@@ -41,10 +57,30 @@
     margin: 0;
   }
   span {
-    transform: translateY(2.5%)
+    transform: translateY(2.5%);
   }
   svg {
     margin-left: var(--space-lg);
+  }
+  @media (max-width: 1024px) {
+    margin-top: var(--vp-lg);
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+}
+
+.heroImg {
+  position: absolute;
+  z-index: var(--ground);
+  height: 90vh;
+  width: auto;
+  top: 10vh;
+  right: -5vw;
+  img {
+    height: 100%;
+  }
+  @media (max-width: 1024px) {
+    display: none;
   }
 }
 
@@ -57,9 +93,12 @@
   font-family: var(--font-accent);
   letter-spacing: var(--push-2xl);
   font-size: var(--text-md);
-  transform: rotate(90deg) scale(.8);
+  transform: rotate(90deg) scale(0.8);
   .arrow {
     margin-left: var(--space-md);
     color: var(--primary);
+  }
+  @media (max-width: 1024px) {
+    display: none;
   }
 }

@@ -1,10 +1,10 @@
-@import './_mixins.scss';
+@import "./_mixins.scss";
 
 :root {
   /* font-family */
-  --font-title: 'Montserrat', sans-serif;
-  --font-body: 'Montserrat', sans-serif;
-  --font-accent: 'Bebas Neue', cursive;
+  --font-title: "Montserrat", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+  --font-accent: "Bebas Neue", cursive;
 
   /* palette */
   --full-black: #0a0a0a;
@@ -63,6 +63,7 @@
   --space-5xl: 70px;
 
   /* viewport-spacing */
+  --vp-xs: 1.5vmin;
   --vp-sm: 2.5vmin;
   --vp-ms: 3.5vmin;
   --vp-md: 5vmin;
@@ -106,6 +107,7 @@
   --text-3xl: 32px;
   --text-3xl-plus: 40px;
   --text-4xl: 48px;
+  --text-4xl-plus: 52px;
   --text-5xl: 56px;
   --text-6xl: 64px;
   --text-7xl: 78px;
@@ -147,6 +149,7 @@
   --text-hero: var(--text-10xl);
   --text-display: var(--text-7xl);
   --text-header: var(--text-5xl);
+  --text-header-sm: var(--text-3xl);
   --text-blurb-lg: var(--text-2xl);
   --text-blurb: var(--text-lg);
   --text-prose: var(--text-md);
@@ -161,10 +164,35 @@
   --intercontent-margin: var(--vp-ms);
   --intracontent-margin: var(--vp-sm);
 
-
   /* container sizing */
   --content-width: 70vw;
   --content-margin-width: calc((100vw - var(--content-width)) / 2);
+
+  /* scrollbar hover mods */
+  --scrollbar-width: 7px;
+  --scrollbar-thumb-color: var(--primary-dark);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    /* text size */
+    --text-hero: var(--text-10xl);
+    --text-display: var(--text-7xl);
+    --text-header: var(--text-3xl-plus);
+    --text-blurb-lg: var(--text-2xl);
+    --text-blurb: var(--text-sm);
+    --text-prose: var(--text-md);
+
+    /* spacing */
+    --grid-gap-vert: var(--vp-lg);
+    --intrasection-margin: var(--vp-md);
+    --intersection-margin: var(--vp-3xl);
+    --intercontent-margin: var(--vp-ml  );
+    --intracontent-margin: var(--vp-md);
+
+    /* container sizing */
+    --content-width: 80vw;
+  }
 }
 
 html,
@@ -184,14 +212,11 @@ body {
   scroll-behavior: smooth;
   ::-webkit-scrollbar {
     background-color: var(--full-black);
-    width: 3px;
-    &:hover {
-      width: 10px;
-    }
+    width: var(--scrollbar-width);
     // display: none !important;
   }
   &::-webkit-scrollbar-thumb {
-    background: var(--primary-dark);
+    background: var(--scrollbar-thumb-color);
     // display: none !important;
   }
   & > * {
@@ -220,6 +245,7 @@ p {
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 h1,

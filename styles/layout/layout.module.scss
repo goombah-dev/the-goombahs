@@ -15,16 +15,22 @@
   }
 }
 
+
 .layoutBGContainer {
   z-index: var(--ground);
-  position: absolute;
-  top: -20vh;
-  left: -30vw;
-  width: 150vw;
+  position: fixed;
+  top: -60vh;
+  left: -10vw;
+  width: 130vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1024px) {
+    width: 190vw;
+    top: -10vh;
+    left: -40vw;
+  }
 }
 
 .artWindow {

@@ -5,6 +5,8 @@ import { TokenCategory } from '../blocks/token-category'
 import { TokenRank } from '../blocks/token-rank'
 import { TokenNav } from '../blocks/token-nav'
 
+import { outsiders } from '../../styles/home/outsiders.module.scss';
+
 const sectionData = {
   title: `The Outsiders`,
   blurb: (
@@ -166,7 +168,7 @@ export const Outsiders = () => {
     useInView({ threshold: 0.4 })
 
   return (
-    <div style={{ position: 'relative' }} ref={muscleRef}>
+    <div className={outsiders} style={{ position: 'relative' }} ref={muscleRef}>
       <TokenCategory
         title={sectionData.title}
         blurb={sectionData.blurb}

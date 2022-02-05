@@ -3,8 +3,9 @@ import { useInView } from 'react-intersection-observer'
 
 import { TokenCategory } from '../blocks/token-category'
 import { TokenRank } from '../blocks/token-rank'
-
 import { TokenNav } from '../blocks/token-nav'
+
+import { family } from '../../styles/home/family.module.scss';
 
 const sectionData = {
   title: `The Family`,
@@ -169,6 +170,8 @@ export const Family = () => {
 
   return (
     <div
+      className={family}
+      id='family'
       style={{ position: 'relative' }}
       ref={familyRef}
     >

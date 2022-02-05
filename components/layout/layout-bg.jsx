@@ -2,16 +2,20 @@ import React from 'react'
 
 import { baseUrlPng } from '../../utils/base-url'
 
-import { layoutBGContainer, artWindow, pullLeft } from '../../styles/layout/layout.module.scss'
+import {
+  layoutBGContainer,
+  artWindow,
+  pullLeft,
+} from '../../styles/layout/layout.module.scss'
 
 export const LayoutBG = ({ numImgs = 2 }) => {
-  const tRbL = 'TR-BL_icjpxa'
-  const tLbR = 'TL-BR_zqwq7p'
+  const tRbL = 'TL-BR_zqwq7p'
+  const tLbR = 'TR-BL_icjpxa'
 
   return (
     <div className={layoutBGContainer}>
-      {
-        Array.from({ length: numImgs }).map((imgs, idx) => {
+      {/* {
+        Array.from({ length: 3 }).map((imgs, idx) => {
           const directionUrl = (idx % 2 === 0) ? tLbR : tRbL
           const isTlBr = !(idx % 2 === 0) ? pullLeft : ''
           
@@ -25,7 +29,19 @@ export const LayoutBG = ({ numImgs = 2 }) => {
             </div>
           )
         })
-      }
+      } */}
+      <div className={`${artWindow}`}>
+        <img
+          src={baseUrlPng(tLbR)}
+          alt='goombahs background collage art'
+        />
+      </div>
+      <div className={`${artWindow}`}>
+        <img
+          src={baseUrlPng(tRbL)}
+          alt='goombahs background collage art'
+        />
+      </div>
     </div>
   )
 }

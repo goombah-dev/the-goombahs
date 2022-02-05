@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import {
   sectionContainer,
@@ -12,16 +12,31 @@ import {
   imgContainer,
   imgMain,
   imgThumb,
+  mobileRankHeader
 } from '../../styles/blocks/token-rank.module.scss'
 
 import { baseUrlPng } from '../../utils/base-url'
+import { TitleBlurb } from './title-blurb'
 
 
 
 export const TokenRank = ({ rankData: rnk }) => {
+   const [isMobile, setIsMobile] = useState(false)
+
+   useEffect(() => {
+     if (window.innerWidth < 1024) {
+       setIsMobile(true)
+     }
+   }, [])
+
   return (
     <section className={sectionContainer}>
       <div className={contentContainer}>
+        {isMobile && (
+          <div className={mobileRankHeader}>
+            <TitleBlurb title={rnk.name} />
+          </div>
+        )}
         <div className={detailContainer}>
           <h4>{rnk.name}</h4>
           <div className={blurb}>

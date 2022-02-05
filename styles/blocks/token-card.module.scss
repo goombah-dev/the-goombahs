@@ -2,6 +2,9 @@
   height: 100%;
   width: 100%;
   background-color: var(--text-color);
+  @media (max-width: 1024px) {
+    width: 60vw;
+  }
   .upper {
     position: relative;
     height: 60%;
@@ -12,7 +15,7 @@
       width: 100%;
       object-fit: cover;
       object-position: top;
-      filter: brightness(.8);
+      filter: brightness(0.8);
     }
     .tokenName {
       position: absolute;
@@ -53,5 +56,7 @@
   font-size: 1vmax;
   width: 80%;
   padding: var(--space-md) 0;
-
+  @media (max-width: 1024px) {
+    font-size: 2vmax;
+  }
 }

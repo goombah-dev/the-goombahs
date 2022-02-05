@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
+import { AnimatePresence } from 'framer-motion'
 
 import { MobileMenu } from './mobile-menu'
 import { DiscordIcon } from '../svg/discord-icon'
@@ -14,7 +16,8 @@ import {
   logo,
   social,
   icon,
-  mobileBtn
+  mobileBtn,
+  close
 } from '../../styles/layout/top-nav.module.scss'
 
 const pageLinks = [
@@ -24,43 +27,81 @@ const pageLinks = [
   },
   {
     name: 'NFTs',
-    path: '/',
+    path: '/#family',
   },
   {
     name: 'Utility',
-    path: '/',
+    path: '/utility',
   },
-  {
-    name: 'Partners',
-    path: '/',
-  },
-  {
-    name: 'Analytics',
-    path: '/',
-  },
+  // {
+  //   name: 'Partners',
+  //   path: '/',
+  // },
+  // {
+  //   name: 'Analytics',
+  //   path: '/',
+  // },
   {
     name: 'Roadmap',
-    path: '/',
+    path: '/#roadmap',
   },
 ]
 
 export const TopNav = () => {
   const [activeLink, setSetActiveLink] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
+  const { pathname } = useRouter()
 
+  // mobile breakpoint for JS
   useEffect(() => {
     if (window.innerWidth < 1024) {
       setIsMobile(true)
     }
   }, [])
 
+  // stop scrolling if menu open
+  useEffect(() => {
+    if (menuOpen) {
+      document.documentElement.style.overflow = 'hidden'
+    } else {
+      document.documentElement.style.overflow = ''
+    }
+  }, [menuOpen]);
+
+  // do not highlight navbar if not on homepage
+  useEffect(() => {
+    const isHomePage = pathname === '/'
+    console.log('isHomePage: ', isHomePage);
+  }, [pathname]);
+  
+  
+
   return (
     <nav className={topNav}>
       <div className={logo}>
-        {isMobile ? `G` : `THE GOOMBAHS`}
+        <Link href='/'>
+          <a>{isMobile ? `G` : `THE GOOMBAHS`}</a>
+        </Link>
       </div>
-      {!isMobile ? (
+      {isMobile ? (
+        <>
+          <div
+            className={`${mobileBtn} ${menuOpen ? close : null}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span />
+          </div>
+          <AnimatePresence>
+            {menuOpen && (
+              <MobileMenu
+                pageLinks={pageLinks}
+                closeMenu={() => setMenuOpen(false)}
+              />
+            )}
+          </AnimatePresence>
+        </>
+      ) : (
         <>
           <div className={navLinks}>
             {pageLinks.map((lnk, idx) => {
@@ -90,15 +131,6 @@ export const TopNav = () => {
               <FBIcon />
             </span>
           </div>
-        </>
-      ) : (
-        <>
-          <div className={mobileBtn} onClick={() => setMenuOpen(!menuOpen)}>
-            <span/>
-            <span/>
-            <span/>
-          </div>
-          {menuOpen && <MobileMenu pageLinks={pageLinks} />}
         </>
       )}
     </nav>

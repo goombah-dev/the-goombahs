@@ -1,10 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { footerContainer, logo, navLinks, navLink, socialBlock, icon } from '../../styles/layout/footer.module.scss'
 import { DiscordIcon } from '../svg/discord-icon'
 import { FBIcon } from '../svg/fb-icon'
 import { TwitterIcon } from '../svg/twitter-icon'
+
+import {
+  footerContainer,
+  logo,
+  navLinks,
+  navLink,
+  socialBlock,
+  icon,
+  meta
+} from '../../styles/layout/footer.module.scss'
 
 const pageLinks = [
   {
@@ -36,16 +45,16 @@ const pageLinks = [
 export const Footer = () => {
   return (
     <footer className={footerContainer}>
-      <div className={logo}>THE GOOMBAHS</div>
+      <div className={logo}>GOOMBAHS</div>
+      <div className={meta}>
+        <span>© 2022 The Goombahs</span>
+        <span><Link href='/terms-conditions'><a>Terms & Conditions</a></Link></span>
+      </div>
       <div className={navLinks}>
         {pageLinks.map((lnk, idx) => {
           return (
             <Link href={lnk.path} key={lnk.name}>
-              <a
-                className={`${navLink}`}
-              >
-                {lnk.name}
-              </a>
+              <a className={`${navLink}`}>{lnk.name}</a>
             </Link>
           )
         })}

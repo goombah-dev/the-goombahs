@@ -1,10 +1,15 @@
-@import '../mixins';
+@import "../mixins";
 
 .sectionContainer {
   @include homeSection(auto);
   margin-bottom: var(--intersection-margin);
   p {
     width: 100% !important;
+  }
+  @media (max-width: 1024px) {
+    h4 {
+      align-self: flex-start;
+    }
   }
 }
 
@@ -15,23 +20,40 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
 }
 
 .monthBlock {
-  margin-bottom: var(--intercontent-margin);
+  margin-bottom: var(--intrasection-margin);
+  background-color: var(--black-fade-10);
+  padding: var(--vp-sm);
+  border-radius: var(--radius-md);
   display: grid;
-  gap: 0 5%;
-  grid-template-columns: .1fr .9fr;
+  gap: 0 10%;
+  grid-template-columns: 7vw 45vw;
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.9fr;
+    padding-left: var(--vp-ml);
+  }
   .monthName {
     font-family: var(--font-accent);
     font-size: var(--text-2xl);
     letter-spacing: var(--push-md);
     color: var(--primary);
+    @media (max-width: 1024px) {
+      margin-bottom: var(--intercontent-margin);
+    }
   }
 }
 
 .eventBlock {
   margin-bottom: var(--intercontent-margin);
+  @media (max-width: 1024px) {
+    margin-bottom: var(--vp-xl);
+  }
   .eventHeader {
     position: relative;
     margin-bottom: var(--space-lg);
@@ -41,20 +63,39 @@
     letter-spacing: var(--push-md);
     &::after {
       position: absolute;
-      content: '';
-      top: 50%;
-      left: -2.5%;
+      content: "";
+      top: 45%;
+      left: -5%;
+      
+      // * correct spacing when blurb is present
+      // top: 50%;
+      // left: -2.5%;
+      
       height: 7px;
       width: 7px;
       transform: translateY(-50%);
       background-color: var(--primary);
+      @media (max-width: 1024px) {
+        left: -7%;
+      }
     }
   }
   .eventBlurb {
+    // awaiting content`
+    display: none;
     @include blurbText(var(--text-prose));
     padding-right: 10vw;
+    @media (max-width: 1024px) {
+      padding: 0;
+    }
   }
   .ctaBtn {
+    // awaiting content
+    display: none;
     margin-top: var(--space-lg);
+    @media (max-width: 1024px) {
+      transform: scale(0.8);
+      transform-origin: left;
+    }
   }
 }

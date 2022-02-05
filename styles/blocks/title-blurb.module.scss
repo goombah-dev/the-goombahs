@@ -1,4 +1,15 @@
-@import '../mixins';
+@import "../mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1024px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .header {
   @include underlinedHeader;
@@ -15,5 +26,9 @@
   justify-content: flex-start;
   span {
     margin-bottom: var(--vp-ms);
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin: var(--vp-lg) 0;
   }
 }

@@ -1,18 +1,23 @@
-@import '../mixins';
+@import "../mixins";
 
 .topNav {
   position: relative;
   z-index: var(--level-top);
   height: 7vh;
   width: 100vw;
+  padding-bottom: var(--vp-xs);
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--full-black);
+  border-bottom: 0.5px solid var(--primary-dark);
   isolation: isolate;
   & > * {
     transition: var(--transition-primary);
   }
+  @media (max-width: 1024px) {
+  }
+  position: fixed;
 }
 
 .logo {
@@ -49,8 +54,8 @@
   }
 }
 
-.social { 
-  height: 100%;
+.social {
+  height: 8vh;
   width: 12vw;
   background-color: var(--primary);
   display: flex;
@@ -61,6 +66,7 @@
   }
   .icon {
     cursor: pointer;
+    transform: translateY(0.5vh);
     transition: var(--transition-primary);
     svg {
       height: 2.5vh;
@@ -78,9 +84,41 @@
   align-items: center;
   justify-content: space-evenly;
   span {
+    position: relative;
     height: 2px;
     width: var(--vp-ml);
     margin-right: var(--vp-ml);
     background-color: #fff;
+    transition: var(--transition-2-smooth);
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: var(--vp-ml);
+      margin-right: var(--vp-ml);
+      background-color: #fff;
+      transition: var(--transition-2-smooth);
+    }
+    &::before {
+      top: -10px;
+    }
+    &::after {
+      top: 10px;
+    }
+  }
+  &.close {
+    span {
+      transform: rotate(180deg);
+      background-color: transparent;
+      &::before {
+        top: -0px;
+        transform: rotate(-45deg);
+      }
+      &::after {
+        top: 0px;
+        transform: rotate(45deg);
+      }
+    }
   }
 }

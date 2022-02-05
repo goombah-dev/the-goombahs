@@ -1,0 +1,16 @@
+@import '../mixins';
+
+.mintContainer {
+  @include homeSection(100vh);
+  z-index: var(--level-two);
+  width: var(--content-width);
+}
+
+.header {
+  @include underlinedHeader;
+  margin-bottom: var(--intrasection-margin);
+}
+
+.blurb {
+  @include blurbText(var(--text-blurb));
+}

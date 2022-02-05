@@ -19,21 +19,19 @@ const sectionData = {
   blurb: (
     <>
       <span>
-        Ut fringilla sapien id lacus varius, id ultrices
-        diam vehicula. Suspendisse potenti. Aenean tristique
-        leo dui, eget tempor velit pulvinar vel. Integer
-        pharetra vitae nisl quis pharetra. Ut arcu odio,
-        lacinia eget pharetra. Nunc tincidunt, quam quis
-        ultricies gravida, diam ligula.
+        Here's the list of what you can expect over the
+        coming year in the Goombah's Social Club. Stay
+        tuned! More events and updates will be added as we
+        pass each successive milestone.
       </span>
-      <br />
+      {/* <br />
       <br />
       <span>
         Sed varius, arcu eu pellentesque pulvinar, odio dui
         semper urna, at aliquam sapien enim vel felis.
         Suspendisse eu nunc odio. Sed sagittis auctor
         vehicula. Duis ut metus cursus.
-      </span>
+      </span> */}
     </>
   ),
   months: [
@@ -129,7 +127,7 @@ export const Roadmap = () => {
   const { title, blurb, months } = sectionData
 
   return (
-    <section className={sectionContainer}>
+    <section className={sectionContainer} id='roadmap'>
       <TitleBlurb title={title} blurb={blurb} />
       <div className={mapContainer}>
         {months.map((mnth) => {

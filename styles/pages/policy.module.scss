@@ -1,0 +1,42 @@
+@import '../mixins';
+
+.policyContainer {
+  @include homeSection(auto);
+  z-index: var(--level-two);
+  width: var(--content-width);
+  margin: 20vh 0;
+}
+
+.policyList {
+  margin-top: var(--intercontent-margin);
+  padding: var(--vp-xl);
+  background-color: var(--black-fade-20);
+  border-radius: var(--radius-lg);
+}
+
+.policyBlock {
+  margin-bottom: var(--intersection-margin);
+
+  .header {
+    font-size: var(--text-header-sm);
+    margin-bottom: var(--intracontent-margin);
+  }
+  .info {
+
+  }
+}
+
+.subTextContainer {
+  margin-top: var(--intracontent-margin);
+  margin-left: var(--vp-ml);
+  @media (max-width: 1024px) {
+    margin-left: 0;
+  }
+}
+
+.subTextItem {
+  margin-bottom: var(--intracontent-margin);
+  h6 {
+    margin-bottom: var(--intracontent-margin);
+  }
+}
