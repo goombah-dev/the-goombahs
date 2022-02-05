@@ -13,7 +13,7 @@ import {
   cardBtn
 } from '../../styles/blocks/token-card.module.scss'
 
-export const TokenCard = ({ token: tkn }) => {
+export const TokenCard = ({ token: tkn, setRank }) => {
   
   return (
     <div className={card}>
@@ -28,7 +28,7 @@ export const TokenCard = ({ token: tkn }) => {
       <div className={lower}>
         <p className={cardBlurb}>{tkn.blurb}</p>
         <Link href={tkn.path}>
-          <a className={`${cardBtn} btn__primary`}>
+          <a className={`${cardBtn} btn__primary`} onClick={setRank}>
             More Info →
           </a>
         </Link>

@@ -20,7 +20,7 @@ import { TitleBlurb } from './title-blurb'
 
 
 
-export const TokenRank = ({ rankData: rnk }) => {
+export const TokenRank = ({ rankData: rnk, sectionId }) => {
    const [isMobile, setIsMobile] = useState(false)
 
    useEffect(() => {
@@ -30,7 +30,7 @@ export const TokenRank = ({ rankData: rnk }) => {
    }, [])
 
   return (
-    <section className={sectionContainer}>
+    <section className={sectionContainer} id={sectionId}>
       <div className={contentContainer}>
         {isMobile && (
           <div className={mobileRankHeader}>

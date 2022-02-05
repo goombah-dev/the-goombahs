@@ -37,7 +37,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/`,
+      path: `/#outsiders-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -63,7 +63,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/`,
+      path: `/#outsiders-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -89,7 +89,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/`,
+      path: `/#outsiders-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -115,7 +115,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/`,
+      path: `/#outsiders-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -141,7 +141,7 @@ const sectionData = {
         </>
       ),
       blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
-      path: `/`,
+      path: `/#outsiders-detail`,
       about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
       perks: [
         `Lorem ipsum dolor sit amet`,
@@ -168,13 +168,21 @@ export const Outsiders = () => {
     useInView({ threshold: 0.4 })
 
   return (
-    <div className={outsiders} style={{ position: 'relative' }} ref={muscleRef}>
+    <div
+      className={outsiders}
+      style={{ position: 'relative' }}
+      ref={muscleRef}
+    >
       <TokenCategory
         title={sectionData.title}
         blurb={sectionData.blurb}
         tokens={sectionData.tokens}
+        setRank={setCurrentRank}
       />
-      <TokenRank rankData={tokenRanks[currentRank]} />
+      <TokenRank
+        rankData={tokenRanks[currentRank]}
+        sectionId={'outsiders-detail'}
+      />
       <TokenNav
         sectionTitle={title}
         sectionInView={muscleInView}

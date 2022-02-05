@@ -22,23 +22,23 @@ const pageLinks = [
   },
   {
     name: 'NFTs',
-    path: '/',
+    path: '/#family',
   },
   {
     name: 'Utility',
-    path: '/',
+    path: '/utility',
   },
-  {
-    name: 'Partners',
-    path: '/',
-  },
-  {
-    name: 'Analytics',
-    path: '/',
-  },
+  // {
+  //   name: 'Partners',
+  //   path: '/',
+  // },
+  // {
+  //   name: 'Analytics',
+  //   path: '/',
+  // },
   {
     name: 'Roadmap',
-    path: '/',
+    path: '/#roadmap',
   },
 ]
 

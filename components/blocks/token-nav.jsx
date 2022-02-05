@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion';
+
+import { fadeSlideLeft } from '../../animations/fadeSlide';
 
 import {
   sectionLabel,
@@ -9,6 +12,9 @@ import {
   activeRank,
   mobileSectionNav
 } from '../../styles/blocks/token-nav.module.scss'
+
+
+
 
 export const TokenNav = ({
   sectionTitle,
@@ -37,11 +43,20 @@ export const TokenNav = ({
     <>
       {!isMobile && (
         <>
-          {sectionInView && (
-            <div className={sectionLabel}>
-              <span>{sectionTitle}</span>
-            </div>
-          )}
+          <AnimatePresence>
+            {sectionInView && (
+              <motion.div
+                className={sectionLabel}
+                variants={fadeSlideLeft}
+                transition={{ type: 'tween', duration: '.5' }}
+                initial='hidden'
+                animate='visible'
+                exit='hidden'
+              >
+                <span>{sectionTitle}</span>
+              </motion.div>
+            )}
+          </AnimatePresence>
           <div className={navPositionWrapper}>
             <nav className={rankNav}>
               {tokenRanks.map((tkn, idx) => {

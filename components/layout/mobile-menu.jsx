@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import { DiscordIcon } from '../svg/discord-icon'
 import { TwitterIcon } from '../svg/twitter-icon'
+import { fadeSlideVert } from '../../animations/fadeSlide';
 
 import {
   mobileMenu,
@@ -13,29 +14,14 @@ import {
   meta,
 } from '../../styles/layout/mobile-menu.module.scss'
 
-// Animation Variant
-const slideFade = {
-  visible: {
-    opacity: 1,
-    y: 0,
-  },
-  hidden: {
-    opacity: 0,
-    y: '-110vh',
-  },
-}
+
 
 export const MobileMenu = ({ pageLinks, closeMenu }) => {
-  
-  const handleCloseMenu = () => {
-    closeMenu()
-  };
-  
   
   return (
     <motion.nav
       className={mobileMenu}
-      variants={slideFade}
+      variants={fadeSlideVert}
       initial='hidden'
       animate='visible'
       exit='hidden'
@@ -46,7 +32,7 @@ export const MobileMenu = ({ pageLinks, closeMenu }) => {
             <li
               key={lnk.name}
               className={link}
-              onClick={handleCloseMenu}
+              onClick={closeMenu}
             >
               <Link href={lnk.path}>{lnk.name}</Link>
             </li>
