@@ -20,7 +20,7 @@ export const TokenCard = ({ token: tkn, setRank }) => {
       <div className={upper}>
           <img
             className={tokenImg}
-            src={baseUrlPng(tkn.imageUrl)}
+            src={baseUrlPng(`tokens/${tkn.imageUrl}`)}
             alt={tkn.id}
           />
         <h5 className={tokenName}>{tkn.title}</h5>

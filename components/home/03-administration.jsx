@@ -8,7 +8,7 @@ import { TokenNav } from '../blocks/token-nav'
 import { admin } from '../../styles/home/administration.module.scss';
 
 const sectionData = {
-  title: `The Administration`,
+  title: `The Commission`,
   blurb: (
     <>
       <span>
@@ -29,7 +29,7 @@ const sectionData = {
   tokens: [
     {
       id: `boss`,
-      imageUrl: `boss-main_hojsjn`,
+      imageUrl: `boss_e3na2h`,
       name: `The Boss`,
       title: (
         <>
@@ -55,7 +55,7 @@ const sectionData = {
     },
     {
       id: `underboss`,
-      imageUrl: `underboss-main_kxq7rg`,
+      imageUrl: `uboss_qrb8bo`,
       name: `The Underboss`,
       title: (
         <>
@@ -81,8 +81,8 @@ const sectionData = {
     },
     {
       id: `consigliere`,
-      imageUrl: `consig-main_fltyei`,
-      name: `The Consiglieri`,
+      imageUrl: `consig_upeopg`,
+      name: `The Consigliere`,
       title: (
         <>
           <span>The</span>

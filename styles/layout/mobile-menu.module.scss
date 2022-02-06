@@ -2,6 +2,7 @@
   z-index: var(--level-top);
   position: fixed;
   height: 93vh;
+  height: -webkit-fill-available;
   width: 100vw;
   top: 7vh;
   left: 0;

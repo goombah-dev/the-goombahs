@@ -28,7 +28,7 @@ const sectionData = {
   tokens: [
     {
       id: `capo`,
-      imageUrl: `capo-main_sg1dys`,
+      imageUrl: `capo_os4t9f`,
       name: `The Capo`,
       title: (
         <>
@@ -54,7 +54,7 @@ const sectionData = {
     },
     {
       id: `loanshark`,
-      imageUrl: `shylock-main_tfoozy`,
+      imageUrl: `shark_lbyoyw`,
       name: `The Loan Shark`,
       title: (
         <>
@@ -80,7 +80,7 @@ const sectionData = {
     },
     {
       id: `soldier`,
-      imageUrl: `ex-navy_c7ylue`,
+      imageUrl: `soldato_vnhboj`,
       name: `The Soldier`,
       title: (
         <>
@@ -106,7 +106,7 @@ const sectionData = {
     },
     {
       id: `associate`,
-      imageUrl: `associate_sokm2e`,
+      imageUrl: `assoc_t5h0tx`,
       name: `The Associate`,
       title: (
         <>
