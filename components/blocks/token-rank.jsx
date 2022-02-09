@@ -56,14 +56,14 @@ export const TokenRank = ({ rankData: rnk, sectionId }) => {
               })}
             </ul>
           </div>
-          <button className={`${ctaBtn} btn__primary`}>
+          {/* <button className={`${ctaBtn} btn btn__primary`}>
             Buy Now →
-          </button>
+          </button> */}
         </div>
         <div className={imgContainer}>
           <img
             className={imgMain}
-            src={baseUrlPng(rnk.imageUrl)}
+            src={baseUrlPng(`tokens/${rnk.imageUrl}`)}
             alt={rnk.name}
           />
           {rnk.imgThumbs.map((thm) => {

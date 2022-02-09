@@ -187,7 +187,7 @@
     --grid-gap-vert: var(--vp-lg);
     --intrasection-margin: var(--vp-md);
     --intersection-margin: var(--vp-3xl);
-    --intercontent-margin: var(--vp-ml  );
+    --intercontent-margin: var(--vp-ml);
     --intracontent-margin: var(--vp-md);
 
     /* container sizing */
@@ -280,7 +280,7 @@ button {
   box-sizing: border-box;
 }
 
-.btn__primary {
+.btn {
   position: relative;
   padding: var(--space-sm) var(--space-xl);
   display: flex;
@@ -288,14 +288,25 @@ button {
   justify-content: center;
   border: none;
   letter-spacing: var(--push-lg);
-  background-color: var(--primary);
   font-family: var(--font-accent);
   font-size: var(--text-2xl);
   text-transform: uppercase;
   color: var(--text-accent);
   transition: var(--transition-primary);
-  &:hover {
-    background-color: var(--primary-vivid);
+  &__primary {
+    background-color: var(--primary);
+    &:hover {
+      background-color: var(--primary-vivid);
+    }
+  }
+  &__secondary {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    &:hover {
+      color: var(--primary-vivid);
+      border-color: var(--primary-vivid);
+    }
   }
   &--transp {
     background-color: transparent;

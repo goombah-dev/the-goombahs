@@ -13,15 +13,15 @@ const sectionData = {
     <>
       <span>
         Each of the five families - Mongelli, Crypanno,
-        Russo, DePietro, and Gonzetti, are organized into a
+        Russo, DePietro, and Gonzetti - are organized into a
         hierarchy. The Boss reigns supreme, the Underboss
-        carrying out his will, while the Consiglieris
-        advise. Capos govern over their assigned turf, and
-        employ soldiers to enforce their authority.
+        carries out his will, while the Consigliere advises.
+        Capos govern over their assigned turf, and employ
+        soldiers to enforce their authority.
       </span>
       <span>
-        The rank of each token corresponds to its rarity, of
-        course, but the highest rank tokens are also
+        The rank of each member corresponds to its rarity,
+        of course, but the highest rank members are also
         rendered in higher fidelity.
       </span>
     </>
@@ -29,7 +29,7 @@ const sectionData = {
   tokens: [
     {
       id: `boss`,
-      imageUrl: `boss_e3na2h`,
+      imageUrl: `boss-2--1_a3sosa`,
       name: `The Boss`,
       title: (
         <>
@@ -37,13 +37,13 @@ const sectionData = {
           <span>Boss</span>
         </>
       ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      blurb: `The Leader. The Don. The Top Dog.`,
       path: `/#fam-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      about: `The Leader. The Don. The Top Dog. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
       perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
+        `Access to the Metaverse`,
+        `Airdrops and Early Access to future collections`,
+        `Access to exclusive merch and events`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -63,13 +63,13 @@ const sectionData = {
           <span>Underboss</span>
         </>
       ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      blurb: `Represents the Boss and runs the day-to-day activities.`,
       path: `/#fam-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
       perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
+        `Access to the Metaverse`,
+        `Airdrops and Early Access to future collections`,
+        `Access to exclusive merch and events`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -89,13 +89,13 @@ const sectionData = {
           <span>Consigliere</span>
         </>
       ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      blurb: `The top advisor in the family.`,
       path: `/#fam-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      about: `He's right-hand man to the Boss. He acts as the closest advisor, and often works directly with the head-honcho. The consiglieri is one of the most powerful members of the family.`,
       perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
+        `Access to the Metaverse`,
+        `Airdrops and Early Access to future collections`,
+        `Access to exclusive merch and events`,
       ],
       buyLink: '/',
       imgThumbs: [

@@ -28,7 +28,7 @@ const sectionData = {
   tokens: [
     {
       id: `capo`,
-      imageUrl: `capo_os4t9f`,
+      imageUrl: `capo-3_zpnmti`,
       name: `The Capo`,
       title: (
         <>
@@ -36,13 +36,13 @@ const sectionData = {
           <span>Capo</span>
         </>
       ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      blurb: `Leads the soldiers and associates.`,
       path: `/#crew-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      about: `Capos are in charge of their own street crews. They watch over a certain turf. Think of them as captains who command crews of soldiers.`,
       perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
+        `Access to the Metaverse`,
+        `Airdrops and Early Access to future collections`,
+        `Access to exclusive merch and events`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -62,13 +62,13 @@ const sectionData = {
           <span>Loan Shark</span>
         </>
       ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      blurb: `Need money quickly? He’s your guy.`,
       path: `/#crew-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      about: `Need cash quick? See a loan shark! They can help you with all of your instant-cash needs. That being said, the interest will be pretty high so don't take more than you can afford to pay.`,
       perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
+        `Access to the Metaverse`,
+        `Airdrops and Early Access to future collections`,
+        `Access to exclusive merch and events`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -88,13 +88,13 @@ const sectionData = {
           <span>Soldier</span>
         </>
       ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      blurb: `The made henchman.`,
       path: `/#crew-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      about: `Soldiers are made men who carry out the day-to-day activities. They follow orders given to them by the capos.`,
       perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
+        `Access to the Metaverse`,
+        `Airdrops and Early Access to future collections`,
+        `Access to exclusive merch and events`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -114,13 +114,13 @@ const sectionData = {
           <span>Associate</span>
         </>
       ),
-      blurb: `Lorem ipsum dolor sit amet, adipiscing vel posuere.`,
+      blurb: `Not made-men, but associates.`,
       path: `/#crew-detail`,
-      about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut vehicula nibh. Vestibulum vestibulum sem sed metus pharetra, consectetur adipiscing vel posuere.`,
+      about: `Associates aren't technically official members of the family, however they are well respected and work closely with the family.`,
       perks: [
-        `Lorem ipsum dolor sit amet`,
-        `consectetur adipiscing`,
-        `Cras ut vehicula nibh`,
+        `Access to the Metaverse`,
+        `Airdrops and Early Access to future collections`,
+        `Access to exclusive merch and events`,
       ],
       buyLink: '/',
       imgThumbs: [

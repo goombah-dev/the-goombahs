@@ -17,7 +17,7 @@
 
 .blurb {
   @include blurbText(var(--text-md));
-  margin-top: var(--space-xl);
+  margin-top: var(--vp-md);
   font-weight: 400;
   width: 80%;
   display: flex;

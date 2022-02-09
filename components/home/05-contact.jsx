@@ -31,7 +31,7 @@ export const Contact = () => {
           <input type='text' placeholder='name' />
           <input type='text' placeholder='email' />
           <button
-            className={`btn__primary ${submitBtn}`}
+            className={`btn btn__primary ${submitBtn}`}
             type='submit'
           >
             Subscribe to Newsletter

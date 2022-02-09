@@ -20,9 +20,9 @@ const sectionData = {
     <>
       <span>
         Here&apos;s the list of what you can expect over the
-        coming year in the Goombah&apos;s Social Club. Stay
-        tuned! More events and updates will be added as we
-        pass each successive milestone.
+        coming year from the Goombah&apos;s Social Club.
+        Stay tuned! More events and updates will be added as
+        we pass each successive milestone.
       </span>
     </>
   ),
@@ -137,7 +137,7 @@ export const Roadmap = () => {
                         {evt.blurb}
                       </p>
                       <button
-                        className={`btn__primary btn__primary--transp ${ctaBtn}`}
+                        className={`btn btn__primary btn--transp ${ctaBtn}`}
                       >
                         Read More →
                       </button>

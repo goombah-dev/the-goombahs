@@ -16,9 +16,7 @@ const terms = {
   blocks: [
     {
       title: `Membership Perks`,
-      text: `More than just a collection of NFTs - becoming a member of
-        the family grants you exclusive access to:
-      `,
+      text: `It’s more than just a collection of NFTs — it’s becoming a member of the family.`,
       subText: [
         {
           title: ``,
@@ -30,7 +28,7 @@ const terms = {
         },
         {
           title: ``,
-          text: `3. Access to our Metaverse & Metaverse live events`,
+          text: `3. Access to our Metaverse & its live events`,
         },
         {
           title: ``,
@@ -54,14 +52,14 @@ const terms = {
         },
         {
           title: ``,
-          text: `9. Get to play our first blockchain game which involves staking , minigames to help earn coin`,
+          text: `9. Ability to play our first blockchain game which involves staking and minigames!`,
         },
       ],
     },
     // {
     //   title: `NFT Membership Passes`,
     //   text: `The name and Intellectual Property involved in The Goombahs NFT Project (“The Goombahs ©”) is owned by the team here at FAL Consulting, LLC. All rights that are not specifically granted to the users and owners of Goombahs below are reserved by the team or potential future DAO. This includes but is not limited to the intellectual property rights surrounding the images, names, logos, 3D layer files,
-    //   trademarks, the website, the ability to mint 3D or voxel or other versions of Goombahs, the look and feel of the user interface, the smart contract code, or anything else not specifically granted by any following licenses. 
+    //   trademarks, the website, the ability to mint 3D or voxel or other versions of Goombahs, the look and feel of the user interface, the smart contract code, or anything else not specifically granted by any following licenses.
     //   `,
     // },
   ],

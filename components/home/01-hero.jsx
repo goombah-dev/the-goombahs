@@ -26,21 +26,32 @@ export const Hero = () => {
           <LogoHero />
         </div>
         <p className={blurb}>
-          Weclome to Club Goombah, the NFT social club where
-          token ownership grants you access to the Club and
-          all the the perks of being a member.
+          Weclome to The Goombahs, the NFT project that
+          works as a skeleton key in the metaverse. At the
+          heart of it all enter Club Goombah the NFT social
+          club where joining the family starts it all.
+          Taking that sacred oath to the Omerta opens the
+          doors and covers your back. Every Goodfella
+          recieves access to the Club and what seems to be
+          an unlimited number of perks.
           <br />
           <br />
-          Minting one of 7500 tokens on the ERC blockchain
-          will make you a member of the family. With your
-          newly minted token you’ll be able to access
-          members only areas of our 3D metaverse, both
-          virtual and live shows, plus other exclusive drops
-          and giveaways.
+          After minting one of the 7500 unique 3d avatars
+          you&apos;ll be a part of members only areas, as
+          well as every and any builds from outside the
+          family. No need for an invite or tickets to any
+          virtual or live shows we are affiliated with, as
+          well as entry to the “Infinite Goombah Giveaway”
+          which is filled with exclusive merchandise ,
+          Goombah airdrops(watch your gangster evolve), IRL
+          vacations, and any new Goombah related drops.
         </p>
         <div className={ctaButton}>
-          <button className='btn__primary'>
+          <button className='btn btn__primary'>
             <span>JOIN DISCORD</span> <DiscordIcon />
+          </button>
+          <button className='btn btn__secondary'>
+            <span>Mint Now →</span>
           </button>
         </div>
       </div>
@@ -50,7 +61,7 @@ export const Hero = () => {
           alt='goombahs'
         />
       </div>
-      <Link href="/#story">
+      <Link href='/#story'>
         <a className={scrollBtn}>
           <span className={text}>SCROLL DOWN</span>
           <span className={arrow}>→</span>

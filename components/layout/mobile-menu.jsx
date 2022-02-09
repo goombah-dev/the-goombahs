@@ -24,7 +24,7 @@ export const MobileMenu = ({ pageLinks, closeMenu }) => {
       variants={fadeSlideVert}
       initial='hidden'
       animate='visible'
-      exit='hidden'
+      exit='hidden' 
     >
       <ul className={links}>
         {pageLinks.map((lnk) => {

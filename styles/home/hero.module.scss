@@ -39,7 +39,7 @@
 }
 
 .blurb {
-  @include blurbText(var(--text-blurb));
+  @include blurbText(var(--text-md));
   line-height: 150%;
   width: 45vw;
   margin: 0;
@@ -53,9 +53,14 @@
 .ctaButton {
   height: 7vh;
   margin-top: var(--vp-ms);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   button {
     height: 100%;
+    width: 15vw;
     margin: 0;
+    margin-right: var(--vp-md);
   }
   span {
     transform: translateY(2.5%);

@@ -14,28 +14,32 @@ import {
 
 export const Story = () => {
   return (
-    <section className={story} id="story">
+    <section className={story} id='story'>
       <div className={storyContent}>
         <div className={sectionHeader}>
           <TitleBlurb title={`The Story`} blurb={``} />
         </div>
         <p className={blurb}>
-          <span className={quote}>“Potresti alzarti.”</span>
           <span>
-            With these two words, a meeting concludes and
-            the heads of the Five Families rise to pay their
-            respects to the Godfather Luciano “The Legend”
-            Mongelli. For decades he has served as capo di
-            tutti i capi and safeguarded the future of the
-            Five Families of New York . Unlike the warring
-            families before them, the truce was solidified
-            by a strategic division of power, ensuring not
-            one family held a stronger advantage.
+            The Goombahs NFT-Meta Project is a whole world
+            being that will be forever built around the
+            Social Club! The Goombahverse has a concert
+            venue, horse track, Casino & MORE!
           </span>
-          <span className={emph}>
-            Unfortunately, this long running peace is about
-            to change and a power struggle is on the horizon
-            between the families...
+          <span>
+            Buying an NFT is more than just cool art, and
+            becoming apart of the family means more than
+            just having a place to portal. We take care of
+            one another. Bringing back the feel of the
+            neighborhood and the camaraderie of community.
+            Becoming a Goombah gives you access to a
+            community of like minded individuals and you
+            also get entered into giveaways and many other
+            opportunities that most people only dream of!
+            Not to mention Animated Alliance and their
+            partners have synergized to create an
+            opportunity - to educate, to experience, and to
+            be family.
           </span>
         </p>
       </div>

@@ -28,7 +28,7 @@ export const TokenCard = ({ token: tkn, setRank }) => {
       <div className={lower}>
         <p className={cardBlurb}>{tkn.blurb}</p>
         <Link href={tkn.path}>
-          <a className={`${cardBtn} btn__primary`} onClick={setRank}>
+          <a className={`${cardBtn} btn btn__primary`} onClick={setRank}>
             More Info →
           </a>
         </Link>
