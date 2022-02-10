@@ -51,7 +51,9 @@ export const Hero = () => {
             <span>JOIN DISCORD</span> <DiscordIcon />
           </button>
           <button className='btn btn__secondary'>
-            <span>Mint Now →</span>
+            <Link href='/mint'>
+              <a>Mint Now →</a>
+            </Link>
           </button>
         </div>
       </div>
