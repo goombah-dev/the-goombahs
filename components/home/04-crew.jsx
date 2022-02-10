@@ -80,7 +80,7 @@ const sectionData = {
     },
     {
       id: `soldier`,
-      imageUrl: `soldato-2_yt8mgq`,
+      imageUrl: `soldato_wfxhft`,
       name: `The Soldier`,
       title: (
         <>
@@ -106,7 +106,7 @@ const sectionData = {
     },
     {
       id: `associate`,
-      imageUrl: `assoc_t5h0tx`,
+      imageUrl: `assoc-3_rscxkm`,
       name: `The Associate`,
       title: (
         <>
