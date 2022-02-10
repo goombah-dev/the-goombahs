@@ -35,6 +35,10 @@ const pageLinks = [
     name: 'Utility',
     path: '/utility',
   },
+  {
+    name: 'Mint',
+    path: '/mint',
+  },
   // {
   //   name: 'Partners',
   //   path: '/',

@@ -1,3 +1,5 @@
+@import '../mixins';
+
 .sectionLabel {
   position: fixed;
   top: 0;
@@ -66,9 +68,23 @@
   align-items: center;
   justify-content: center;
   @media (max-width: 1024px) {
+    bottom: 2vh;
     width: 100vw;
-    height: 5vh;
+    height: 10vh;
     left: calc(-1 * var(--content-margin-width));
+    span {
+      opacity: 1 !important;
+    }
+    &::after {
+      @include pseudoUnderline(95vw);
+      pointer-events: none;
+      left: 50%;
+      top: 50%;
+      height: 10vh;
+      background-color: var(--grey-fade-20);
+      border-radius: var(--radius-rounded);
+      transform: translate(-50%, -35%);
+    }
   }
   span {
     &:not(:last-child) {
@@ -97,7 +113,7 @@
   justify-content: space-evenly;
   span {
     width: auto;
-    font-size: var(--text-blurb);
+    font-size: var(--text-2xl);
     font-weight: var(--xxbold);
     background-color: transparent;
     color: var(--primary);

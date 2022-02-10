@@ -1,6 +1,10 @@
 import React from 'react'
 import { TitleBlurb } from '../components/blocks/title-blurb'
 
+import { baseUrlPng } from '../utils/base-url';
+;
+
+
 import {
   policyContainer,
   policyList,
@@ -9,6 +13,7 @@ import {
   info,
   subTextContainer,
   subTextItem,
+  footerImg
 } from '../styles/pages/policy.module.scss'
 
 const terms = {
@@ -92,6 +97,12 @@ const Utility = () => {
           )
         })}
       </ul>
+      <div className={footerImg}>
+        <img
+          src={baseUrlPng('Logo_Preview_vr8jik')}
+          alt=''
+        />
+      </div>
     </div>
   )
 }

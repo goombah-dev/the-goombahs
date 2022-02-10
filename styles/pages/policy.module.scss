@@ -4,7 +4,7 @@
   @include homeSection(auto);
   z-index: var(--level-two);
   width: var(--content-width);
-  margin: 20vh 0;
+  margin-top: 20vh;
 }
 
 .policyList {
@@ -12,6 +12,9 @@
   padding: var(--vp-xl);
   background-color: var(--black-fade-20);
   border-radius: var(--radius-lg);
+  @media (max-width: 1024px) {
+    padding: var(--vp-md  );
+  }
 }
 
 .policyBlock {
@@ -39,4 +42,10 @@
   h6 {
     margin-bottom: var(--intracontent-margin);
   }
+}
+
+
+.footerImg {
+  opacity: 0.25;
+  width: 100vw;
 }

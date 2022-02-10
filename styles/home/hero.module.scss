@@ -5,7 +5,8 @@
   margin-bottom: var(--vp-xl);
   @media (max-width: 1024px) {
     margin: 0;
-    height: 100vh;
+    height: unset;
+    min-height: 120vh;
   }
 }
 
@@ -33,6 +34,8 @@
   @media (max-width: 1024px) {
     width: 100%;
     svg {
+      margin-top: var(--vp-xl);
+      margin-bottom: -2vh;
       width: 100%;
     }
   }
@@ -46,6 +49,7 @@
   margin-top: var(--vp-md);
   letter-spacing: var(--push-lg);
   @media (max-width: 1024px) {
+    margin: 0;
     width: 100%;
   }
 }
@@ -72,6 +76,12 @@
     margin-top: var(--vp-lg);
     justify-self: flex-start;
     align-self: flex-start;
+    flex-direction: column;
+    height: 20vh;
+    button {
+      width: 80vw;
+      margin-bottom: var(--space-2xl);
+    }
   }
 }
 

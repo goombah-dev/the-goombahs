@@ -80,7 +80,7 @@ const sectionData = {
     },
     {
       id: `soldier`,
-      imageUrl: `soldato_vnhboj`,
+      imageUrl: `soldato-2_yt8mgq`,
       name: `The Soldier`,
       title: (
         <>
