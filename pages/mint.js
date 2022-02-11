@@ -9,6 +9,22 @@ const mint = () => {
     <div className={mintContainer}>
       <h1 className={header}>Time to Join the Family</h1>
       <p className={blurb}>
+        Minting is available, get your hands on a Goombah
+        and enables the firs Teflon Don and beyond, costs a
+        traditional equally fair, no matter the rank 0.08
+        ETH. There are no price tiers or gauging regardless
+        of inflation by the real crooks membership osts the
+        same for everyone. Minting is available, get your
+        hands on a Goombah and enables the first of many
+        instant rewards. The Infinite Goombah Giveaway
+        Campaign. Now its time to meet The Family.
+        <br />
+        <br />
+        Please note: Once you make the purchase, you cannot
+        undo this action.
+      </p>
+      {/* <h1 className={header}>Time to Join the Family</h1>
+      <p className={blurb}>
         Current Phase: Whitelist Only, Next Phase: Public
         Sale. Please do not try to mint unless your address
         is qualified for the current phase. You can only
@@ -20,7 +36,7 @@ const mint = () => {
         <br />
         Please note: Once you make the purchase, you cannot
         undo this action.
-      </p>
+      </p> */}
     </div>
   )
 };
