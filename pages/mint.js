@@ -10,8 +10,8 @@ const mint = () => {
       <h1 className={header}>Time to Join the Family</h1>
       <p className={blurb}>
         Minting is available, get your hands on a Goombah
-        and enables the firs Teflon Don and beyond, costs a
-        traditional equally fair, no matter the rank 0.08
+        and enable the first Teflon Don and beyond, costs a
+        traditional, equally fair, no matter the rank, 0.08
         ETH. There are no price tiers or gauging regardless
         of inflation by the real crooks membership osts the
         same for everyone. Minting is available, get your
