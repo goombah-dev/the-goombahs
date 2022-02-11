@@ -98,8 +98,12 @@
     background-color: var(--primary-dark);
   }
   .icon {
+    transition: var(--transition-primary);
     svg {
       height: 2.5vh;
+    }
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

@@ -6,7 +6,7 @@ import { AnimatePresence } from 'framer-motion'
 import { LogoIcon } from '../svg/logo-icon';
 import { MobileMenu } from './mobile-menu'
 import { DiscordIcon } from '../svg/discord-icon'
-import { TwitterIcon } from '../svg/twitter-icon'
+import { OpenSeaIcon } from '../svg/opensea-icon';
 import { FBIcon } from '../svg/fb-icon'
 
 import {
@@ -143,9 +143,12 @@ export const TopNav = () => {
             <span className={icon}>
               <DiscordIcon />
             </span>
-            <span className={icon}>
-              <TwitterIcon />
-            </span>
+            <a
+              href='https://opensea.io/collection/the-goombahs'
+              className={icon}
+            >
+              <OpenSeaIcon />
+            </a>
             <span className={icon}>
               <FBIcon />
             </span>

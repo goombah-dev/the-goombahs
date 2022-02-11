@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 
+import { LogoIcon } from '../svg/logo-icon'
 import { DiscordIcon } from '../svg/discord-icon'
 import { FBIcon } from '../svg/fb-icon'
-import { TwitterIcon } from '../svg/twitter-icon'
+import { OpenSeaIcon } from '../svg/opensea-icon'
 
 import {
   footerContainer,
@@ -15,7 +16,6 @@ import {
   icon,
   meta,
 } from '../../styles/layout/footer.module.scss'
-import { LogoIcon } from '../svg/logo-icon'
 
 const pageLinks = [
   {
@@ -77,9 +77,12 @@ export const Footer = () => {
         <span className={icon}>
           <DiscordIcon />
         </span>
-        <span className={icon}>
-          <TwitterIcon />
-        </span>
+        <a
+          className={icon}
+          href='https://opensea.io/collection/the-goombahs'
+        >
+          <OpenSeaIcon />
+        </a>
         <span className={icon}>
           <FBIcon />
         </span>

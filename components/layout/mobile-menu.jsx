@@ -13,6 +13,7 @@ import {
   menuFooter,
   meta,
 } from '../../styles/layout/mobile-menu.module.scss'
+import { OpenSeaIcon } from '../svg/opensea-icon';
 
 
 
@@ -24,7 +25,7 @@ export const MobileMenu = ({ pageLinks, closeMenu }) => {
       variants={fadeSlideVert}
       initial='hidden'
       animate='visible'
-      exit='hidden' 
+      exit='hidden'
     >
       <ul className={links}>
         {pageLinks.map((lnk) => {
@@ -43,9 +44,9 @@ export const MobileMenu = ({ pageLinks, closeMenu }) => {
         <span>
           <DiscordIcon />
         </span>
-        <span>
-          <TwitterIcon />
-        </span>
+        <a href='https://opensea.io/collection/the-goombahs'>
+          <OpenSeaIcon />
+        </a>
         <div className={meta}>
           <span>The Goombahs ©2022</span>
           <span>|</span>

@@ -78,10 +78,10 @@ export const Hero = () => {
         </div>
       </div>
       <div className={heroImg}>
-        <img
+        {/* <img
           src={baseUrlPng(`hero-gooms_q5grxs`)}
           alt='goombahs'
-        />
+        /> */}
       </div>
       <Link href='/#story'>
         <a className={scrollBtn}>

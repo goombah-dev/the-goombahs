@@ -83,7 +83,7 @@
       height: 2.5vh;
     }
     &:hover {
-      transform: scale(1.05);
+      transform: translateY(0.5vh) scale(1.05);
     }
   }
 }
