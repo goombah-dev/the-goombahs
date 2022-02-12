@@ -180,7 +180,7 @@ const Mint = () => {
           cannot undo this action.
         </p>
       </div>
-      <Marquee className={mintMarquee} gradient={false}>
+      {/* <Marquee className={mintMarquee} gradient={false}>
         {nftImageUrls.map((imgUrl) => {
           return (
             <span key={imgUrl}>
@@ -201,7 +201,7 @@ const Mint = () => {
             </span>
           )
         })}
-      </Marquee>
+      </Marquee> */}
 
       <section className={minterContainer}>
         <s.Screen>
