@@ -1,0 +1,31 @@
+.partners {
+  z-index: var(--level-three);
+  height: 20vh;
+  width: 100vw;
+  background-color: var(--full-black);
+  border-bottom: 1px solid var(--primary-dark);
+  border-top: 1px solid var(--primary-dark);
+}
+
+.logoMarquee {
+  height: 20vh;
+}
+
+.logoWrapper {
+  height: 8vh;
+  margin: 0 var(--vp-ml);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    height: 14vh;
+     &:hover {
+      path {
+        fill: var(--primary);
+      }
+    }
+  }
+  path {
+    transition: var(--transition-primary);
+  }
+}
