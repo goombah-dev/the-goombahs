@@ -183,15 +183,21 @@ const Mint = () => {
       <Marquee className={mintMarquee} gradient={false}>
         {nftImageUrls.map((imgUrl) => {
           return (
-            <span>
-              <img src={baseUrlPng(`tokens/${imgUrl}`)} alt="" />
+            <span key={imgUrl}>
+              <img
+                src={baseUrlPng(`tokens/${imgUrl}`)}
+                alt='goombah'
+              />
             </span>
           )
         })}
         {nftImageUrls.map((imgUrl) => {
           return (
-            <span>
-              <img src={baseUrlPng(`tokens/${imgUrl}`)} alt="" />
+            <span key={imgUrl}>
+              <img
+                src={baseUrlPng(`tokens/${imgUrl}`)}
+                alt='goombah'
+              />
             </span>
           )
         })}
@@ -206,15 +212,17 @@ const Mint = () => {
               padding: 24,
             }}
           >
-            <FullLockLogo /> 
-            <p 
+            <FullLockLogo />
+            <p
               style={{
                 letterSpacing: 'var(--push-2xl)',
                 fontWeight: 'var(--light)',
                 transform: 'scale(.5)',
-                marginTop: '-5px'
+                marginTop: '-5px',
               }}
-            >JOIN THE FAMILY</p> 
+            >
+              JOIN THE FAMILY
+            </p>
             <s.SpacerSmall />
             <ResponsiveWrapper
               flex={1}
@@ -464,7 +472,7 @@ const Mint = () => {
                 We have set the gas limit to{' '}
                 {CONFIG.GAS_LIMIT} for the contract to
                 successfully mint your NFT. We recommend
-                that you don't lower the gas limit.
+                that you don&apos;t lower the gas limit.
               </s.TextDescription>
             </s.Container>
           </s.Container>

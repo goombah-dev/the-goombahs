@@ -37,10 +37,10 @@ export const Hero = () => {
           event venues for not only The Goombahs but
           projects and businesses of the world. Community
           engagement, experience, and education are the
-          team's central principals. Each being offered and
-          updated as our family and metaverse grows. Minting
-          is currently available, get your hands on a
-          Goombah and enable the first of many instant
+          team&apos;s central principals. Each being offered
+          and updated as our family and metaverse grows.
+          Minting is currently available, get your hands on
+          a Goombah and enable the first of many instant
           rewards - The Infinite Goombah Giveaway Campaign.
           <br />
           <br />
