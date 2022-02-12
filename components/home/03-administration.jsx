@@ -15,9 +15,15 @@ const sectionData = {
         Each of the five families - Mongelli, Crypanno,
         Russo, DePietro, and Gonzetti - are organized into a
         hierarchy. The Boss reigns supreme, the Underboss
-        carries out his will, while the Consigliere advises.
+        carries out his will, and the Consigliere advises.
         Capos govern over their assigned turf, and employ
         soldiers to enforce their authority.
+        {/* Each of the five families - Mongelli, Crypanno,
+        Russo, DePietro, and Gonzetti - are organized into a
+        hierarchy. The Boss reigns supreme, the Underboss
+        carries out his will, while the Consigliere advises.
+        Capos govern over their assigned turf, and employ
+        soldiers to enforce their authority. */}
       </span>
       <span>
         The rank of each member corresponds to its rarity,
@@ -37,9 +43,9 @@ const sectionData = {
           <span>Boss</span>
         </>
       ),
-      blurb: `The Leader. The Don. The Top Dog.`,
+      blurb: `The Leader. The Don. The Capo dei capi.`,
       path: `/#fam-detail`,
-      about: `The Leader. The Don. The Top Dog. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
+      about: `The Leader. The Don. The Capo dei capi. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
       perks: [
         `Access to the Metaverse`,
         `Airdrops and Early Access to future collections`,
@@ -91,7 +97,7 @@ const sectionData = {
       ),
       blurb: `The top advisor in the family.`,
       path: `/#fam-detail`,
-      about: `He's right-hand man to the Boss. He acts as the closest advisor, and often works directly with the head-honcho. The consiglieri is one of the most powerful members of the family.`,
+      about: `As right-hand man to the Boss, he acts as a confidant and is his closest advisor. Don't underestimate! Working directly with the head-honcho, the consigliere is one of the most powerful members of the family.`,
       perks: [
         `Access to the Metaverse`,
         `Airdrops and Early Access to future collections`,

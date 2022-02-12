@@ -12,16 +12,24 @@ const sectionData = {
   blurb: (
     <>
       <span>
-        While the family may have control of the
+        While the Don and his Commission control the
+        organization as a whole, the family has many needs
+        and functionaries to handle the ground work. As well
+        as having friends in high places to keep the
+        business running smoothly.
+        {/* While the family may have control of the
         organization, it does have need of functionaries to
         handle the ground work, as well as its friends in
-        high places to keep the business running smoothly.
+        high places to keep the business running smoothly. */}
       </span>
       <span>
         Like the family, each of the outsider tokens is
         ranked in order of rarity. Outsider tokens are also
+        are uniquely designed as they are in the family.
+        {/* Like the family, each of the outsider tokens is
+        ranked in order of rarity. Outsider tokens are also
         not necessarily uniquely designed as they are in the
-        family.
+        family. */}
       </span>
     </>
   ),
