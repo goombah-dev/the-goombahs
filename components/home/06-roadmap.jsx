@@ -11,7 +11,7 @@ import {
   eventBlock,
   eventHeader,
   eventBlurb,
-  ctaBtn
+  ctaBtn,
 } from '../../styles/home/roadmap.module.scss'
 
 const sectionData = {
@@ -20,9 +20,9 @@ const sectionData = {
     <>
       <span>
         Here&apos;s the list of what you can expect over the
-        coming year from the Social Club.
-        Stay tuned! More events and updates will be added as
-        we pass each successive milestone.
+        coming year from the Social Club. Stay tuned! More
+        events and updates will be added as we pass each
+        successive milestone.
       </span>
     </>
   ),
@@ -36,7 +36,7 @@ const sectionData = {
           path: '/',
         },
         {
-          title: `Oculus Giveaway`,
+          title: `Oculus 2 Giveaway`,
           blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
@@ -51,7 +51,7 @@ const sectionData = {
           path: '/',
         },
         {
-          title: `BudBudz Joint Event`,
+          title: `BudBudz joint Event`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
@@ -61,7 +61,7 @@ const sectionData = {
       name: `March`,
       events: [
         {
-          title: `Official merch store opening`,
+          title: `Goombah merch store opening`,
           blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
@@ -76,12 +76,12 @@ const sectionData = {
       name: `April`,
       events: [
         {
-          title: `The Spine`,
+          title: `SPINE3D joint event`,
           blurb: `Nam cursus faucibus sodales. Morbi velit tortor, condimentum at erat a, facilisis ultricies erat. Vestibulum vel interdum neque. In ac sollicitudin metus. Integer cursus urna enim, quis lobortis velit semper in.`,
           path: '/',
         },
         {
-          title: `Weapon Box Airdrop`,
+          title: `Community Airdrop`,
           blurb: `Nunc maximus metus in pulvinar mollis. Proin pellentesque tellus quis urna hendrerit hendrerit. Pellentesque lacinia dolor at ultricies rutrum.`,
           path: '/',
         },
@@ -91,7 +91,12 @@ const sectionData = {
       name: `May`,
       events: [
         {
-          title: `Live Comedy Show`,
+          title: `First official Live metaverse Comedy Show`,
+          blurb: `Cras iaculis tellus feugiat, accumsan risus consequat, bibendum mi. Cras enim neque, pharetra nec ultrices eget.`,
+          path: '/',
+        },
+        {
+          title: `Goombah Go Hybrid IRL/META Game Release`,
           blurb: `Cras iaculis tellus feugiat, accumsan risus consequat, bibendum mi. Cras enim neque, pharetra nec ultrices eget.`,
           path: '/',
         },
@@ -101,13 +106,8 @@ const sectionData = {
       name: `June`,
       events: [
         {
-          title: `Jail Token Release`,
+          title: `Goombah Graduation NFT.NYC Event`,
           blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
-          path: '/',
-        },
-        {
-          title: `Goombah brewery launch`,
-          blurb: `Nam cursus faucibus sodales. Morbi velit tortor, condimentum at erat a, facilisis ultricies erat. Vestibulum vel interdum neque. In ac sollicitudin metus. Integer cursus urna enim, quis lobortis velit semper in.`,
           path: '/',
         },
       ],
@@ -124,23 +124,26 @@ export const Roadmap = () => {
       <div className={mapContainer}>
         {months.map((mnth) => {
           return (
-            <div className={monthBlock} key={mnth.name}>  
+            <div className={monthBlock} key={mnth.name}>
               <p className={monthName}>{mnth.name}</p>
               <div className={eventsSection}>
                 {mnth.events.map((evt) => {
                   return (
-                    <div className={eventBlock} key={evt.title}>
+                    <div
+                      className={eventBlock}
+                      key={evt.title}
+                    >
                       <h6 className={eventHeader}>
                         {evt.title}
                       </h6>
                       <p className={eventBlurb}>
                         {evt.blurb}
                       </p>
-                      <button
+                      {/* <button
                         className={`btn btn__primary btn--transp ${ctaBtn}`}
                       >
                         Read More →
-                      </button>
+                      </button> */}
                     </div>
                   )
                 })}
