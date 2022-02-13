@@ -51,7 +51,7 @@ const sectionData = {
           path: '/',
         },
         {
-          title: `BudBudz joint Event`,
+          title: `BudBuds joint Event`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
@@ -106,7 +106,12 @@ const sectionData = {
       name: `June`,
       events: [
         {
-          title: `Goombah Graduation NFT.NYC Event`,
+          title: `Goombah Graduation`,
+          blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `NFT.NYC Event`,
           blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },

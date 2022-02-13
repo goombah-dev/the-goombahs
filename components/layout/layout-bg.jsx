@@ -32,12 +32,14 @@ export const LayoutBG = ({ numImgs = 2 }) => {
       } */}
       <div className={`${artWindow}`}>
         <img
+          loading='lazy'
           src={baseUrlPng(tLbR)}
           alt='goombahs background collage art'
         />
       </div>
       <div className={`${artWindow}`}>
         <img
+          loading='lazy'
           src={baseUrlPng(tRbL)}
           alt='goombahs background collage art'
         />
