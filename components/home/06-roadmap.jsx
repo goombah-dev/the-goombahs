@@ -20,7 +20,7 @@ const sectionData = {
     <>
       <span>
         Here&apos;s the list of what you can expect over the
-        coming year from the Goombah&apos;s Social Club.
+        coming year from the Social Club.
         Stay tuned! More events and updates will be added as
         we pass each successive milestone.
       </span>
