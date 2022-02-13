@@ -41,9 +41,12 @@ export const MobileMenu = ({ pageLinks, closeMenu }) => {
         })}
       </ul>
       <div className={menuFooter}>
-        <span>
+        <a href='https://discord.com/invite/yXmRQy6s6Q'>
           <DiscordIcon />
-        </span>
+        </a>
+        <a href='https://twitter.com/TheGoombahs'>
+          <TwitterIcon />
+        </a>
         <a href='https://opensea.io/collection/the-goombahs'>
           <OpenSeaIcon />
         </a>

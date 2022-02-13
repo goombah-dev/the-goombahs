@@ -29,12 +29,11 @@
   width: 100vw;
   display: grid;
   gap: var(--vp-sm);
-  grid-template-columns:  1fr 1fr;
-  grid-template-columns:  10vh 10vh;
+  grid-template-columns:  repeat(3, 10vh);
   grid-template-rows: 5vh 5vh;
   grid-template-areas: 
-    ".    ."
-    "meta meta"
+    ".    .    ."
+    "meta meta meta"
   ;
   align-items: center;
   justify-content: center;

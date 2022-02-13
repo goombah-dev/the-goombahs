@@ -49,7 +49,7 @@
   @media (max-width: 1024px) {
     display: flex;
   }
-  span {
+  span, a {
     font-size: var(--text-blurb);
     margin-bottom: var(--intercontent-margin);
   }
