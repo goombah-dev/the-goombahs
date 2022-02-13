@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x222Feb6c253B3eCb04c3d95BB52CF76C745D19C7",
+  "SCAN_LINK": "https://etherscan.io/address/0x222Feb6c253B3eCb04c3d95BB52CF76C745D19C7",
+  "NETWORK": {
+    "NAME": "Mainnet",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "The Goombahs",
+  "SYMBOL": "GBZ",
+  "MAX_SUPPLY": 7500,
+  "WEI_COST": 80000000000000000,
+  "DISPLAY_COST": 0.08,
+  "GAS_LIMIT": 400000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/the-goombahs",
+  "SHOW_BACKGROUND": true
+}

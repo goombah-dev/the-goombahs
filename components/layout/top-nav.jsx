@@ -21,6 +21,7 @@ import {
   mobileBtn,
   close
 } from '../../styles/layout/top-nav.module.scss'
+import { TwitterIcon } from '../svg/twitter-icon';
 
 const pageLinks = [
   {
@@ -140,18 +141,24 @@ export const TopNav = () => {
             })}
           </div>
           <div className={social}>
-            <span className={icon}>
+            <a
+              className={icon}
+              href='https://discord.com/invite/yXmRQy6s6Q'
+            >
               <DiscordIcon />
-            </span>
+            </a>
             <a
               href='https://opensea.io/collection/the-goombahs'
               className={icon}
             >
               <OpenSeaIcon />
             </a>
-            <span className={icon}>
-              <FBIcon />
-            </span>
+            <a
+              className={icon}
+              href='https://twitter.com/TheGoombahs'
+            >
+              <TwitterIcon />
+            </a>
           </div>
         </>
       )}

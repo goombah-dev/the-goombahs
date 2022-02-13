@@ -61,12 +61,12 @@ const Mint = () => {
     CONTRACT_ADDRESS: '',
     SCAN_LINK: '',
     NETWORK: {
-      NAME: '',
-      SYMBOL: '',
+      NAME: 'Ethereum',
+      SYMBOL: 'ETH',
       ID: 0,
     },
     NFT_NAME: '',
-    SYMBOL: '',
+    SYMBOL: 'GBZ',
     MAX_SUPPLY: 1,
     WEI_COST: 0,
     DISPLAY_COST: 0,
@@ -137,7 +137,7 @@ const Mint = () => {
 
   const getConfig = async () => {
     const configResponse = await fetch(
-      '/config/config.json',
+      '/minter-config/config.json',
       {
         headers: {
           'Content-Type': 'application/json',
@@ -330,6 +330,7 @@ const Mint = () => {
                       >
                         <s.TextDescription
                           style={{
+                            textTransform: 'uppercase',
                             textAlign: 'center',
                             color: 'var(--accent-text)',
                           }}

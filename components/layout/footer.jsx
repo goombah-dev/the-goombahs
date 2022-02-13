@@ -16,6 +16,7 @@ import {
   icon,
   meta,
 } from '../../styles/layout/footer.module.scss'
+import { TwitterIcon } from '../svg/twitter-icon'
 
 const pageLinks = [
   {
@@ -74,18 +75,24 @@ export const Footer = () => {
         })}
       </div>
       <div className={socialBlock}>
-        <span className={icon}>
+        <a
+          className={icon}
+          href='https://discord.com/invite/yXmRQy6s6Q'
+        >
           <DiscordIcon />
-        </span>
+        </a>
         <a
           className={icon}
           href='https://opensea.io/collection/the-goombahs'
         >
           <OpenSeaIcon />
         </a>
-        <span className={icon}>
-          <FBIcon />
-        </span>
+        <a
+          className={icon}
+          href='https://twitter.com/TheGoombahs'
+        >
+          <TwitterIcon />
+        </a>
       </div>
     </footer>
   )

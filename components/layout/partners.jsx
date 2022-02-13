@@ -14,22 +14,22 @@ import {
 
 const partnerLogos = [
   {
-    link: '',
+    link: 'https://www.cryptofal.com/',
     name: 'Fal',
     logo: <FalLogo />,
   },
   {
-    link: '',
+    link: 'https://spine3d.com/ ',
     name: 'Spine3d',
     logo: <SpineLogo />,
   },
   {
-    link: '',
+    link: 'https://daydreamingagency.com/ ',
     name: 'Dayreaming',
     logo: <DaydreamingLogo />,
   },
   {
-    link: '',
+    link: 'https://coinbound.io/',
     name: 'Coinbound',
     logo: <CoinboundLogo />,
   },
