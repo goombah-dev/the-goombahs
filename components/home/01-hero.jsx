@@ -53,7 +53,7 @@ export const Hero = () => {
           rewards - The Infinite Goombah Giveaway Campaign. */}
           <br />
           <br />
-          Education.Experience.Engagement.
+          Education. Experience. Engagement.
         </p>
         <div className={ctaButton}>
           <button className='btn btn__primary'>
