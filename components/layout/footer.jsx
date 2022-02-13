@@ -12,6 +12,7 @@ import {
   logoWrap,
   navLinks,
   navLink,
+  emph as emphStyle,
   socialBlock,
   icon,
   meta,
@@ -24,6 +25,10 @@ const pageLinks = [
     path: '/',
   },
   {
+    name: 'About',
+    path: '/about',
+  },
+  {
     name: 'NFTs',
     path: '/#tokens-1',
   },
@@ -31,10 +36,6 @@ const pageLinks = [
     name: 'Utility',
     path: '/utility',
   },
-  // {
-  //   name: 'Partners',
-  //   path: '/',
-  // },
   // {
   //   name: 'Analytics',
   //   path: '/',
@@ -44,8 +45,9 @@ const pageLinks = [
     path: '/#roadmap',
   },
   {
-    name: 'Terms & Conditions',
-    path: '/terms-conditions',
+    name: 'Mint',
+    path: '/mint',
+    emph: true,
   },
 ]
 
@@ -69,7 +71,13 @@ export const Footer = () => {
         {pageLinks.map((lnk, idx) => {
           return (
             <Link href={lnk.path} key={lnk.name}>
-              <a className={`${navLink}`}>{lnk.name}</a>
+              <a
+                className={`${navLink} ${
+                  lnk.emph && emphStyle
+                }`}
+              >
+                {lnk.name}
+              </a>
             </Link>
           )
         })}

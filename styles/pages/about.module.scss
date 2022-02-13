@@ -1,0 +1,28 @@
+@import "../mixins";
+
+.aboutContainer {
+  @include homeSection(auto);
+  min-height: 70vh;
+  z-index: var(--level-two);
+  width: var(--content-width);
+  margin: 20vh 0;
+  align-items: center;
+  div {
+    align-items: center;
+  }
+  h4 {
+    text-align: center;
+  }
+  p {
+    background-color: var(--black-fade-20);
+    padding: var(--vp-lg);
+    border-radius: var(--radius-lg);
+    span {
+      max-width: 100%;
+    }
+  }
+  button {
+    margin-top: var(--vp-md);
+    padding: 2vh 3vh;
+  }
+}

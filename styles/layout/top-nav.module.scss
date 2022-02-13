@@ -22,11 +22,11 @@
 
 .logo {
   margin-left: var(--space-xl);
-  transform: translateY(.5vh);
+  transform: translateY(0.5vh);
   font-size: var(--text-2xl);
   text-transform: uppercase;
   font-weight: var(--xbold);
-  .logoWrap { 
+  .logoWrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +38,10 @@
   }
 }
 
+.navLinks {
+  margin-top: var(--vp-xs);
+}
+
 .navLink {
   position: relative;
   text-transform: uppercase;
@@ -45,6 +49,33 @@
   transition: var(--transition-primary);
   &:not(:last-child) {
     margin-right: var(--space-3xl);
+  }
+  &.emph {
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+    &:hover {
+      &::before {
+        background-color: var(--primary-trans);
+      }
+    }
+    &::after {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      padding: 1vh 2vh;
+      border: 1px solid var(--primary-dark);
+      border-radius: var(--radius-rounded);
+      transition: var(--transition-1-smooth);
+    }
   }
   &.active {
     color: var(--primary-vivid);

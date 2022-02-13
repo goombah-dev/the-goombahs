@@ -4,7 +4,7 @@
   /* font-family */
   --font-title: "Montserrat", sans-serif;
   --font-body: "Montserrat", sans-serif;
-  --font-accent: "Bebas Neue", cursive;
+  --font-accent: "Bebas Neue", sans-serif;
 
   /* palette */
   --full-black: #0a0a0a;
@@ -17,6 +17,8 @@
   --grey-90: #292929;
   --grey-50: #78757a;
   --grey-40: #99979b;
+  --grey-30: #b4b1b4;
+  --grey-20: #cdcbcd;
   --grey-10: #e6e5e6;
   --grey-05: #f6f6f6;
   --grey-fade-20: hsla(276, 2%, 47%, 0.2);
@@ -24,6 +26,7 @@
   --white: #ffffff;
   --white-fade-20: hsla(0, 0%, 100%, 0.2);
   --dry-paint: #570000;
+  --dry-paint-trans: #5700009c;
   --red-eye: #820000;
   --house-paint: #be0000;
 
@@ -62,6 +65,7 @@
   --space-5xl: 70px;
 
   /* viewport-spacing */
+  --vp-xxs: .5vmin;
   --vp-xs: 1vmin;
   --vp-sm: 2.5vmin;
   --vp-ms: 3.5vmin;
@@ -140,8 +144,9 @@
   --text-color: var(--black);
   --text-accent: var(--grey-10);
   --primary: var(--red-eye);
-  --primary-dark: var(--dry-paint);
   --primary-vivid: var(--house-paint);
+  --primary-dark: var(--dry-paint);
+  --primary-trans: var(--dry-paint-trans);
   --primary-accent: var(--grey-10);
 
   /* text size */
@@ -150,6 +155,7 @@
   --text-header: var(--text-5xl);
   --text-header-sm: var(--text-3xl);
   --text-blurb-lg: var(--text-2xl);
+  --text-blurb-md: var(--text-xl);
   --text-blurb: var(--text-lg);
   --text-prose: var(--text-md);
 

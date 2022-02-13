@@ -42,7 +42,7 @@
 }
 
 .blurb {
-  @include blurbText(var(--text-md));
+  @include blurbText(var(--text-blurb-md));
   line-height: 150%;
   width: 45vw;
   margin: 0;

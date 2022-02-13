@@ -1,13 +1,14 @@
-@import '../mixins';
+@import "../mixins";
 
 .mintInfoContainer {
-  @include homeSection(70vh);
+  @include homeSection(auto);
+  min-height: 80vh;
   position: relative;
   z-index: var(--level-two);
   width: var(--content-width);
   padding: var(--vp-2xl);
   @media (max-width: 1024px) {
-    height: 90vh;
+    min-height: 100vh;
     padding: 0;
   }
 }
@@ -19,12 +20,47 @@
 
 .blurb {
   @include blurbText(var(--text-blurb));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .minterContainer {
   z-index: var(--level-two);
   position: relative;
   margin-bottom: var(--vp-2xl);
+}
+
+.disclaimer {
+  width: 60%;
+  margin: var(--vp-md);
+  padding: var(--vp-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-fade-20);
+  color: var(--grey-20);
+  border: 1px solid var(--primary-accent);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-sm);
+  font-weight: var(--light);
+  text-align: center;
+  @media (max-width: 1024px) {
+    width: 100%;
+    transform: scale(0.9);
+    font-size: var(--text-sm);
+    text-align: left;
+    span {
+      margin-bottom: var(--vp-sm);
+    }
+  }
+  span {
+    &:not(:last-child) {
+      margin-bottom: var(--space-sm);
+    }
+  }
 }
 
 .mintMarquee {

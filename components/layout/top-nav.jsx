@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 import { AnimatePresence } from 'framer-motion'
 
-import { LogoIcon } from '../svg/logo-icon';
+import { LogoIcon } from '../svg/logo-icon'
 import { MobileMenu } from './mobile-menu'
 import { DiscordIcon } from '../svg/discord-icon'
-import { OpenSeaIcon } from '../svg/opensea-icon';
+import { OpenSeaIcon } from '../svg/opensea-icon'
 import { FBIcon } from '../svg/fb-icon'
 
 import {
@@ -14,19 +14,24 @@ import {
   navLinks,
   navLink,
   active,
+  emph as emphStyle,
   logo,
   logoWrap,
   social,
   icon,
   mobileBtn,
-  close
+  close,
 } from '../../styles/layout/top-nav.module.scss'
-import { TwitterIcon } from '../svg/twitter-icon';
+import { TwitterIcon } from '../svg/twitter-icon'
 
 const pageLinks = [
   {
     name: 'Home',
     path: '/',
+  },
+  {
+    name: 'About',
+    path: '/about',
   },
   {
     name: 'NFTs',
@@ -36,14 +41,6 @@ const pageLinks = [
     name: 'Utility',
     path: '/utility',
   },
-  {
-    name: 'Mint',
-    path: '/mint',
-  },
-  // {
-  //   name: 'Partners',
-  //   path: '/',
-  // },
   // {
   //   name: 'Analytics',
   //   path: '/',
@@ -52,11 +49,17 @@ const pageLinks = [
     name: 'Roadmap',
     path: '/#roadmap',
   },
+  {
+    name: 'Mint',
+    path: '/mint',
+    emph: true
+  },
 ]
 
 export const TopNav = () => {
   const [activeLink, setSetActiveLink] = useState(0)
-  const [linksDeactivated, setLinksDeactivated] = useState(false);
+  const [linksDeactivated, setLinksDeactivated] =
+    useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const { pathname } = useRouter()
@@ -75,15 +78,12 @@ export const TopNav = () => {
     } else {
       document.documentElement.style.overflow = ''
     }
-  }, [menuOpen]);
+  }, [menuOpen])
 
   // do not highlight navbar if not on homepage
   useEffect(() => {
     const isHomePage = pathname === '/'
-    
-  }, [pathname]);
-  
-  
+  }, [pathname])
 
   return (
     <nav className={topNav}>
@@ -131,7 +131,7 @@ export const TopNav = () => {
               return (
                 <Link href={lnk.path} key={lnk.name}>
                   <a
-                    className={`${navLink} ${isActiveLink}`}
+                    className={`${navLink} ${isActiveLink} ${lnk.emph && emphStyle}`}
                     onClick={() => setSetActiveLink(idx)}
                   >
                     {lnk.name}

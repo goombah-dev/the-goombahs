@@ -7,7 +7,7 @@ import Marquee from 'react-fast-marquee'
 import { FullLockLogo } from '../components/svg/FullLockLogo'
 
 // styled components from OG minter project
-import * as s from '../styles/pages/_global-sc-styles.jsx'
+import * as s from '../styles/styled-components/_global-sc-styles.jsx'
 import {
   StyledButton,
   StyledRoundButton,
@@ -15,7 +15,7 @@ import {
   StyledLogo,
   StyledImg,
   StyledLink,
-} from '../styles/pages/_minter-sc-styles.jsx'
+} from '../styles/styled-components/_minter-sc-styles.jsx'
 
 // NextJS styles
 import {
@@ -24,6 +24,7 @@ import {
   minterContainer,
   header,
   blurb,
+  disclaimer,
 } from '../styles/pages/mint.module.scss'
 import { baseUrlPng } from '../utils/base-url'
 
@@ -44,7 +45,6 @@ const nftImageUrls = [
   'uboss_qrb8bo',
   'boss_w9ttpo',
 ]
-
 
 const Mint = () => {
   const dispatch = useDispatch()
@@ -137,7 +137,7 @@ const Mint = () => {
 
   const getConfig = async () => {
     const configResponse = await fetch(
-      '/minter-config/config.json',
+      '/config/config.json',
       {
         headers: {
           'Content-Type': 'application/json',
@@ -164,20 +164,29 @@ const Mint = () => {
       <div className={mintInfoContainer}>
         <h1 className={header}>Time to Join the Family</h1>
         <p className={blurb}>
-          Minting is available, get your hands on a Goombah
-          and enable the first Teflon Don and beyond, costs
-          a traditional, equally fair, no matter the rank,
-          0.08 ETH. There are no price tiers or gauging
-          regardless of inflation by the real crooks
-          membership osts the same for everyone. Minting is
-          available, get your hands on a Goombah and enables
-          the first of many instant rewards. The Infinite
-          Goombah Giveaway Campaign. Now its time to meet
-          The Family.
+          Minting is available, get your hands on a Goombah!
+          The cost - A traditional, equally fair, no matter
+          the rank, 0.08 ETH. There are no price tiers or
+          gauging regardless of popularity and or rank. Our
+          membership cost will always be the same for
+          everyone. Welcome to the Family. Enjoy the
+          hospitality.
           <br />
           <br />
-          Please note: Once you make the purchase, you
-          cannot undo this action.
+          <div className={disclaimer}>
+            <span>
+              Please note: Once you make the purchase, you
+              cannot undo this action.
+            </span>
+            <span>
+              There is a 5 Goombah purchase limit per family
+              member.
+            </span>
+            <span>
+              Gas prices may vary and are not included in
+              the price above.
+            </span>
+          </div>
         </p>
       </div>
       {/* <Marquee className={mintMarquee} gradient={false}>
@@ -227,7 +236,6 @@ const Mint = () => {
             <ResponsiveWrapper
               flex={1}
               style={{ padding: 24 }}
-              test
             >
               {/* <s.Container
                 flex={1}
