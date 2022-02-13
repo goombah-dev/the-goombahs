@@ -1,7 +1,8 @@
+import Link from 'next/link'
 import React from 'react'
-import { TitleBlurb } from '../components/blocks/title-blurb';
+import { TitleBlurb } from '../components/blocks/title-blurb'
 
-import { aboutContainer } from '../styles/pages/about.module.scss';
+import { aboutContainer } from '../styles/pages/about.module.scss'
 
 const pageContent = {
   title: 'About The Goombahs',
@@ -47,15 +48,15 @@ const pageContent = {
   ),
 }
 
-
-
 const About = () => {
-  const pc = pageContent;
+  const pc = pageContent
 
   return (
     <section className={aboutContainer}>
       <TitleBlurb title={pc.title} blurb={pc.blurb} />
-      <button className='btn btn__primary'>Mint Yours Now →</button>
+      <Link href='/mint'>
+        <a className='btn btn__primary'>Mint Yours Now →</a>
+      </Link>
     </section>
   )
 }
