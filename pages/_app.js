@@ -13,17 +13,20 @@ import { LayoutBG } from '../components/layout/layout-bg'
 
 import '../styles/globals.scss'
 import { Partners } from '../components/layout/partners'
+import { FullLockLogo } from '../components/svg/FullLockLogo'
+import { Maintenance } from '../components/blocks/maintenance'
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <div className={layout}>
-        <TopNav />
+        {/* <TopNav />
         <Component {...pageProps} />
         <LayoutBG numImgs={4} />
         <Partners />
-        <Footer />
+        <Footer /> */}
+        <Maintenance />
       </div>
     </Provider>
   )
