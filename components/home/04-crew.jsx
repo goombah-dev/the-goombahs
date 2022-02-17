@@ -25,7 +25,7 @@ const sectionData = {
       <span>
         Like the family, each of the outsider tokens is
         ranked in order of rarity. Outsider tokens are also
-        are uniquely designed as they are in the family.
+        uniquely designed as they are in the family.
         {/* Like the family, each of the outsider tokens is
         ranked in order of rarity. Outsider tokens are also
         not necessarily uniquely designed as they are in the

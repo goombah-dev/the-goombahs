@@ -83,7 +83,8 @@ const Mint = () => {
     let totalGasLimit = String(gasLimit * mintAmount)
     console.log('Cost: ', totalCostWei)
     console.log('Gas limit: ', totalGasLimit)
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`)
+    setFeedback(`Minting your Goombah...`)
+    // setFeedback(`Minting your ${CONFIG.NFT_NAME}...`)
     setClaimingNft(true)
     blockchain.smartContract.methods
       .mint(mintAmount)
@@ -103,8 +104,11 @@ const Mint = () => {
       .then((receipt) => {
         console.log(receipt)
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `WOW, the Goombah is yours! go visit Opensea.io to view it.`
         )
+        // setFeedback(
+        //   `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+        // )
         setClaimingNft(false)
         dispatch(fetchData(blockchain.account))
       })
@@ -124,6 +128,12 @@ const Mint = () => {
       newMintAmount = 5
     }
     setMintAmount(newMintAmount)
+  }
+
+  const [displayAmount, setDisplayAmount] = useState(false);
+
+  const displayAmountChange = () => {
+    setDisplayAmount(!displayAmount)
   }
 
   const getData = () => {
@@ -173,7 +183,7 @@ const Mint = () => {
           hospitality.
           <br />
           <br />
-          <div className={disclaimer}>
+          {/* <div className={disclaimer}>
             <span>
               Please note: Once you make the purchase, you
               cannot undo this action.
@@ -186,7 +196,7 @@ const Mint = () => {
               Gas prices may vary and are not included in
               the price above.
             </span>
-          </div>
+          </div> */}
         </p>
       </div>
       {/* <Marquee className={mintMarquee} gradient={false}>
@@ -256,7 +266,7 @@ const Mint = () => {
                     '0px 5px 11px 2px rgba(0,0,0,0.7)',
                 }}
               >
-                <s.TextTitle
+                { displayAmount ? <s.TextTitle
                   style={{
                     textAlign: 'center',
                     fontSize: 50,
@@ -265,7 +275,7 @@ const Mint = () => {
                   }}
                 >
                   {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-                </s.TextTitle>
+                </s.TextTitle> : <s.TextTitle></s.TextTitle> }
                 <s.TextDescription
                   style={{
                     textAlign: 'center',
@@ -352,6 +362,7 @@ const Mint = () => {
                           onClick={(e) => {
                             e.preventDefault()
                             dispatch(connect())
+                            displayAmountChange()
                             getData()
                           }}
                         >

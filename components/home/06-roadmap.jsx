@@ -19,10 +19,7 @@ const sectionData = {
   blurb: (
     <>
       <span>
-        Here&apos;s the list of what you can expect over the
-        coming year from the Social Club. Stay tuned! More
-        events and updates will be added as we pass each
-        successive milestone.
+      Here is a list of what you can expect in the near future from The Goombahs. Stay tuned! More events and updates will be added as we pass each milestone.
       </span>
     </>
   ),
@@ -51,7 +48,7 @@ const sectionData = {
           path: '/',
         },
         {
-          title: `BudBuds joint Event`,
+          title: `Metaverse Poker Night`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },

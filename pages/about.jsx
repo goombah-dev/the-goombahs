@@ -27,7 +27,7 @@ const pageContent = {
         three E&apos;s:
         <br />
         <br />
-        Education. Experience. Engagement.
+        Education, Experience, and Engagement.
         <br />
         <br />
       </span>
@@ -36,12 +36,12 @@ const pageContent = {
         superlative platform for execution. Revolving around
         the three E&apos;s the social club will initially
         offer a concert venue, horse track, Casino & MORE!
-        This has all been erected pre-launch and will
+        This has all been built pre-launch and will
         continue to evolve. Possessing entry to The Families
         central headquarters warrants a constant engaging
         experience inside this new worlds top of the line
         virtual environment. Complete with tons of user
-        engagement persistently upgraded daily! The social
+        engagement upgraded regularly! The social
         club is just the beginning.
       </span>
     </>

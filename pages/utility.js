@@ -45,20 +45,20 @@ const terms = {
         },
         {
           title: ``,
-          text: `6. Ability to use our Goombahs for own personal promotions , branding and other features`,
+          text: `6. The ability to use your Goombahs for your own personal promotions, branding, and other features.`,
         },
         {
           title: ``,
-          text: `7. Access to our first scavenger hunt which could be in Meta or IRL`,
+          text: `7. Access to our first scavenger hunt which could be in The Meta or IRL`,
         },
-        {
-          title: ``,
-          text: `8. First invites to our DAO for community governance , charity , and live / meta event choices`,
-        },
-        {
-          title: ``,
-          text: `9. Ability to play our first blockchain game which involves staking and minigames!`,
-        },
+        // {
+        //   title: ``,
+        //   text: `8. First invites to our DAO for community governance , charity , and live / meta event choices`,
+        // },
+        // {
+        //   title: ``,
+        //   text: `9. Ability to play our first blockchain game which involves staking and minigames!`,
+        // },
       ],
     },
     // {
