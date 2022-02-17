@@ -12,8 +12,7 @@ const sectionData = {
   blurb: (
     <>
       <span>
-        Each of the five families - Mongelli, Crypanno,
-        Russo, DePietro, and Gonzetti - are organized into a
+        Each of the five families are organized into a
         hierarchy. The Boss reigns supreme, the Underboss
         carries out his will, and the Consigliere advises.
         Capos govern over their assigned turf, and employ
