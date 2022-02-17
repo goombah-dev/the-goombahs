@@ -23,11 +23,11 @@ const partnerLogos = [
     name: 'Spine3d',
     logo: <SpineLogo />,
   },
-  {
-    link: 'https://daydreamingagency.com/ ',
-    name: 'Dayreaming',
-    logo: <DaydreamingLogo />,
-  },
+  // {
+  //   link: 'https://daydreamingagency.com/ ',
+  //   name: 'Dayreaming',
+  //   logo: <DaydreamingLogo />,
+  // },
   {
     link: 'https://coinbound.io/',
     name: 'Coinbound',
