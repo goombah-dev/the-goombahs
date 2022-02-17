@@ -77,7 +77,7 @@ export const Story = () => {
             and to be family. */}
           </span>
           <span>
-            Now its time to meet The Family… ALLA SALUTE”
+            Now its time to meet The Family… ALLA SALUTE
           </span>
         </p>
       </div>
