@@ -26,7 +26,7 @@ export const Hero = () => {
           <LogoHero />
         </div>
         <p className={blurb}>
-          The Goombahs are an exclusive NFT-METAVERSE collection. Each Goombah NFT doubles as your access point into “The Goombaverse".
+          The Goombahs are an exclusive NFT-METAVERSE collection. Each Goombah NFT doubles as your access point into “The Goombaverse". Upon minting, you will forever have access to all IRL and virtual events. Anything that The Goombahs or their partners are a part of, you are now a part of.
         </p>
         <div className={ctaButton}>
           <button className='btn btn__primary'>
