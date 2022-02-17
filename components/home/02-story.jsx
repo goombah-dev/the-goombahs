@@ -22,7 +22,7 @@ export const Story = () => {
         <p className={blurb}>
           <span>
             Unlike nearly every other project with a
-            potential metaverse; The Goombaverse is not just
+            potential metaverse, The Goombaverse is not just
             a single plot of land or territory. It is an
             entire world! Forever built around the Social
             Club. Community engagement is the ongoing
@@ -38,21 +38,19 @@ export const Story = () => {
           </span>
           <span>
             The Family considers the social club both a
-            headquarters and second home. It is a fine first
+            headquarters and a second home. It is a fine first
             and centerpiece of many future build out and
             event venues. This world is not restricted
-            beyond The Goombahs any qualifying project or
-            businesses of the world is encouraged to be
-            apart of the New World. Community engagement,
-            experience, and education are the team's central
-            principals. Each being offered and updated as
+            to The Goombahs; any qualifying project is encouraged to be
+            a part of The Goombahverse. Community engagement,
+            experience, and education are the central
+            principals of the team. Each will be offered and updated as
             our family and metaverse grows. Minting is
-            currently available, get your hands on a Goombah
-            and enable the first of many instant rewards -
-            The Infinite Goombah Giveaway Campaign Buying
-            into this NFT is more than just possessing cool
-            art or becoming apart of the family, means more
-            than just having a place to portal. We take care
+            currently available! Get your hands on a Goombah
+            and enable the first of many perks -
+            The Infinite Goombah Giveaway Campaign. Buying
+            into this NFT is more than just purchasing and owning cool
+            art, you're becoming a part of the family. We take care
             of one another. Bringing back the feel of the
             neighborhood and the camaraderie of community.
             Becoming a Goombah gives you access to a
