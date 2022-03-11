@@ -55,7 +55,7 @@ const About = () => {
     <section className={aboutContainer}>
       <TitleBlurb title={pc.title} blurb={pc.blurb} />
       <Link href='/mint'>
-        <a className='btn btn__primary'>Mint Yours Now →</a>
+        <a className='btn btn__primary'>Mint Yours Now! →</a>
       </Link>
     </section>
   )
