@@ -28,14 +28,19 @@ export const Contact = () => {
           </p>
         </div>
         <div className={contactForm}>
-          <input type='text' placeholder='name' />
-          <input type='text' placeholder='email' />
+          
+          
+          
+
+        <form action = "http://eepurl.com/hIUcKr" >
           <button
-            className={`btn btn__primary ${submitBtn}`}
+          className={`btn btn__primary ${submitBtn}`}
             type='submit'
           >
             Subscribe to Newsletter
           </button>
+          </form>
+         
         </div>
       </div>
     </section>
