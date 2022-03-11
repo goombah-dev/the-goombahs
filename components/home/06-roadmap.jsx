@@ -25,45 +25,100 @@ const sectionData = {
   ),
   months: [
     {
-      name: `January`,
+      name: `Phase 1`,
       events: [
         {
-          title: `Official NFT release`,
+          title: `Spide3D Partnership`,
           blurb: ` Vestibulum tempor, ex eu iaculis molestie, metus ligula dictum neque, sed gravida tellus mauris ac elit. Sed varius libero et sem ultricies, nec facilisis metus hendrerit. Nunc tincidunt, quam quis ultricies gravida, diam ligula tempus magna, eget pellentesque`,
           path: '/',
         },
         {
-          title: `Oculus 2 Giveaway`,
+          title: `Discord Launch`,
+          blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Merchandise Giveaways`,
+          blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Presale`,
+          blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Public Sale`,
+          blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Metaverse Beta Launch`,
           blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
       ],
     },
     {
-      name: `February`,
+      name: `Phase 2`,
       events: [
         {
-          title: `Metaverse release`,
+          title: `Coinbound Partnership`,
           blurb: `Integer pharetra vitae nisl quis pharetra. Ut arcu odio, lacinia eget pharetra a, gravida eget justo. Quisque ut condimentum nisl.`,
           path: '/',
         },
         {
-          title: `Metaverse Poker Night`,
+          title: `Discord Poker & Movie Nights`,
+          blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Metaverse- Launch Scavenger Hunt`,
+          blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Metaverse- Launch Social Event`,
+          blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Goombah Merchandise Store Launch`,
+          blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Goombah Education Program`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
       ],
     },
     {
-      name: `March`,
+      name: `Phase 3`,
       events: [
         {
-          title: `Goombah merch store opening`,
+          title: `Metaverse- 1st Live Comedy or Concert Show`,
           blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
         {
-          title: `“THe Big Score” Online Scavenger Hunt`,
+          title: `“Spine3D Partnership Event`,
+          blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `“IRL NFT Gallery Events (East Coast)`,
+          blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `“Community Airdrop`,
+          blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
+          path: '/',
+        },
+        {
+          title: `Goombahverse Expansion + Partnerships`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
