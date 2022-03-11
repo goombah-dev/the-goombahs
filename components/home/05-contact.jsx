@@ -30,15 +30,12 @@ export const Contact = () => {
         <div className={contactForm}>
           <input type='text' placeholder='name' />
           <input type='text' placeholder='email' />
-          <Link to="http://eepurl.com/hIUcKr">
-            <button
+          <button
             className={`btn btn__primary ${submitBtn}`}
             type='submit'
           >
-                   
             Subscribe to Newsletter
           </button>
-          </Link>
         </div>
       </div>
     </section>
