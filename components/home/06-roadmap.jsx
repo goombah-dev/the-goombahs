@@ -53,7 +53,7 @@ const sectionData = {
           path: '/',
         },
         {
-          title: `Metaverse Beta Launch`,
+          title: `Metaverse - Goombahverse Beta Launch`,
           blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
@@ -73,12 +73,12 @@ const sectionData = {
           path: '/',
         },
         {
-          title: `Metaverse- Launch Scavenger Hunt`,
+          title: `Metaverse - Launch Scavenger Hunt`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
         {
-          title: `Metaverse- Launch Social Event`,
+          title: `Metaverse - Launch Social Event`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
@@ -98,7 +98,7 @@ const sectionData = {
       name: `Phase 3`,
       events: [
         {
-          title: `Metaverse- 1st Live Comedy or Concert Show`,
+          title: `Metaverse - 1st Live Comedy or Concert Show`,
           blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
