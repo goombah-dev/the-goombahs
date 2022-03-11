@@ -103,17 +103,17 @@ const sectionData = {
           path: '/',
         },
         {
-          title: `“Spine3D Partnership Event`,
+          title: `Spine3D Partnership Event`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
         {
-          title: `“IRL NFT Gallery Events (East Coast)`,
+          title: `IRL NFT Gallery Events (East Coast)`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
         {
-          title: `“Community Airdrop`,
+          title: `Community Airdrop`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
         },
