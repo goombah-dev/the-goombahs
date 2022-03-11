@@ -124,51 +124,8 @@ const sectionData = {
         },
       ],
     },
-    {
-      name: `April`,
-      events: [
-        {
-          title: `SPINE3D joint event`,
-          blurb: `Nam cursus faucibus sodales. Morbi velit tortor, condimentum at erat a, facilisis ultricies erat. Vestibulum vel interdum neque. In ac sollicitudin metus. Integer cursus urna enim, quis lobortis velit semper in.`,
-          path: '/',
-        },
-        {
-          title: `Community Airdrop`,
-          blurb: `Nunc maximus metus in pulvinar mollis. Proin pellentesque tellus quis urna hendrerit hendrerit. Pellentesque lacinia dolor at ultricies rutrum.`,
-          path: '/',
-        },
-      ],
-    },
-    {
-      name: `May`,
-      events: [
-        {
-          title: `First official Live metaverse Comedy Show`,
-          blurb: `Cras iaculis tellus feugiat, accumsan risus consequat, bibendum mi. Cras enim neque, pharetra nec ultrices eget.`,
-          path: '/',
-        },
-        {
-          title: `Goombah Go Hybrid IRL/META Game Release`,
-          blurb: `Cras iaculis tellus feugiat, accumsan risus consequat, bibendum mi. Cras enim neque, pharetra nec ultrices eget.`,
-          path: '/',
-        },
-      ],
-    },
-    {
-      name: `June`,
-      events: [
-        {
-          title: `Goombah Graduation`,
-          blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
-          path: '/',
-        },
-        {
-          title: `NFT.NYC Event`,
-          blurb: `Ut arcu odio, lacinia eget pharetra a, gravida eget justo.  Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
-          path: '/',
-        },
-      ],
-    },
+    
+    
   ],
 }
 
