@@ -28,7 +28,7 @@ const sectionData = {
       name: `Phase 1`,
       events: [
         {
-          title: `Spide3D Partnership`,
+          title: `Spine3D Partnership`,
           blurb: ` Vestibulum tempor, ex eu iaculis molestie, metus ligula dictum neque, sed gravida tellus mauris ac elit. Sed varius libero et sem ultricies, nec facilisis metus hendrerit. Nunc tincidunt, quam quis ultricies gravida, diam ligula tempus magna, eget pellentesque`,
           path: '/',
         },
