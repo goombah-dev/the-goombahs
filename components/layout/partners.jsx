@@ -41,9 +41,8 @@ export const Partners = () => {
       <Marquee
         className={logoMarquee}
         pauseOnHover
-        speed={40}
+        speed={0}
         gradient={false}
-        behavior={alternate}
       >
         {partnerLogos.map((ptnr, idx) => (
           <a
