@@ -28,11 +28,11 @@ const partnerLogos = [
   //   name: 'Dayreaming',
   //   logo: <DaydreamingLogo />,
   // },
-  {
-    link: 'https://coinbound.io/',
-    name: 'Coinbound',
-    logo: <CoinboundLogo />,
-  },
+  // {
+  //  link: 'https://coinbound.io/',
+  //  name: 'Coinbound',
+  //  logo: <CoinboundLogo />,
+ // },
 ]
 
 export const Partners = () => {
