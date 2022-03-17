@@ -43,6 +43,7 @@ export const Partners = () => {
         pauseOnHover
         speed={40}
         gradient={false}
+        behavior={alternate}
       >
         {partnerLogos.map((ptnr, idx) => (
           <a
