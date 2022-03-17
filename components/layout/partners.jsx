@@ -53,15 +53,15 @@ export const Partners = () => {
             {ptnr.logo}
           </a>
         ))}
-        {partnerLogos.map((ptnr, idx) => (
-          <a
-            key={`${ptnr.name}-${idx}`}
-            href={ptnr.link}
-            className={logoWrapper}
-          >
-            {ptnr.logo}
-          </a>
-        ))}
+ //       {partnerLogos.map((ptnr, idx) => (
+ //         <a
+ //           key={`${ptnr.name}-${idx}`}
+ //           href={ptnr.link}
+ //           className={logoWrapper}
+ //         >
+ //           {ptnr.logo}
+  //        </a>
+  //      ))}
       </Marquee>
     </section>
   )
