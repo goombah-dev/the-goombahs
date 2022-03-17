@@ -28,11 +28,11 @@ const partnerLogos = [
   //   name: 'Dayreaming',
   //   logo: <DaydreamingLogo />,
   // },
-  {
-    link: 'https://coinbound.io/',
-    name: 'Coinbound',
-    logo: <CoinboundLogo />,
-  },
+  // {
+  //  link: 'https://coinbound.io/',
+  //  name: 'Coinbound',
+  //  logo: <CoinboundLogo />,
+ // },
 ]
 
 export const Partners = () => {
@@ -41,7 +41,7 @@ export const Partners = () => {
       <Marquee
         className={logoMarquee}
         pauseOnHover
-        speed={40}
+        speed={0}
         gradient={false}
       >
         {partnerLogos.map((ptnr, idx) => (
