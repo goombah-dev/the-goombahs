@@ -29,13 +29,13 @@ const pageLinks = [
     path: '/about',
   },
   {
-    name: 'NFTs',
+    name: 'Utility',
     path: '/#tokens-1',
   },
-  {
-    name: 'Utility',
-    path: '/utility',
-  },
+//   {
+//     name: 'Utility',
+//     path: '/utility',
+//   },
   // {
   //   name: 'Analytics',
   //   path: '/',
