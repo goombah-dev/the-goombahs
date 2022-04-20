@@ -26,7 +26,7 @@ export const Story = () => {
             a single plot of land or territory. It is an
             entire world! Forever built around the Social
             Club. Community engagement is the ongoing
-            priority.
+            priority. An exclusive NFT-METAVERSE collection where each token doubles as The Goombaverse Utility Pass. Instantly upon mint holders are forever granted entry into all IRL and metaverse events. Anything The Goombahs or their partners are apart of, you are now apart of.
             {/* The Goombahs NFT-Metaverse Project is not just a
             single plot of land or territory. It is an
             entire world that will be forever built around
