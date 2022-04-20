@@ -26,7 +26,7 @@ const sectionData = {
       </span>
     </>
   ),
-  
+}  
 
 export const Administration = () => {
   const { tokens: tokenRanks, title } = sectionData
