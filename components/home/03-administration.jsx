@@ -8,25 +8,32 @@ import { TokenNav } from '../blocks/token-nav'
 import { admin } from '../../styles/home/administration.module.scss';
 
 const sectionData = {
-  title: `Utility`,
+  title: `The Commission`,
   blurb: (
     <>
       <span>
-        Membership Perks
-        It’s more than just a collection of NFTs — it’s becoming a member of the family.
+        Each of the five families - Mongelli, Crypanno,
+        Russo, DePietro, and Gonzetti - are organized into a
+        hierarchy. The Boss reigns supreme, the Underboss
+        carries out his will, and the Consigliere advises.
+        Capos govern over their assigned turf, and employ
+        soldiers to enforce their authority.
+        {/* Each of the five families - Mongelli, Crypanno,
+        Russo, DePietro, and Gonzetti - are organized into a
+        hierarchy. The Boss reigns supreme, the Underboss
+        carries out his will, while the Consigliere advises.
+        Capos govern over their assigned turf, and employ
+        soldiers to enforce their authority. */}
       </span>
       <span>
-        1. Access to Metaverse exclusive events - Scavenger hunts, shows, poker, NFT social events, and more!
-2. Ability to host your own events in our metaverse
-3. Education Program - Introduction to Cryptocurriences + Blockchain
-4. Access to our exclusive merchandise store
-5. First dibs to our future NFT collection drops , accessories and surprise weapon airdrops
-6. Ability to help delegate the future of the collection
-7. Another big announcement coming soon!
+        The rank of each member corresponds to its rarity,
+        of course, but the highest rank members are also
+        rendered in higher fidelity.
       </span>
     </>
   ),
-}  
+  
+}
 
 export const Administration = () => {
   const { tokens: tokenRanks, title } = sectionData
