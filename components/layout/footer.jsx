@@ -25,7 +25,7 @@ const pageLinks = [
     path: '/',
   },
   {
-    name: 'Utilities',
+    name: 'Utility',
     path: '/#tokens-1',
   },
   // {
