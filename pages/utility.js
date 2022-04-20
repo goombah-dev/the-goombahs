@@ -25,31 +25,31 @@ const terms = {
       subText: [
         {
           title: ``,
-          text: `1. Limited edition merchandise`,
+          text: `1. Access to Metaverse exclusive events - Scavenger hunts, shows, poker, NFT social events, and more!`,
         },
         {
           title: ``,
-          text: `2. Limited edition metaverse wearables`,
+          text: `2. Ability to host your own events in our metaverse`,
         },
         {
           title: ``,
-          text: `3. Access to our Metaverse & its live events`,
+          text: `3. Education Program - Introduction to Cryptocurriences + Blockchain`,
         },
         {
           title: ``,
-          text: `4. Access to our IRL events`,
+          text: `4. Access to our exclusive merchandise store`,
         },
         {
           title: ``,
-          text: `5. First dibs  to our future NFT collection drops , accessories and surprise weapon airdrops`,
+          text: `5. First dibs to our future NFT collection drops , accessories and surprise weapon airdrops`,
         },
         {
           title: ``,
-          text: `6. The ability to use your Goombahs for your own personal promotions, branding, and other features.`,
+          text: `6. Ability to help delegate the future of the collection`,
         },
         {
           title: ``,
-          text: `7. Access to our first scavenger hunt which could be in The Meta or IRL`,
+          text: `7. Another big announcement coming soon!`,
         },
         // {
         //   title: ``,
