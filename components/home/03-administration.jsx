@@ -117,7 +117,7 @@ const sectionData = {
           <span>Lottery</span>
         </>
       ),
-      blurb: `852`,
+      blurb: `COMING SOON`,
       path: `/#fam-detail`,
    //   about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
       perks: [
