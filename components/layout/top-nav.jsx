@@ -37,10 +37,10 @@ const pageLinks = [
     name: 'Utility',
     path: '/#tokens-1',
   },
-//   {
-//     name: 'Utility',
-//     path: '/utility',
-//   },
+  {
+    name: 'The Goombahverse',
+    path: '/#tokens-2',
+  },
   // {
   //   name: 'Analytics',
   //   path: '/',
