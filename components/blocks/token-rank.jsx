@@ -39,10 +39,10 @@ export const TokenRank = ({ rankData: rnk, sectionId }) => {
         )}
         <div className={detailContainer}>
           <h4>{rnk.name}</h4>
-//          <div className={blurb}>
+          <div className={blurb}>
 //            <h6>About</h6>
 //            <p>{rnk.about}</p>
-//          </div>
+          </div>
           <div className={perks}>
             <h6>Includes</h6>
             <ul className={perkList}>
