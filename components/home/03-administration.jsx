@@ -8,7 +8,7 @@ import { TokenNav } from '../blocks/token-nav'
 import { admin } from '../../styles/home/administration.module.scss';
 
 const sectionData = {
-  title: `Utility`,
+  title: `Utility & Breakdown`,
   blurb: (
     <>
       <span>
