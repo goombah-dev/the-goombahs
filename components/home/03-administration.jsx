@@ -8,27 +8,17 @@ import { TokenNav } from '../blocks/token-nav'
 import { admin } from '../../styles/home/administration.module.scss';
 
 const sectionData = {
-  title: `The Commission`,
+  title: `Special Editions`,
   blurb: (
     <>
       <span>
-        Each of the five families - Mongelli, Crypanno,
-        Russo, DePietro, and Gonzetti - are organized into a
-        hierarchy. The Boss reigns supreme, the Underboss
-        carries out his will, and the Consigliere advises.
-        Capos govern over their assigned turf, and employ
-        soldiers to enforce their authority.
-        {/* Each of the five families - Mongelli, Crypanno,
-        Russo, DePietro, and Gonzetti - are organized into a
-        hierarchy. The Boss reigns supreme, the Underboss
-        carries out his will, while the Consigliere advises.
-        Capos govern over their assigned turf, and employ
-        soldiers to enforce their authority. */}
+        Boss - 8
       </span>
       <span>
-        The rank of each member corresponds to its rarity,
-        of course, but the highest rank members are also
-        rendered in higher fidelity.
+        Consigliere - 10
+      </span>
+    <span>
+        Underboss - 25
       </span>
     </>
   ),
