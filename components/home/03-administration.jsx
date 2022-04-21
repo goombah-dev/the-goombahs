@@ -8,18 +8,23 @@ import { TokenNav } from '../blocks/token-nav'
 import { admin } from '../../styles/home/administration.module.scss';
 
 const sectionData = {
-  title: `Special Editions`,
+  title: `Utility`,
   blurb: (
     <>
       <span>
-        Boss - 8
+       It’s more than just a collection of NFTs — it’s becoming a member of the family. Membership perks include:
+  
       </span>
       <span>
-        Consigliere - 10
+        1. Access to Metaverse exclusive events - Scavenger hunts, shows, poker, NFT social events, and more!
+2. Ability to host your own events in our metaverse
+3. Education Program - Introduction to Cryptocurriences + Blockchain
+4. Access to our exclusive merchandise store
+5. First dibs to our future NFT collection drops , accessories and surprise weapon airdrops
+6. Ability to help delegate the future of the collection
+7. Another big announcement coming soon!
       </span>
-    <span>
-        Underboss - 25
-      </span>
+  
     </>
   ),
   tokens: [
