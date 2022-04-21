@@ -24,10 +24,10 @@ const pageLinks = [
     name: 'Home',
     path: '/',
   },
-  {
-    name: 'About',
-    path: '/about',
-  },
+//   {
+//     name: 'About',
+//     path: '/about',
+//   },
   {
     name: 'Utility',
     path: '/#tokens-1',
