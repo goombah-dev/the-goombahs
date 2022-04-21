@@ -30,7 +30,7 @@ const sectionData = {
   ),
   tokens: [
     {
-      id: `boss`,
+      id: `Special Edition`,
       imageUrl: `boss-2--1_a3sosa`,
       name: `Special Editions`,
       title: (
