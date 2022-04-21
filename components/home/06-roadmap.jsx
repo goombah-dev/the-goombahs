@@ -21,6 +21,9 @@ const sectionData = {
       <span>
       Here is a list of what you can expect in the near future from The Goombahs. Stay tuned! More events and updates will be added as we pass each milestone.
       </span>
+    <span> 
+    COMING SOON: The Lottery
+    </span>
     </>
   ),
   months: [
