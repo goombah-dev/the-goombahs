@@ -30,9 +30,9 @@ const sectionData = {
   ),
   tokens: [
     {
-      id: `Special Edition`,
+      id: `Special Editions`,
       imageUrl: `boss-2--1_a3sosa`,
-      name: `Special Editions`,
+      name: `Special`,
       title: (
         <>
           <span>Special</span>
@@ -56,7 +56,7 @@ const sectionData = {
       ],
     },
     {
-      id: `underboss`,
+      id: `Rare Editions`,
       imageUrl: `uboss_qrb8bo`,
       name: `Rare Editions`,
       title: (
@@ -82,7 +82,7 @@ const sectionData = {
       ],
     },
     {
-      id: `consigliere`,
+      id: `Common Editions`,
       imageUrl: `consig_upeopg`,
       name: `Common Editions`,
       title: (
