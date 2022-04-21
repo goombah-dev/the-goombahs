@@ -8,27 +8,21 @@ import { TokenNav } from '../blocks/token-nav'
 import { admin } from '../../styles/home/administration.module.scss';
 
 const sectionData = {
-  title: `The Commission`,
+  title: `Utility`,
   blurb: (
     <>
       <span>
-        Each of the five families - Mongelli, Crypanno,
-        Russo, DePietro, and Gonzetti - are organized into a
-        hierarchy. The Boss reigns supreme, the Underboss
-        carries out his will, and the Consigliere advises.
-        Capos govern over their assigned turf, and employ
-        soldiers to enforce their authority.
-        {/* Each of the five families - Mongelli, Crypanno,
-        Russo, DePietro, and Gonzetti - are organized into a
-        hierarchy. The Boss reigns supreme, the Underboss
-        carries out his will, while the Consigliere advises.
-        Capos govern over their assigned turf, and employ
-        soldiers to enforce their authority. */}
+        It’s more than just a collection of NFTs — it’s becoming a member of the family.
+        Our membership perks include a bunch of utilities!
       </span>
       <span>
-        The rank of each member corresponds to its rarity,
-        of course, but the highest rank members are also
-        rendered in higher fidelity.
+        1. Access to Metaverse exclusive events - Scavenger hunts, shows, poker, NFT social events, and more!
+        2. Ability to host your own events in our metaverse
+        3. Education Program - Introduction to Cryptocurriences + Blockchain
+        4. Access to our exclusive merchandise store
+        5. First dibs to our future NFT collection drops , accessories and surprise weapon airdrops
+        6. Ability to help delegate the future of the collection
+        7. Another big announcement coming soon!
       </span>
     </>
   ),
@@ -36,20 +30,20 @@ const sectionData = {
     {
       id: `boss`,
       imageUrl: `boss-2--1_a3sosa`,
-      name: `The Boss`,
+      name: `Special Editions`,
       title: (
         <>
-          <span>The</span>
-          <span>Boss</span>
+          <span>Special</span>
+          <span>Editions</span>
         </>
       ),
-      blurb: `The Leader. The Don. The Capo dei capi.`,
+      blurb: `Boss - Consigliere - Underboss`,
       path: `/#fam-detail`,
-      about: `The Leader. The Don. The Capo dei capi. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
+     // about: `The Leader. The Don. The Capo dei capi. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Boss - 8`,
+        `Consigliere - 10`,
+        `Underboss - 25`,
       ],
       buyLink: '/',
       imgThumbs: [
