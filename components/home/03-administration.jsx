@@ -15,7 +15,7 @@ const sectionData = {
        It’s more than just a collection of NFTs — it’s becoming a member of the family. Membership perks include:
   
       </span>
-      <ol type="1">
+      <ol type="I">
         <li>Access to Metaverse exclusive events - Scavenger hunts, shows, poker, NFT social events, and more!</li>
         <li>Ability to host your own events in our metaverse</li>
         <li>Education Program - Introduction to Cryptocurriences + Blockchain</li>
