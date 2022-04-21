@@ -16,14 +16,14 @@ const sectionData = {
   
       </span>
       <ol type="I">
-        <li>Access to Metaverse exclusive events - Scavenger hunts, shows, poker, NFT social events, and more!</li>
-        <li>Ability to host your own events in our metaverse</li>
-        <li>Education Program - Introduction to Cryptocurriences + Blockchain</li>
-        <li>Access to our exclusive merchandise store</li>
-        <li>First dibs on our future NFT collection drops , accessories and surprise weapon airdrops
+        <li>1. Access to Metaverse exclusive events - Scavenger hunts, shows, poker, NFT social events, and more!</li>
+        <li>2. Ability to host your own events in our metaverse</li>
+        <li>3. Education Program - Introduction to Cryptocurriences + Blockchain</li>
+        <li>4. Access to our exclusive merchandise store</li>
+        <li>5. First dibs on our future NFT collection drops , accessories and surprise weapon airdrops
 </li>
-        <li>Ability to help delegate the future of the collection</li>
-        <li>Another big announcement coming soon!</li>
+        <li>6. Ability to help delegate the future of the collection</li>
+        <li>7. Another big announcement coming soon!</li>
       </ol>
   
     </>
@@ -32,20 +32,20 @@ const sectionData = {
     {
       id: `boss`,
       imageUrl: `boss-2--1_a3sosa`,
-      name: `The Boss`,
+      name: `Special Editions`,
       title: (
         <>
-          <span>The</span>
-          <span>Boss</span>
+          <span>Special</span>
+          <span>Editions</span>
         </>
       ),
-      blurb: `The Leader. The Don. The Capo dei capi.`,
+      blurb: `Includes:`,
       path: `/#fam-detail`,
-      about: `The Leader. The Don. The Capo dei capi. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
+     // about: `The Leader. The Don. The Capo dei capi. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Boss - 8`,
+        `Consigliere - 10`,
+        `Underboss - 25`,
       ],
       buyLink: '/',
       imgThumbs: [
