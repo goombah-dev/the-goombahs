@@ -8,29 +8,13 @@ import { TokenNav } from '../blocks/token-nav'
 import { crew } from '../../styles/home/crew.module.scss';
 
 const sectionData = {
-  title: `The Crew`,
+  title: `The Lottery`,
   blurb: (
     <>
       <span>
-        While the Don and his Commission control the
-        organization as a whole, the family has many needs
-        and functionaries to handle the ground work. As well
-        as having friends in high places to keep the
-        business running smoothly.
-        {/* While the family may have control of the
-        organization, it does have need of functionaries to
-        handle the ground work, as well as its friends in
-        high places to keep the business running smoothly. */}
+        COMING SOON
       </span>
-      <span>
-        Like the family, each of the outsider tokens is
-        ranked in order of rarity. Outsider tokens are also
-        uniquely designed as they are in the family.
-        {/* Like the family, each of the outsider tokens is
-        ranked in order of rarity. Outsider tokens are also
-        not necessarily uniquely designed as they are in the
-        family. */}
-      </span>
+     
     </>
   ),
   tokens: [
