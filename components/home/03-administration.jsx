@@ -107,30 +107,7 @@ const sectionData = {
         `boss-5_tsoawa`,
       ],
     },
-    {
-      id: `The Lottery`,
-      imageUrl: `uboss_qrb8bo`,
-      name: `The Lottery`,
-      title: (
-        <>
-          <span>The</span>
-          <span>Lottery</span>
-        </>
-      ),
-      blurb: `COMING SOON`,
-      path: `/#fam-detail`,
-   //   about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
-      perks: [
-        `COMING SOON`,
-      ],
-      buyLink: '/',
-      imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
-      ],
-    },
+    
   ],
 }
 
