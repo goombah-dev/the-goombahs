@@ -39,7 +39,7 @@ const sectionData = {
           <span>Editions</span>
         </>
       ),
-      blurb: `Includes:`,
+      blurb: `43`,
       path: `/#fam-detail`,
      // about: `The Leader. The Don. The Capo dei capi. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
       perks: [
@@ -58,20 +58,20 @@ const sectionData = {
     {
       id: `underboss`,
       imageUrl: `uboss_qrb8bo`,
-      name: `The Underboss`,
+      name: `Rare Editions`,
       title: (
         <>
-          <span>The</span>
-          <span>Underboss</span>
+          <span>Rare</span>
+          <span>Editions</span>
         </>
       ),
-      blurb: `Represents the Boss and runs the day-to-day activities.`,
+      blurb: `852`,
       path: `/#fam-detail`,
-      about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
+     // about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Loan Shark - 100`,
+        `Cappo - 502`,
+        `Goodfella - 250 (Coming Soon)`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -84,20 +84,44 @@ const sectionData = {
     {
       id: `consigliere`,
       imageUrl: `consig_upeopg`,
-      name: `The Consigliere`,
+      name: `Common Editions`,
+      title: (
+        <>
+          <span>Common</span>
+          <span>Editions</span>
+        </>
+      ),
+      blurb: `6,605`,
+      path: `/#fam-detail`,
+     // about: `As right-hand man to the Boss, he acts as a confidant and is his closest advisor. Don't underestimate! Working directly with the head-honcho, the consigliere is one of the most powerful members of the family.`,
+      perks: [
+        `Associate - 1,939`,
+        `Soldier - 4,666`,
+     
+      ],
+      buyLink: '/',
+      imgThumbs: [
+        `boss-2_bwvxyp`,
+        `boss-3_ykzeeo`,
+        `boss-4_h0rsza`,
+        `boss-5_tsoawa`,
+      ],
+    },
+    {
+      id: `The Lottery`,
+      imageUrl: `uboss_qrb8bo`,
+      name: `The Lottery`,
       title: (
         <>
           <span>The</span>
-          <span>Consigliere</span>
+          <span>Lottery</span>
         </>
       ),
-      blurb: `The top advisor in the family.`,
+      blurb: `852`,
       path: `/#fam-detail`,
-      about: `As right-hand man to the Boss, he acts as a confidant and is his closest advisor. Don't underestimate! Working directly with the head-honcho, the consigliere is one of the most powerful members of the family.`,
+   //   about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `COMING SOON`,
       ],
       buyLink: '/',
       imgThumbs: [
