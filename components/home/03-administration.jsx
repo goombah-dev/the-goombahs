@@ -65,7 +65,7 @@ const sectionData = {
       ),
       blurb: `Represents the Boss and runs the day-to-day activities.`,
       path: `/#fam-detail`,
-      about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
+  //    about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
       perks: [
         `Access to the Metaverse`,
         `Airdrops and Early Access to future collections`,
@@ -91,7 +91,7 @@ const sectionData = {
       ),
       blurb: `The top advisor in the family.`,
       path: `/#fam-detail`,
-      about: `As right-hand man to the Boss, he acts as a confidant and is his closest advisor. Don't underestimate! Working directly with the head-honcho, the consigliere is one of the most powerful members of the family.`,
+   //   about: `As right-hand man to the Boss, he acts as a confidant and is his closest advisor. Don't underestimate! Working directly with the head-honcho, the consigliere is one of the most powerful members of the family.`,
       perks: [
         `Access to the Metaverse`,
         `Airdrops and Early Access to future collections`,
