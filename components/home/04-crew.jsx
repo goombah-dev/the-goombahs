@@ -8,24 +8,24 @@ import { TokenNav } from '../blocks/token-nav'
 import { crew } from '../../styles/home/crew.module.scss';
 
 const sectionData = {
-  title: `The Lottery`,
+  title: `The Goombahverse`,
   blurb: (
     <>
       <span>
-        COMING SOON
+        
       </span>
      
     </>
   ),
   tokens: [
     {
-      id: `capo`,
+      id: `casino`,
       imageUrl: `capo-3_zpnmti`,
-      name: `The Capo`,
+      name: `The Casino`,
       title: (
         <>
           <span>The</span>
-          <span>Capo</span>
+          <span>Casino</span>
         </>
       ),
       blurb: `Leads the soldiers and associates.`,
@@ -45,13 +45,13 @@ const sectionData = {
       ],
     },
     {
-      id: `loanshark`,
+      id: `gallery`,
       imageUrl: `shark_lbyoyw`,
-      name: `The Loan Shark`,
+      name: `The Loan Gallery`,
       title: (
         <>
           <span>The</span>
-          <span>Loan Shark</span>
+          <span>Gallery</span>
         </>
       ),
       blurb: `Need money quickly? He’s your guy.`,
@@ -71,13 +71,13 @@ const sectionData = {
       ],
     },
     {
-      id: `soldier`,
+      id: `racetrack`,
       imageUrl: `soldato_wfxhft`,
-      name: `The Soldier`,
+      name: `The Goombah Racetrack`,
       title: (
         <>
           <span>The</span>
-          <span>Soldier</span>
+          <span>Racetrack</span>
         </>
       ),
       blurb: `The made henchman.`,
@@ -97,13 +97,39 @@ const sectionData = {
       ],
     },
     {
-      id: `associate`,
+      id: `club`,
       imageUrl: `assoc-3_rscxkm`,
-      name: `The Associate`,
+      name: `Club Goombah`,
       title: (
         <>
-          <span>The</span>
-          <span>Associate</span>
+          <span>Club</span>
+          <span>Goombah</span>
+        </>
+      ),
+      blurb: `Not made-men, but associates.`,
+      path: `/#crew-detail`,
+      about: `Associates aren't technically official members of the family, however they are well respected and work closely with the family.`,
+      perks: [
+        `Access to the Metaverse`,
+        `Airdrops and Early Access to future collections`,
+        `Access to exclusive merch and events`,
+      ],
+      buyLink: '/',
+      imgThumbs: [
+        `boss-2_bwvxyp`,
+        `boss-3_ykzeeo`,
+        `boss-4_h0rsza`,
+        `boss-5_tsoawa`,
+      ],
+    },
+    {
+      id: `highroller`,
+      imageUrl: `assoc-3_rscxkm`,
+      name: `High Roller Room`,
+      title: (
+        <>
+          <span>High</span>
+          <span>Roller Room</span>
         </>
       ),
       blurb: `Not made-men, but associates.`,
