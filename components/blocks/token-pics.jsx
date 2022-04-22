@@ -69,7 +69,7 @@ export const TokenRank = ({ rankData: rnk, sectionId }) => {
                 key={thm}
                 className={imgThumb}
                 // src={`${thm}`}
-                src={`${thm.imageUrl}`}
+                src={`${thm}`}
                 alt={rnk.id}
               />
             )
