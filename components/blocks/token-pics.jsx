@@ -71,8 +71,7 @@ export const TokenRank = ({ rankData: rnk, sectionId }) => {
                 src={`${rnk.imgThumbs}`}
                 alt={rnk.id}
               />
-           
-          })}
+        
         </div>
       </div>
     </section>
