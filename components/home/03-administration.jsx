@@ -46,6 +46,7 @@ const sectionData = {
         `Boss - 8`,
         `Consigliere - 10`,
         `Underboss - 25`,
+        `Goodfella - 250 (Coming Soon)`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -71,7 +72,6 @@ const sectionData = {
       perks: [
         `Loan Shark - 100`,
         `Cappo - 502`,
-        `Goodfella - 250 (Coming Soon)`,
       ],
       buyLink: '/',
       imgThumbs: [
