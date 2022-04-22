@@ -116,10 +116,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/flyer1.jpeg`,
       ],
     },
     {
