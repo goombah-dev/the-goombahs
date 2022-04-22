@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 import { TokenCategory } from '../blocks/token-category'
-import { TokenRank } from '../blocks/token-pics'
+import { TokenRank } from '../blocks/token-rank'
 import { TokenNav } from '../blocks/token-nav'
 
 import { crew } from '../../styles/home/crew.module.scss';
