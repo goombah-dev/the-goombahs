@@ -28,13 +28,12 @@ const sectionData = {
           <span>Casino</span>
         </>
       ),
-      blurb: `Leads the soldiers and associates.`,
+      blurb: `Risk it for the biscuit.`,
       path: `/#crew-detail`,
       about: `Capos are in charge of their own street crews. They watch over a certain turf. Think of them as captains who command crews of soldiers.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Card Games`,
+        `Table Games`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -54,13 +53,12 @@ const sectionData = {
           <span>Gallery</span>
         </>
       ),
-      blurb: `Need money quickly? He’s your guy.`,
+      blurb: `Check out artwork created or owned by other members of The Goombahverse`,
       path: `/#crew-detail`,
       about: `Need cash quick? See a loan shark! They can help you with all of your instant-cash needs. That being said, the interest will be pretty high so don't take more than you can afford to pay.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Check out artwork created or owned by other memebers of The Goombahverse`,
+        `Show off your own artwork or NFT`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -80,13 +78,11 @@ const sectionData = {
           <span>Racetrack</span>
         </>
       ),
-      blurb: `The made henchman.`,
+      blurb: `Dem Horses`,
       path: `/#crew-detail`,
       about: `Soldiers are made men who carry out the day-to-day activities. They follow orders given to them by the capos.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Hang out at the race track!`,
       ],
       buyLink: '/',
       imgThumbs: [
@@ -106,13 +102,11 @@ const sectionData = {
           <span>Goombah</span>
         </>
       ),
-      blurb: `Not made-men, but associates.`,
+      blurb: `Come clubbing with us`,
       path: `/#crew-detail`,
       about: `Associates aren't technically official members of the family, however they are well respected and work closely with the family.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Some events will have live music/performances`,
       ],
       buyLink: '/',
       imgThumbs: `/config/images/flyer1.jpeg`,
@@ -128,13 +122,11 @@ const sectionData = {
           <span>Roller Room</span>
         </>
       ),
-      blurb: `Not made-men, but associates.`,
+      blurb: `$$$$$$$$$$$$$$`,
       path: `/#crew-detail`,
       about: `Associates aren't technically official members of the family, however they are well respected and work closely with the family.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Private tables`,
       ],
       buyLink: '/',
       imgThumbs: [
