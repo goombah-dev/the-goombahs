@@ -53,7 +53,7 @@ const sectionData = {
           <span>Gallery</span>
         </>
       ),
-      blurb: `Check out artwork created or owned by other members of The Goombahverse`,
+      blurb: `Check out community art/NFTs`,
       path: `/#crew-detail`,
       about: `Need cash quick? See a loan shark! They can help you with all of your instant-cash needs. That being said, the interest will be pretty high so don't take more than you can afford to pay.`,
       perks: [
