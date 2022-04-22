@@ -98,7 +98,7 @@ const sectionData = {
     },
     {
       id: `club`,
-      imageUrl: `../../public/config/images/flyer1.jpeg`,
+      imageUrl: `/config/images/flyer1.jpeg`,
       name: `Club Goombah`,
       title: (
         <>
