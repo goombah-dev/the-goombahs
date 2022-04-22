@@ -63,16 +63,16 @@ export const TokenRank = ({ rankData: rnk, sectionId }) => {
             src={`${rnk.imageUrl}`}
             alt={rnk.name}
           />
-          {rnk.imgThumbs.map((thm) => {
-            return (
+//           {rnk.imgThumbs.map((thm) => {
+//             return (
               <img
                 key={thm}
                 className={imgThumb}
-                // src={`${thm}`}
-                src={`${thm}`}
+                // src={`${rnk.imgThumbs}`}
+                src={`${rnk.imgThumbs}`}
                 alt={rnk.id}
               />
-            )
+//             )
           })}
         </div>
       </div>
