@@ -115,9 +115,8 @@ const sectionData = {
         `Access to exclusive merch and events`,
       ],
       buyLink: '/',
-      imgThumbs: [
-        `/config/images/flyer1.jpeg`,
-      ],
+      imgThumbs: `/config/images/flyer1.jpeg`,
+      
     },
     {
       id: `highroller`,
