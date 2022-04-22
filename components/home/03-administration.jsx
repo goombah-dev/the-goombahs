@@ -39,7 +39,7 @@ const sectionData = {
           <span>Editions</span>
         </>
       ),
-      blurb: `43`,
+      blurb: `293 total`,
       path: `/#fam-detail`,
      // about: `The Leader. The Don. The Capo dei capi. The boss is the head of the family and has absolute rule over the activities that the family is involved in. They are the highest ranking member of the family.`,
       perks: [
@@ -66,7 +66,7 @@ const sectionData = {
           <span>Editions</span>
         </>
       ),
-      blurb: `852`,
+      blurb: `602 total`,
       path: `/#fam-detail`,
      // about: `The underboss oversees operations and directly interacts with the capos. Right below the boss, they ensure the money keeps making its way up the ranks.`,
       perks: [
