@@ -20,7 +20,7 @@ const sectionData = {
   tokens: [
     {
       id: `casino`,
-      imageUrl: `/config/images/Casino.png`,
+      imageUrl: `/config/images/casino1.png`,
       name: `The Casino`,
       title: (
         <>
@@ -59,7 +59,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `/config/images/Gallery.png`,
+        `/config/images/gallerynew1.png`,
       ],
     },
     {
@@ -80,7 +80,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `/config/images/Race\ Track\ .png`,
+        `/config/images/racetracknew.png`,
       ],
     },
     {
@@ -100,12 +100,12 @@ const sectionData = {
         `Some events will have live music/performances`,
       ],
       buyLink: '/',
-      imgThumbs: `/config/images/ClubGoombah.png`,
+      imgThumbs: `/config/images/clubgoombah1.png`,
       
     },
     {
       id: `highroller`,
-      imageUrl: `/config/images/HighRollerClub.png`,
+      imageUrl: `/config/images/highrollernew.png`,
       name: `High Roller Room`,
       title: (
         <>
