@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-import { TokenCategory } from '../blocks/token-category'
+import { TokenCategory } from '../blocks/token-category-pics'
 import { TokenRank } from '../blocks/token-pics'
 import { TokenNav } from '../blocks/token-nav'
 
