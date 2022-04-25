@@ -58,7 +58,7 @@ const sectionData = {
     },
     {
       id: `Rare`,
-      imageUrl: `uboss_qrb8bo`,
+      imageUrl: `/config/images/Cappo1.png`,
       name: `Rare Editions`,
       title: (
         <>
@@ -83,7 +83,7 @@ const sectionData = {
     },
     {
       id: `Common`,
-      imageUrl: `consig_upeopg`,
+      imageUrl: `/config/images/Associate1.png`,
       name: `Common Editions`,
       title: (
         <>
