@@ -35,11 +35,11 @@ const pageLinks = [
  // },
   {
     name: 'Utility',
-    path: '/#tokens-1',
+    path: '/#utility',
   },
   {
     name: 'The Goombahverse',
-    path: '/#tokens-2',
+    path: '/#goombahverse',
   },
   // {
   //   name: 'Analytics',
