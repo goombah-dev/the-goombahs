@@ -66,11 +66,6 @@ const sectionData = {
       name: `Phase 2`,
       events: [
         {
-          title: `Coinbound Partnership`,
-          blurb: `Integer pharetra vitae nisl quis pharetra. Ut arcu odio, lacinia eget pharetra a, gravida eget justo. Quisque ut condimentum nisl.`,
-          path: '/',
-        },
-        {
           title: `Discord Poker & Movie Nights`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,
           path: '/',
