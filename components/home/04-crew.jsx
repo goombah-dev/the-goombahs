@@ -64,7 +64,7 @@ const sectionData = {
     },
     {
       id: `racetrack`,
-      imageUrl: `racetracknew.png`,
+      imageUrl: `/config/images/racetracknew.png`,
       name: `The Goombah Racetrack`,
       title: (
         <>
@@ -80,7 +80,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `/config/images//config/images/Race\ Track\ .png`,
+        `/config/images/Race\ Track\ .png`,
       ],
     },
     {
