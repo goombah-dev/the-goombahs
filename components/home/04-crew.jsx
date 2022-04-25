@@ -42,7 +42,7 @@ const sectionData = {
     },
     {
       id: `gallery`,
-      imageUrl: `/config/images/Gallery.jpeg`,
+      imageUrl: `/config/images/Gallery.png`,
       name: `The Loan Gallery`,
       title: (
         <>
@@ -59,7 +59,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `/config/images/Gallery.jpeg`,
+        `/config/images/Gallery.png`,
       ],
     },
     {
