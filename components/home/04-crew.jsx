@@ -20,7 +20,7 @@ const sectionData = {
   tokens: [
     {
       id: `casino`,
-      imageUrl: `/config/images/casino1.png`,
+      imageUrl: `/config/images/Casino.png`,
       name: `The Casino`,
       title: (
         <>
@@ -37,7 +37,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `/config/images/Casino.png`,
+        `/config/images/casino1.png`,
       ],
     },
     {
@@ -64,7 +64,7 @@ const sectionData = {
     },
     {
       id: `racetrack`,
-      imageUrl: `/config/images/Race\ Track\ .png`,
+      imageUrl: `racetracknew.png`,
       name: `The Goombah Racetrack`,
       title: (
         <>
@@ -80,12 +80,12 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `/config/images/racetracknew.png`,
+        `/config/images//config/images/Race\ Track\ .png`,
       ],
     },
     {
       id: `club`,
-      imageUrl: `/config/images/ClubGoombah.png`,
+      imageUrl: `/config/images/clubgoombah1.png`,
       name: `Club Goombah`,
       title: (
         <>
@@ -105,7 +105,7 @@ const sectionData = {
     },
     {
       id: `highroller`,
-      imageUrl: `/config/images/highrollernew.png`,
+      imageUrl: `/config/images/HighRollerClub.png`,
       name: `High Roller Room`,
       title: (
         <>
