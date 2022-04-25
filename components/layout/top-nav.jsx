@@ -34,12 +34,12 @@ const pageLinks = [
  //   path: '/about',
  // },
   {
-    name: 'NFTs',
-    path: '/#tokens-1',
+    name: 'Utility',
+    path: '/#utility',
   },
   {
-    name: 'Utility',
-    path: '/utility',
+    name: 'The Goombahverse',
+    path: '/#goombahverse',
   },
   // {
   //   name: 'Analytics',

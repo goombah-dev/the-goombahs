@@ -1,141 +1,127 @@
 import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-import { TokenCategory } from '../blocks/token-category'
-import { TokenRank } from '../blocks/token-rank'
+import { TokenCategory } from '../blocks/token-category-pics'
+import { TokenRank } from '../blocks/token-pics'
 import { TokenNav } from '../blocks/token-nav'
 
 import { crew } from '../../styles/home/crew.module.scss';
 
 const sectionData = {
-  title: `The Crew`,
+  title: `The Goombahverse`,
   blurb: (
     <>
       <span>
-        While the Don and his Commission control the
-        organization as a whole, the family has many needs
-        and functionaries to handle the ground work. As well
-        as having friends in high places to keep the
-        business running smoothly.
-        {/* While the family may have control of the
-        organization, it does have need of functionaries to
-        handle the ground work, as well as its friends in
-        high places to keep the business running smoothly. */}
+        
       </span>
-      <span>
-        Like the family, each of the outsider tokens is
-        ranked in order of rarity. Outsider tokens are also
-        uniquely designed as they are in the family.
-        {/* Like the family, each of the outsider tokens is
-        ranked in order of rarity. Outsider tokens are also
-        not necessarily uniquely designed as they are in the
-        family. */}
-      </span>
+     
     </>
   ),
   tokens: [
     {
-      id: `capo`,
-      imageUrl: `capo-3_zpnmti`,
-      name: `The Capo`,
+      id: `casino`,
+      imageUrl: `/config/images/Casino.png`,
+      name: `The Casino`,
       title: (
         <>
           <span>The</span>
-          <span>Capo</span>
+          <span>Casino</span>
         </>
       ),
-      blurb: `Leads the soldiers and associates.`,
+      blurb: `Risk it for the biscuit.`,
       path: `/#crew-detail`,
       about: `Capos are in charge of their own street crews. They watch over a certain turf. Think of them as captains who command crews of soldiers.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Card Games`,
+        `Table Games`,
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/casino1.png`,
       ],
     },
     {
-      id: `loanshark`,
-      imageUrl: `shark_lbyoyw`,
-      name: `The Loan Shark`,
+      id: `gallery`,
+      imageUrl: `/config/images/Gallery.png`,
+      name: `The Loan Gallery`,
       title: (
         <>
           <span>The</span>
-          <span>Loan Shark</span>
+          <span>Gallery</span>
         </>
       ),
-      blurb: `Need money quickly? He’s your guy.`,
+      blurb: `Check out community art/NFTs`,
       path: `/#crew-detail`,
       about: `Need cash quick? See a loan shark! They can help you with all of your instant-cash needs. That being said, the interest will be pretty high so don't take more than you can afford to pay.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Check out artwork created or owned by other memebers of The Goombahverse`,
+        `Show off your own artwork or NFT`,
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/gallerynew1.png`,
       ],
     },
     {
-      id: `soldier`,
-      imageUrl: `soldato_wfxhft`,
-      name: `The Soldier`,
+      id: `racetrack`,
+      imageUrl: `/config/images/racetracknew.png`,
+      name: `The Goombah Racetrack`,
       title: (
         <>
           <span>The</span>
-          <span>Soldier</span>
+          <span>Racetrack</span>
         </>
       ),
-      blurb: `The made henchman.`,
+      blurb: `Dem Horses`,
       path: `/#crew-detail`,
       about: `Soldiers are made men who carry out the day-to-day activities. They follow orders given to them by the capos.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Hang out at the race track!`,
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/Race\ Track\ .png`,
       ],
     },
     {
-      id: `associate`,
-      imageUrl: `assoc-3_rscxkm`,
-      name: `The Associate`,
+      id: `club`,
+      imageUrl: `/config/images/clubgoombah1.png`,
+      name: `Club Goombah`,
       title: (
         <>
-          <span>The</span>
-          <span>Associate</span>
+          <span>Club</span>
+          <span>Goombah</span>
         </>
       ),
-      blurb: `Not made-men, but associates.`,
+      blurb: `Come clubbing with us`,
       path: `/#crew-detail`,
       about: `Associates aren't technically official members of the family, however they are well respected and work closely with the family.`,
       perks: [
-        `Access to the Metaverse`,
-        `Airdrops and Early Access to future collections`,
-        `Access to exclusive merch and events`,
+        `Some events will have live music/performances`,
+      ],
+      buyLink: '/',
+      imgThumbs: `/config/images/clubgoombah1.png`,
+      
+    },
+    {
+      id: `highroller`,
+      imageUrl: `/config/images/HighRollerClub.png`,
+      name: `High Roller Room`,
+      title: (
+        <>
+          <span>High</span>
+          <span>Roller Room</span>
+        </>
+      ),
+      blurb: `$$$$$$$$`,
+      path: `/#crew-detail`,
+      about: `Associates aren't technically official members of the family, however they are well respected and work closely with the family.`,
+      perks: [
+        `Private tables`,
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/HighRollerClub.png`,
       ],
     },
   ],
@@ -154,7 +140,7 @@ export const Crew = () => {
       className={crew}
       style={{ position: 'relative' }}
       ref={muscleRef}
-      id='tokens-2'
+      id='goombahverse'
     >
       <TokenCategory
         title={sectionData.title}

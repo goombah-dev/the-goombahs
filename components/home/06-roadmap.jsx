@@ -21,6 +21,9 @@ const sectionData = {
       <span>
       Here is a list of what you can expect in the near future from The Goombahs. Stay tuned! More events and updates will be added as we pass each milestone.
       </span>
+    <h2>
+    COMING SOON: The Lottery
+    </h2>
     </>
   ),
   months: [
@@ -62,11 +65,6 @@ const sectionData = {
     {
       name: `Phase 2`,
       events: [
-        {
-          title: `Coinbound Partnership`,
-          blurb: `Integer pharetra vitae nisl quis pharetra. Ut arcu odio, lacinia eget pharetra a, gravida eget justo. Quisque ut condimentum nisl.`,
-          path: '/',
-        },
         {
           title: `Discord Poker & Movie Nights`,
           blurb: `Donec lobortis aliquet arcu quis ornare. Pellentesque commodo turpis vitae lacinia interdum. Fusce non lorem justo. Etiam dui dolor, accumsan sed iaculis id, feugiat sed massa. Suspendisse purus sem, blandit vitae justo in, fringilla convallis risus.`,

@@ -15,7 +15,7 @@ import {
   mobileRankHeader
 } from '../../styles/blocks/token-rank.module.scss'
 
-import { baseUrlPng } from '../../utils/base-url'
+
 import { TitleBlurb } from './title-blurb'
 
 
@@ -60,20 +60,19 @@ export const TokenRank = ({ rankData: rnk, sectionId }) => {
         <div className={imgContainer}>
           <img
             className={imgMain}
-            src={baseUrlPng(`tokens/${rnk.imageUrl}`)}
+            src={`${rnk.imageUrl}`}
             alt={rnk.name}
           />
-          {rnk.imgThumbs.map((thm) => {
-            return (
+
+             
               <img
-                key={thm}
+                
                 className={imgThumb}
-                // src={baseUrlPng(`${rnk.id}/${thm}`)}
-                src={baseUrlPng(`boss/${thm}`)}
+                src={`${rnk.imageThumbs}`}
                 alt={rnk.id}
               />
-            )
-          })}
+         
+        
         </div>
       </div>
     </section>
