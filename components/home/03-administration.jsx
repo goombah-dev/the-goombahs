@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 import { TokenCategory } from '../blocks/token-category'
-import { TokenRank } from '../blocks/token-rank'
+import { TokenRank } from '../blocks/token-pics'
 import { TokenNav } from '../blocks/token-nav'
 
 import { admin } from '../../styles/home/administration.module.scss';
@@ -31,7 +31,7 @@ const sectionData = {
   tokens: [
     {
       id: `Special`,
-      imageUrl: `boss-2--1_a3sosa`,
+      imageUrl: `/config/images/boss1.png`,
       name: `Special Editions`,
       title: (
         <>
