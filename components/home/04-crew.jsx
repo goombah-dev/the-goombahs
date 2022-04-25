@@ -20,7 +20,7 @@ const sectionData = {
   tokens: [
     {
       id: `casino`,
-      imageUrl: `capo-3_zpnmti`,
+      imageUrl: `/config/images/Casino.png`,
       name: `The Casino`,
       title: (
         <>
@@ -37,10 +37,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/Casino.png`,
       ],
     },
     {
@@ -62,15 +59,12 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/`,
       ],
     },
     {
       id: `racetrack`,
-      imageUrl: `soldato_wfxhft`,
+      imageUrl: `/config/images/Race\ Track\ .png`,
       name: `The Goombah Racetrack`,
       title: (
         <>
@@ -86,10 +80,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/Race\ Track\ .png`,
       ],
     },
     {
@@ -109,12 +100,12 @@ const sectionData = {
         `Some events will have live music/performances`,
       ],
       buyLink: '/',
-      imgThumbs: `/config/images/flyer1.jpeg`,
+      imgThumbs: `/config/images/ClubGoombah.png`,
       
     },
     {
       id: `highroller`,
-      imageUrl: `assoc-3_rscxkm`,
+      imageUrl: `/config/images/HighRollerClub.png`,
       name: `High Roller Room`,
       title: (
         <>
@@ -130,10 +121,7 @@ const sectionData = {
       ],
       buyLink: '/',
       imgThumbs: [
-        `boss-2_bwvxyp`,
-        `boss-3_ykzeeo`,
-        `boss-4_h0rsza`,
-        `boss-5_tsoawa`,
+        `/config/images/HighRollerClub.png`,
       ],
     },
   ],
