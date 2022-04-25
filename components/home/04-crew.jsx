@@ -113,7 +113,7 @@ const sectionData = {
           <span>Roller Room</span>
         </>
       ),
-      blurb: `$$$$$$$$$$$$$$`,
+      blurb: `$$$$$$$$`,
       path: `/#crew-detail`,
       about: `Associates aren't technically official members of the family, however they are well respected and work closely with the family.`,
       perks: [
