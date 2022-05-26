@@ -2,7 +2,7 @@
 
 .story {
   @include homeSection(auto);
-  min-height: 80vh;
+  min-height: 100vh;
   @media (max-width: 1024px) {
     min-height: 110vh;
     margin-top: var(--intersection-margin);
