@@ -23,9 +23,11 @@ const sectionData = {
         <li>5. First dibs on our future NFT collection drops , accessories and surprise weapon airdrops
 </li>
         <li>6. Ability to help delegate the future of the collection</li>
-        <li>7. Another big announcement coming soon!</li>
       </ol>
-  
+      <hr />
+      <p><a title="Raffle" href="https://cryptofal.com" target="_blank">The Goombahs Recurring Raffle</a>
+      <span>Upon obtaining and verifying one of more Gen-1 Goombah NFT, unlock full access to The Goombahverse
+      Upon registering your wallet and NFT, each Goombah held will grant one entry into every recurring raffle</span></p>
     </>
   ),
   tokens: [
@@ -46,7 +48,7 @@ const sectionData = {
         `Boss - 8`,
         `Consigliere - 10`,
         `Underboss - 25`,
-        `Goodfella - 250 (Coming Soon)`,
+        `Key Holders - 250`,
       ],
       buyLink: '/',
       imgThumbs: [
