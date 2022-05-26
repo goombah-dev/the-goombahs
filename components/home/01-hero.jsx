@@ -48,13 +48,13 @@ export const Hero = () => {
           alt='goombahs'
         />
       </div> */}
-   /*   <Link href='/#story'>
+      <Link href='/mint'>
         <a className={scrollBtn}>
-          <span className={text}>SCROLL DOWN</span>
-          <span className={arrow}>→</span>
+          <span className={text}>Mint</span>
+          <span className={arrow}>*</span>
         </a>
       </Link>
-      */
+      
       
     </section>
   )
