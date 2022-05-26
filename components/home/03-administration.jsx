@@ -6,7 +6,7 @@ import { TokenRank } from '../blocks/token-pics'
 import { TokenNav } from '../blocks/token-nav'
 
 import { admin } from '../../styles/home/administration.module.scss';
-
+import { submitBtn } from '../../styles/home/contact.module.scss'
 const sectionData = {
   title: `Utility & Breakdown`,
   blurb: (
@@ -32,6 +32,14 @@ const sectionData = {
       </span>
       <span><a title="whitepaper" href="/Goombahs_Whitepaper.pdf" target="_blank">View Project Whitepaper</a></span>
       
+   <form action = "/Goombahs_Whitepaper.pdf" >
+          <button
+          className={`btn btn__primary ${submitBtn}`}
+            type='submit'
+          >
+            View Project Whitepaper
+          </button>
+          </form>
     
   
     </>
