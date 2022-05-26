@@ -25,8 +25,7 @@ const sectionData = {
         <li>6. Ability to help delegate the future of the collection</li>
         <li>7. Entry into every recurring Prize Pool Raffle</li>
       </ol>
-      <br />
-        <p sytle="font-size:14px">The Goombahs Prize Pool Raffle</p>
+        <p sytle="font-size:18px">The Goombahs Prize Pool Raffle</p>
       
     
       <span>Upon obtaining and verifying one or more Gen-1 Goombah NFT, the holder unlocks full access to The Goombahverse. Upon registration and verification of your wallet/NFT(s), each Goombah held will grant one entry into every recurring Prize Pool Raffle. A raffle will be held after approximately every 100 Goombah NFT mints for prizes up to $10,000 USD.
