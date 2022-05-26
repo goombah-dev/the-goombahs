@@ -34,7 +34,7 @@ export default function Home() {
         <Crew />
         <Roadmap />
         <Story/>
-       // <Contact />
+    {/* <Contact /> */}
       </main>
     </>
   )
