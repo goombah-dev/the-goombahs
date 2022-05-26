@@ -40,6 +40,7 @@ const sectionData = {
             View Project Whitepaper
           </button>
           </form>
+          <br /><br />
     
   
     </>
