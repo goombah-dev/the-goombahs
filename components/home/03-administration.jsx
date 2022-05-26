@@ -6,7 +6,7 @@ import { TokenRank } from '../blocks/token-pics'
 import { TokenNav } from '../blocks/token-nav'
 
 import { admin } from '../../styles/home/administration.module.scss';
-
+import { submitBtn } from '../../styles/home/contact.module.scss'
 const sectionData = {
   title: `Utility & Breakdown`,
   blurb: (
@@ -23,8 +23,25 @@ const sectionData = {
         <li>5. First dibs on our future NFT collection drops , accessories and surprise weapon airdrops
 </li>
         <li>6. Ability to help delegate the future of the collection</li>
-        <li>7. Another big announcement coming soon!</li>
+        <li>7. Entry into every recurring Prize Pool Raffle</li>
       </ol>
+        <p sytle="font-size:25px"><b><u>The Goombahs Prize Pool Raffle</u></b></p>
+      
+    
+      <span>Upon obtaining and verifying one or more Gen-1 Goombah NFT, the holder unlocks full access to The Goombahverse. Upon registration and verification of your wallet/NFT(s), each Goombah held will grant one entry into every recurring Prize Pool Raffle. A raffle will be held after approximately every 100 Goombah NFT mints for prizes up to $10,000 USD.
+      </span>
+     
+      
+   <form action = "/Goombahs_Whitepaper.pdf" >
+          <button
+          className={`btn btn__primary ${submitBtn}`}
+            type='submit'
+          >
+            View Project Whitepaper
+          </button>
+          </form>
+          <br /><br />
+    
   
     </>
   ),
@@ -46,7 +63,7 @@ const sectionData = {
         `Boss - 8`,
         `Consigliere - 10`,
         `Underboss - 25`,
-        `Goodfella - 250 (Coming Soon)`,
+        `Key Holder - 250`,
       ],
       buyLink: '/',
       imgThumbs: [

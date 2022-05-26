@@ -29,11 +29,12 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <Story/>
+        
         <Administration />
         <Crew />
         <Roadmap />
-        <Contact />
+        <Story/>
+    {/* <Contact /> */}
       </main>
     </>
   )
